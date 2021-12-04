@@ -106,13 +106,13 @@ class Data:
             return datetime.timedelta(seconds=0)
         return datetime.timedelta(seconds=respawns_in_seconds)
 
-    def mark_chest_used(self, chest_id) -> datetime.timedelta:
+    def mark_chest_used(self, chest_id, respawn_time=60 * 60) -> datetime.timedelta:
         resets_at = self.is_chest_reset(chest_id)
         if resets_at > datetime.timedelta(seconds=0):
             return resets_at
         rcd = self.recent_chest_data
         self.increment_total_chests()
-        rcd[chest_id] = time.time() + 60 * 60
+        rcd[chest_id] = time.time() + respawn_time
         self.add_to_history(chest_id)
         with open("data/recent_chest_data.json", "w") as f:
             json.dump(rcd, f, indent=2)

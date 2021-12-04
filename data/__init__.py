@@ -193,6 +193,18 @@ chest_alias_list = {
   "614f0337519d9fd5eba64695": {
     "zone": "Mourningdale",
     "name": "Wolf Cave"
-  }
+  },
+  "614f0336519d9fd5eba6468c": {
+    "zone": "Mourningdale",
+    "name": "Lunaryth"
+  },
+  "614f0336519d9fd5eba6468b": {
+    "zone": "Mourningdale",
+    "name": "Unknown"
+  },
+  "614f0337519d9fd5eba6468d": {
+    "zone": "Mourningdale",
+    "name": "Unknown"
+  },
 }
 

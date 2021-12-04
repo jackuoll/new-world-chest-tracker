@@ -14,14 +14,15 @@ from settings import SETTINGS
 def handle_position_update(event):
     loc_arr = event["position"]
     loc = Location(x=loc_arr[0], y=loc_arr[1])
-    interested_types = ["chestsLargeSupplies", "chestsLargeAncient"]
+    interested_types = ["chestsLargeSupplies", "chestsLargeAncient", "chestsEliteSupplies", "chestsEliteAncient"]
     DATA.set_current_player_location(loc)
     nearby_pois = DATA.nearby_pois()
     for poi in nearby_pois:
         if poi.type not in interested_types:
             continue
         if DATA.is_entering(loc, poi.location) and not poi.unreachable:
-            resets = DATA.mark_chest_used(poi.id)
+            is_elite = "Elite" in poi.type
+            resets = DATA.mark_chest_used(poi.id, 60 * 60 * 23 if is_elite else 60 * 60)
             name = chest_alias_list.get(poi.id, poi.id)
             print(f"Approach - {poi.type}, {name} - resets: {resets.total_seconds()}")
 
