@@ -20,7 +20,7 @@ def handle_position_update(event):
     for poi in nearby_pois:
         if poi.type not in interested_types:
             continue
-        if DATA.is_entering(loc, poi.location):
+        if DATA.is_entering(loc, poi.location) and not poi.unreachable:
             resets = DATA.mark_chest_used(poi.id)
             name = chest_alias_list.get(poi.id, poi.id)
             print(f"Approach - {poi.type}, {name} - resets: {resets.total_seconds()}")

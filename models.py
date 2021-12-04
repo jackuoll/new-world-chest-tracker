@@ -13,6 +13,7 @@ class Location(BaseModel):
 class MarkerExtraData(BaseModel):
     zone: str
     name: str
+    unreachable: Optional[bool] = False
 
 
 class Marker(BaseModel):
@@ -40,3 +41,7 @@ class Marker(BaseModel):
     @property
     def zone(self) -> str:
         return self.extra_data.zone if self.extra_data else "Unknown"
+
+    @property
+    def unreachable(self) -> str:
+        return self.extra_data.unreachable if self.extra_data else False
