@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>nightshark's chest resets</title>
+    <script src="/static/app.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <h1 class="column title">
+        Nightshark's Chest Resets
+      </h1>
+        <div class="column has-text-right">
+          <span class="icon has-background-link is-medium has-text-white-bis" style="border-radius: 5px;" onClick="togglePause()" id="pause">
+            <i class='fa fa-pause' ></i>
+          </span>
+        </div>
+      </div>
+      <div class="box">
+        <p class="subtitle">
+          <h1 class="title">Statistics</h1>
+          <p><strong>Total Chests Opened:</strong> <span id="total-opened">Unknown</span></p>
+          <p><strong>Opened Last 24h:</strong> <span id="24h-opened">Unknown</span></p>
+        </p>
+      </div>
+      <div class="box">
+        <p class="subtitle">
+          <h1 class="title">Currently Nearby</h1>
+          <pre id="nearby"></pre>
+        </p>
+      </div>
+      <div class="box ">
+        <p class="subtitle">
+          <h1 class="title">Recently Opened</h1>
+        </p>
+        <table class="table table is-fullwidth is-hoverable">
+          <thead>
+            <tr>
+              <th>Zone</th>
+              <th>Location Name</th>
+              <th>Reset</th>
+              <th>Resets In</th>
+            </tr>
+          </thead>
+        <tbody id="recent-chests">
+        </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  </body>
+</html>
