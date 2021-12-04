@@ -45,7 +45,7 @@ while True:
         asyncio.run(connect_to_websocket())
     except ConnectionRefusedError:
         pass
-    except websockets.exceptions.ConnectionClosedError:
+    except (websockets.exceptions.ConnectionClosedError, websockets.exceptions.ConnectionClosedOK):
         print("disconnected")
     time.sleep(1)
 
