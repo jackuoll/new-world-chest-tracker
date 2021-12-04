@@ -30,7 +30,7 @@ def timedelta_to_time(td: timedelta):
     return f"{days}d {hours}h {minutes}m {seconds}s"
 
 
-@app.get("/")
+@app.get("/data/")
 async def root():
     with open("data/total_chests") as f:
         total_chests_opened = json.load(f)
@@ -40,7 +40,7 @@ async def root():
             "opened_last_24h": len(DATA.get_history()),
             "total_opened": total_chests_opened,
             "nearby": {
-                "a": "a\nb\nc"
+                k: DATA.markers.get(k).dict() for k, v in json.load(chest_f).items()
             },
             "reset_timers": {
                 k: {
@@ -57,7 +57,7 @@ async def root():
         return data
 
 
-@app.get("/page/")
+@app.get("/")
 async def page(request: Request):
     return templates.TemplateResponse("page.html", {"request": request, "id": id})
 

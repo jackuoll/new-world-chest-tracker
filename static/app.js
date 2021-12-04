@@ -2,7 +2,7 @@ let lastReceivedData = null;
 let refreshPaused = false;
 
 const loadData = () => {
-    return fetch("/")
+    return fetch("/data/")
         .then((response) => response.json())
         .then((data) => data)
         .catch((err) => {
