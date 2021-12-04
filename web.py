@@ -40,7 +40,7 @@ async def root():
             "opened_last_24h": len(DATA.get_history()),
             "total_opened": total_chests_opened,
             "nearby": {
-                k: DATA.markers.get(k).dict() for k, v in json.load(chest_f).items()
+                "a": "a\nb\nc"
             },
             "reset_timers": {
                 k: {

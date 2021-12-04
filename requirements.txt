@@ -3,3 +3,5 @@ uvicorn
 requests
 websockets
 jinja2
+pydantic[dotenv]
+pydantic
