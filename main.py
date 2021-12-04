@@ -8,6 +8,7 @@ from models import Location
 
 from data_store import DATA
 from data import chest_alias_list
+from settings import SETTINGS
 
 
 def handle_position_update(event):
@@ -28,7 +29,7 @@ def handle_position_update(event):
 
 
 async def connect_to_websocket():
-    async with websockets.connect("wss://localhost.newworldminimap.com:42224/Location") as websocket:
+    async with websockets.connect(SETTINGS.nw_wss_server_location) as websocket:
         print("connected")
         while True:
             data = await websocket.recv()
