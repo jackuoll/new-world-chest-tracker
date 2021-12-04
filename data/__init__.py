@@ -206,5 +206,41 @@ chest_alias_list = {
     "zone": "Mourningdale",
     "name": "Unknown"
   },
+  "614f0373519d9fd5eba646d4": {
+    "zone": "Shattered Mountain",
+    "name": "Mines 1"
+  },
+  "614f0373519d9fd5eba646d3": {
+    "zone": "Shattered Mountain",
+    "name": "Mines 2"
+  },
+  "614f0373519d9fd5eba646d5": {
+    "zone": "Shattered Mountain",
+    "name": "Mines 3"
+  },
+  "614f0373519d9fd5eba646d2": {
+    "zone": "Shattered Mountain",
+    "name": "Mines 4"
+  },
+  "614f0373519d9fd5eba646d6": {
+    "zone": "Shattered Mountain",
+    "name": "Mines 5"
+  },
+  "614f0373519d9fd5eba646d9": {
+    "zone": "Shattered Mountain",
+    "name": "Mines 6"
+  },
+  "614f0373519d9fd5eba646db": {
+    "zone": "Shattered Mountain",
+    "name": "Mines 7"
+  },
+  "614f0373519d9fd5eba646da": {
+    "zone": "Shattered Mountain",
+    "name": "Mines 8"
+  },
+  "614f0373519d9fd5eba646d7": {
+    "zone": "Shattered Mountain",
+    "name": "Mines 9"
+  }
 }
 
