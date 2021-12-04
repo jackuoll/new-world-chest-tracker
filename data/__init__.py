@@ -49,8 +49,8 @@ chest_alias_list = {
     "name": "Boss"
   },
   "614f032e519d9fd5eba645c4": {
-    "zone": "Shattered",
-    "name": " Mines"
+    "zone": "Shattered Mountain",
+    "name": "Mines"
   },
   "614f0330519d9fd5eba645e6": {
     "zone": "Reekwater",
@@ -208,39 +208,39 @@ chest_alias_list = {
   },
   "614f0373519d9fd5eba646d4": {
     "zone": "Shattered Mountain",
-    "name": "Mines 1"
+    "name": "Mines 1 (Elite)"
   },
   "614f0373519d9fd5eba646d3": {
     "zone": "Shattered Mountain",
-    "name": "Mines 2"
+    "name": "Mines 2 (Elite)"
   },
   "614f0373519d9fd5eba646d5": {
     "zone": "Shattered Mountain",
-    "name": "Mines 3"
+    "name": "Mines 3 (Elite)"
   },
   "614f0373519d9fd5eba646d2": {
     "zone": "Shattered Mountain",
-    "name": "Mines 4"
+    "name": "Mines 4 (Elite)"
   },
   "614f0373519d9fd5eba646d6": {
     "zone": "Shattered Mountain",
-    "name": "Mines 5"
+    "name": "Mines 5 (Elite)"
   },
   "614f0373519d9fd5eba646d9": {
     "zone": "Shattered Mountain",
-    "name": "Mines 6"
+    "name": "Mines 6 (Elite)"
   },
   "614f0373519d9fd5eba646db": {
     "zone": "Shattered Mountain",
-    "name": "Mines 7"
+    "name": "Mines 7 (Elite)"
   },
   "614f0373519d9fd5eba646da": {
     "zone": "Shattered Mountain",
-    "name": "Mines 8"
+    "name": "Mines 8 (Elite)"
   },
   "614f0373519d9fd5eba646d7": {
     "zone": "Shattered Mountain",
-    "name": "Mines 9"
+    "name": "Mines 9 (Elite)"
   }
 }
 
