@@ -127,7 +127,7 @@ const refreshAll = () => {
     }
     loadData().then((data) => {
       // todo: doesn't work anymore since we send seconds remaining from python
-      if(JSON.stringify(lastReceivedData) == JSON.stringify(data)) {
+      if(JSON.stringify(lastReceivedData) == JSON.stringify(data) || refreshPaused) {
           return;
       }
       lastReceivedData = data;
