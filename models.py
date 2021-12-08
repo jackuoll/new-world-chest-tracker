@@ -13,6 +13,16 @@ class Location(BaseModel):
     x: float  # e/w
     y: float  # n/s
 
+    def get_zone(self) -> str:
+        j = get_json("data/region_data.json")
+        point = Point(self.location.y, self.location.x)
+        for region in j:
+            poly_points = j[region]["latlngs"]
+            polygon = Polygon(poly_points)
+            if polygon.contains(point):
+                return region.replace("region_", "").replace("_", " ").title()
+        return "Unknown"
+
 
 class MarkerExtraData(BaseModel):
     zone: str
@@ -45,16 +55,7 @@ class Marker(BaseModel):
     @property
     def zone(self) -> str:
         if not self.extra_data:
-            j = get_json("data/region_data.json")
-            point = Point(self.location.y, self.location.x)
-            region_name = "Unknown"
-            for region in j:
-                poly_points = j[region]["latlngs"]
-                polygon = Polygon(poly_points)
-                if polygon.contains(point):
-                    region_name = region.replace("region_", "").replace("_", " ").title()
-                    break
-
+            region_name = self.location.get_zone()
             self.extra_data = MarkerExtraData(
                 name="Unknown",
                 zone=region_name,

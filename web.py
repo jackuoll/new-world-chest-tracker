@@ -6,6 +6,8 @@ from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
+from models import Location
+
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
@@ -35,9 +37,11 @@ def root():
     DATA.player_obj.refresh_from_db()
     nearby = json.loads(DATA.player_obj.nearby or "{}")
     cur_time = datetime.now()
+    loc = Location(**json.loads(DATA.player_obj.current_location))
     data = {
         "opened_last_24h": len(DATA.get_last_24h()),
         "total_opened": total_chests_opened,
+        "zone": loc.get_zone(),
         "nearby": {
             p["id"]: DATA.markers.get(p["id"]).dict() for p in nearby
         },

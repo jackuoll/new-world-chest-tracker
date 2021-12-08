@@ -51,6 +51,7 @@ const showStatistics = (data) => {
     document.getElementById("24h-opened").textContent=data["opened_last_24h"];
     document.getElementById("total-opened").textContent=data["total_opened"];
     document.getElementById("nearby").textContent=JSON.stringify(data["nearby"], null, 2);
+    document.getElementById("zone").textContent=data["zone"];
 };
 
 const showRecentChests = (data) => {
