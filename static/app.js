@@ -6,7 +6,7 @@ let onTab = "stockpiles";
 const setTab = (value) => {
     onTab = value;
     const tabs = document.getElementById("tabs");
-    refreshStats();
+    refreshAll();
     const children = Array.prototype.slice.call(tabs.children);
     children.forEach((elem) => {
         if(elem.id != value) {
@@ -16,7 +16,6 @@ const setTab = (value) => {
         }
     });
 };
-
 
 const loadData = () => {
     return fetch("/data/")
@@ -47,22 +46,16 @@ const dropdown = (elemId) => {
     cl.toggle("is-active");
 };
 
-const refreshStats = () => {
-    if(refreshPaused) {
-        return;
-    }
-    loadData().then((data) => {
-      if(JSON.stringify(lastReceivedData) == JSON.stringify(data)) {
-          return;
-      }
-      lastReceivedData = data;
-      document.getElementById("total-opened").textContent=data["total_opened"];
-      document.getElementById("24h-opened").textContent=data["opened_last_24h"];
-      const recent = document.getElementById("recent-chests");
+const showStatistics = (data) => {
+    document.getElementById("total-opened").textContent=data["total_opened"];
+    document.getElementById("24h-opened").textContent=data["opened_last_24h"];
+    document.getElementById("total-opened").textContent=data["total_opened"];
+    document.getElementById("nearby").textContent=JSON.stringify(data["nearby"], null, 2);
+};
+
+const showRecentChests = (data) => {
+  const recent = document.getElementById("recent-chests");
       let replaceWith = "";
-      console.log(onTab);
-      console.log(data["reset_timers"]);
-      console.log(data["reset_timers"][onTab]);
       if(Object.keys(data["reset_timers"][onTab]).length == 0) {
           recent.innerHTML = `<td>All ${onTab} reset!</td>`;
           return;
@@ -111,8 +104,19 @@ const refreshStats = () => {
             </tr>`;
       }
       recent.innerHTML = replaceWith;
-      document.getElementById("total-opened").textContent=data["total_opened"];
-      document.getElementById("nearby").textContent=JSON.stringify(data["nearby"], null, 2);
+};
+
+const refreshAll = () => {
+    if(refreshPaused) {
+        return;
+    }
+    loadData().then((data) => {
+      if(JSON.stringify(lastReceivedData) == JSON.stringify(data)) {
+          return;
+      }
+      lastReceivedData = data;
+      showStatistics(data);
+      showRecentChests(data);
     }).catch((err) => {
         if(!refreshPaused) {
             togglePause();
@@ -122,7 +126,7 @@ const refreshStats = () => {
 }
 
 window.onload = function() {
-    refreshStats();
+    refreshAll();
 };
 
-const repeat = setInterval(refreshStats, 1000);
+const repeat = setInterval(refreshAll, 1000);

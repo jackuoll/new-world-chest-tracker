@@ -35,40 +35,39 @@ def root():
     reset_timers = DATA.recent_chest_data
     DATA.player_obj.refresh_from_db()
     nearby = json.loads(DATA.player_obj.nearby or "{}")
-    with open("data/recent_chest_data.json") as f, open("data/nearby.json") as chest_f:
-        cur_time = datetime.now()
-        data = {
-            "opened_last_24h": len(DATA.get_last_24h()),
-            "total_opened": total_chests_opened,
-            "nearby": {
-                p["id"]: DATA.markers.get(p["id"]).dict() for p in nearby
-            },
-            "reset_timers": {
-                "elites": {
-                    chest.chest_id: {
-                        "name": DATA.markers.get(chest.chest_id).name,
-                        "zone": DATA.markers.get(chest.chest_id).zone,
-                        "reset": chest.reset_time.strftime("%I:%M%p").lower(),
-                        "resets_in": timedelta_to_time(chest.reset_time - cur_time)
-                    }
-
-                    for chest in reset_timers
-                    if chest.is_elite
-                },
-                "stockpiles": {
-                    chest.chest_id: {
-                        "name": DATA.markers.get(chest.chest_id).name,
-                        "zone": DATA.markers.get(chest.chest_id).zone,
-                        "reset": chest.reset_time.strftime("%I:%M%p").lower(),
-                        "resets_in": timedelta_to_time(chest.reset_time - cur_time)
-                    }
-
-                    for chest in reset_timers
-                    if not chest.is_elite
+    cur_time = datetime.now()
+    data = {
+        "opened_last_24h": len(DATA.get_last_24h()),
+        "total_opened": total_chests_opened,
+        "nearby": {
+            p["id"]: DATA.markers.get(p["id"]).dict() for p in nearby
+        },
+        "reset_timers": {
+            "elites": {
+                chest.chest_id: {
+                    "name": DATA.markers.get(chest.chest_id).name,
+                    "zone": DATA.markers.get(chest.chest_id).zone,
+                    "reset": chest.reset_time.strftime("%I:%M%p").lower(),
+                    "resets_in": timedelta_to_time(chest.reset_time - cur_time)
                 }
+
+                for chest in reset_timers
+                if chest.is_elite
+            },
+            "stockpiles": {
+                chest.chest_id: {
+                    "name": DATA.markers.get(chest.chest_id).name,
+                    "zone": DATA.markers.get(chest.chest_id).zone,
+                    "reset": chest.reset_time.strftime("%I:%M%p").lower(),
+                    "resets_in": timedelta_to_time(chest.reset_time - cur_time)
+                }
+
+                for chest in reset_timers
+                if not chest.is_elite
             }
         }
-        return data
+    }
+    return data
 
 
 @app.get("/")
