@@ -41,9 +41,15 @@ const togglePause = () => {
     cl.toggle("has-background-primary");
 }
 
-const dropdown = (elemId) => {
-    const cl = document.getElementById(elemId).classList;
-    cl.toggle("is-active");
+const setLocation = (id) => {
+    return fetch(`/set_marker_location/${id}/`, {method: "PATCH"})
+        .then((response) => response.json())
+        .then((data) => data)
+        .catch((err) => {
+            if(!refreshPaused) {
+                togglePause();
+            }
+        })
 };
 
 const showStatistics = (data) => {
@@ -70,7 +76,7 @@ const showRecentChests = (data) => {
           const resetsIn = info["resets_in"]
           replaceWith += `
             <tr>
-              <td>${zone}</td>
+              <td><a onClick='setLocation("${id}");'><i class="fa-solid fa-location-crosshairs"></i></a> ${zone}</td>
               <td>${name}</td>
               <td>${reset}</td>
               <td>${resetsIn}</td>

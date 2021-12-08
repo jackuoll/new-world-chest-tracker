@@ -73,7 +73,7 @@ chest_alias_list = {
     "name": "Tower 5",
     "unreachable": True
   },
-"614f0330519d9fd5eba645eb": {
+  "614f0330519d9fd5eba645eb": {
     "zone": "Reekwater",
     "name": "Tower 6",
     "unreachable": True

@@ -4,30 +4,34 @@ import logging
 import time
 
 import websockets
+
+from data.models import PlayerData, LootHistory
 from models import Location
 
-from data_store import DATA
-from data import chest_alias_list
 from settings import SETTINGS
 from asgiref.sync import sync_to_async
 
 
+PLAYER = PlayerData.objects.get(player_name="Nightshark")
+print(PLAYER)
+
+
 def handle_position_update(event):
     loc_arr = event["position"]
-    loc = Location(x=loc_arr[0], y=loc_arr[1])
+    loc = Location(y=loc_arr[0], x=loc_arr[1])
+    PLAYER.update_location(loc)
+    markers = PLAYER.nearby_markers
     interested_types = ["chestsLargeSupplies", "chestsLargeAncient", "chestsEliteSupplies", "chestsEliteAncient"]
-    DATA.set_current_player_location(loc)
-    nearby_pois = DATA.nearby_pois()
-    for poi in nearby_pois:
-        if poi.type not in interested_types:
-            continue
-        if DATA.is_entering(loc, poi.location) and not poi.unreachable:
+    for poi in markers:
+        is_chest = poi.type in interested_types
+        if poi.location.is_entering(PLAYER.old_location, PLAYER.location) and not poi.unreachable:
             is_elite = "Elite" in poi.type
-            resets = DATA.mark_chest_used(poi.id, 60 * 60 * 23 if is_elite else 60 * 60)
-            name = chest_alias_list.get(poi.id, poi.id)
-            print(f"Approach - {poi.type}, {name} - resets: {resets.total_seconds()}")
-
-    DATA.set_last_player_location(loc)
+            if is_chest:
+                lh = LootHistory.mark_looted(poi.marker_id, 60 * 60 * 23 if is_elite else 60 * 60)
+                print(f"Approach - {poi.type}, {poi.name} - resets: {lh.resets.total_seconds()}")
+            else:
+                print(f"Approach - {poi.type}, {poi.name}")
+    PLAYER.save()
 
 
 async def connect_to_websocket():
@@ -41,8 +45,6 @@ async def connect_to_websocket():
             else:
                 h = sync_to_async(handle_position_update)
                 await h(event)
-                await sync_to_async(DATA.flush, thread_sensitive=True)()
-                #DATA.flush()
 
 
 while True:

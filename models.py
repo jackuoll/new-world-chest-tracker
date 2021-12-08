@@ -16,7 +16,7 @@ class Location(BaseModel):
     y: float  # n/s
 
     def get_zone(self) -> str:
-        point = Point(self.y, self.x)
+        point = Point(self.x, self.y)
         for region in REGION_DATA:
             poly_points = REGION_DATA[region]["latlngs"]
             polygon = Polygon(poly_points)
@@ -24,6 +24,17 @@ class Location(BaseModel):
                 return region.replace("region_", "").replace("_", " ").title()
         return "Unknown"
 
+    def is_entering(self, old_loc: Location, loc: Location) -> bool:
+        player_was_in_range = self.is_nearby(old_loc)
+        player_in_range = self.is_nearby(loc)
+        if not player_was_in_range and player_in_range:
+            return True
+        return False
+
+    def is_nearby(self, loc: Location) -> bool:
+        if loc is None:
+            return False
+        return abs(self.x - loc.x) < 3 and abs(self.y - loc.y) < 3
 
 class MarkerExtraData(BaseModel):
     zone: str

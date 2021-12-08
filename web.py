@@ -6,17 +6,12 @@ from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
+from data.models import Marker, LootHistory, PlayerData
 from models import Location
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
-
-
-def add_name_to(d) -> dict:
-    from data_store import DATA
-    d["name"] = DATA.markers.get(d["id"], None)
-    return d
 
 
 def timedelta_to_time(td: timedelta):
@@ -31,40 +26,37 @@ def timedelta_to_time(td: timedelta):
 
 @app.get("/data/")
 def root():
-    from data_store import DATA
-    total_chests_opened = DATA.total_chests_opened
-    reset_timers = DATA.recent_chest_data
-    DATA.player_obj.refresh_from_db()
-    nearby = json.loads(DATA.player_obj.nearby or "{}")
+    player = PlayerData.objects.get(player_name="Nightshark")
+    total_chests_opened = player.chests_looted
+    reset_timers = LootHistory.recent_loot()
+    nearby = player.nearby_markers
     cur_time = datetime.now()
-    loc = Location(**json.loads(DATA.player_obj.current_location))
+    loc = player.location
     data = {
-        "opened_last_24h": len(DATA.get_last_24h()),
+        "opened_last_24h": len(LootHistory.get_last_24h()),
         "total_opened": total_chests_opened,
         "zone": loc.get_zone(),
         "nearby": {
-            p["id"]: DATA.markers.get(p["id"]).dict() for p in nearby
+            p.marker_id: {k: v for k, v in p.__dict__.items() if not k.startswith("_")} for p in nearby
         },
         "reset_timers": {
             "elites": {
                 chest.chest_id: {
-                    "name": DATA.markers.get(chest.chest_id).name,
-                    "zone": DATA.markers.get(chest.chest_id).zone,
+                    "name": chest.chest.name,
+                    "zone": chest.chest.location.get_zone(),
                     "reset": chest.reset_time.strftime("%I:%M%p").lower(),
                     "resets_in": timedelta_to_time(chest.reset_time - cur_time)
                 }
-
                 for chest in reset_timers
                 if chest.is_elite
             },
             "stockpiles": {
                 chest.chest_id: {
-                    "name": DATA.markers.get(chest.chest_id).name,
-                    "zone": DATA.markers.get(chest.chest_id).zone,
+                    "name": chest.chest.name,
+                    "zone": chest.chest.location.get_zone(),
                     "reset": chest.reset_time.strftime("%I:%M%p").lower(),
                     "resets_in": timedelta_to_time(chest.reset_time - cur_time)
                 }
-
                 for chest in reset_timers
                 if not chest.is_elite
             }
@@ -77,5 +69,14 @@ def root():
 def page(request: Request):
     return templates.TemplateResponse("page.html", {"request": request, "id": id})
 
+
+# @app.patch("/set_marker_location/{marker_id}/")
+# def set_market_loc(marker_id: str):
+#     from data_store import DATA
+#     cur_loc = Location(**json.loads(DATA.player_obj.current_location))
+#     med = Marker.objects.get(marker_id=marker_id)
+#     med.location = cur_loc.json()
+#     med.save()
+#     return {"status": "ok"}
 
 # 614f0374519d9fd5eba646ec
