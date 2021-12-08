@@ -1,3 +1,4 @@
+from __future__ import annotations
 from typing import List, Optional
 
 from pydantic import Field, BaseModel, validator, root_validator
@@ -45,3 +46,7 @@ class Marker(BaseModel):
     @property
     def unreachable(self) -> str:
         return self.extra_data.unreachable if self.extra_data else False
+
+    @classmethod
+    def load(cls) -> List[Marker]:
+        pass

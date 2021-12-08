@@ -39,6 +39,7 @@ async def connect_to_websocket():
                 logging.warning(f"dunno what {event} is")
             else:
                 handle_position_update(event)
+                DATA.flush()
 
 
 while True:

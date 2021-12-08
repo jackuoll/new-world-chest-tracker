@@ -7,15 +7,13 @@ from starlette.requests import Request
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
-from data import chest_alias_list
-from data_store import DATA
-
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 
 def add_name_to(d) -> dict:
+    from data_store import DATA
     d["name"] = DATA.markers.get(d["id"], None)
     return d
 
@@ -31,36 +29,35 @@ def timedelta_to_time(td: timedelta):
 
 
 @app.get("/data/")
-async def root():
-    with open("data/total_chests") as f:
-        total_chests_opened = json.load(f)
+def root():
+    from data_store import DATA
+    total_chests_opened = DATA.total_chests_opened
+    reset_timers = DATA.recent_chest_data
     with open("data/recent_chest_data.json") as f, open("data/nearby.json") as chest_f:
-        cur_time = time.time()
+        cur_time = datetime.now()
         data = {
-            "opened_last_24h": len(DATA.get_history()),
+            "opened_last_24h": len(DATA.get_last_24h()),
             "total_opened": total_chests_opened,
             "nearby": {
                 k: DATA.markers.get(k).dict() for k, v in json.load(chest_f).items()
             },
             "reset_timers": {
-                k: {
-                    "name": DATA.markers.get(k).name,
-                    "zone": DATA.markers.get(k).zone,
-                    "reset": (datetime.now() + timedelta(seconds=v - cur_time)).strftime("%I:%M%p").lower(),
-                    "resets_in": timedelta_to_time(timedelta(seconds=v - cur_time))
+                chest.chest_id: {
+                    "name": DATA.markers.get(chest.chest_id).name,
+                    "zone": DATA.markers.get(chest.chest_id).zone,
+                    "reset": chest.reset_time.strftime("%I:%M%p").lower(),
+                    "resets_in": timedelta_to_time(chest.reset_time - cur_time)
                 }
 
-                for k, v in sorted(json.load(f).items(), key=lambda items: items[1])
-                if v > cur_time
+                for chest in reset_timers
             }
         }
         return data
 
 
 @app.get("/")
-async def page(request: Request):
+def page(request: Request):
     return templates.TemplateResponse("page.html", {"request": request, "id": id})
 
 
-# notes chest 162 MD bear
-# texts chest 168 weavers field 1.5k
+# 614f0374519d9fd5eba646ec

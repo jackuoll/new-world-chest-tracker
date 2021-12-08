@@ -1,57 +1,36 @@
 import datetime
-import json
-import time
-from typing import List, Any, Dict
+from typing import List, Any, Dict, Tuple
 
 import requests
 
+from data.models import PlayerData, LootHistory
+from data.utils import get_json, write_json
 from models import Marker, Location
 
 
 class Data:
-    def __init__(self) -> None:
+    def __init__(self, player_name: str) -> None:
+        self.player_obj, _ = PlayerData.objects.get_or_create(player_name=player_name)  # type: Tuple[PlayerData, Any]
         self._markers: Dict[str, Marker] = None
         self._recent_chest_data = None
         self._last_player_location = None
-        self._total_chests_opened = self.load_total_chests_opened()
+        self._total_chests_opened = self.total_chests_opened
         self._current_player_location = None
 
-    def load_total_chests_opened(self) -> int:
-        fn = "data/total_chests"
-
-        try:
-            with open(fn) as f:
-                total_chests_opened = json.load(f)
-        except FileNotFoundError:
-            total_chests_opened = 71
-        return total_chests_opened
+    @property
+    def total_chests_opened(self) -> int:
+        return self.player_obj.chests_looted
 
     def increment_total_chests(self) -> None:
-        self._total_chests_opened += 1
-        print(f"now opened {self._total_chests_opened} chests")
-        with open("data/total_chests", "w") as f:
-            json.dump(self._total_chests_opened, f)
-
-    def get_json(self, filename: str) -> Any:
-        try:
-            with open(filename) as f:
-                return json.load(f)
-        except FileNotFoundError:
-            pass
-        return None
-
-    def write_json(self, j: Any, filename: str) -> None:
-        with open(filename, "w") as f:
-            json.dump(j, f)
+        self.player_obj.chests_looted += 1
 
     def fetch_markers(self) -> None:
         print("fetching markers...")
         self._markers = {}
-        marker_req = self.get_json("data/markers.json")
+        marker_req = get_json("data/markers.json")
         if marker_req is None:
             marker_req = requests.get("https://aeternum-map.gg/api/markers").json()
-            with open("data/markers.json", "w") as f:
-                json.dump(marker_req, f)
+            write_json(marker_req, "data/markers.json")
         for marker in marker_req:
             self._markers[marker["_id"]] = Marker(**marker)
         print("fetched markers")
@@ -64,9 +43,11 @@ class Data:
 
     def set_current_player_location(self, location: Location) -> None:
         self._current_player_location = location
+        self.player_obj.current_location = location.json()
 
     def set_last_player_location(self, location: Location) -> None:
         self._last_player_location = location
+        self.player_obj.last_location = location.json()
 
     def is_nearby(self, loc1: Location, loc2: Location) -> bool:
         return abs(loc1.x - loc2.x) < 3 and abs(loc1.y - loc2.y) < 3
@@ -83,39 +64,20 @@ class Data:
 
     @property
     def recent_chest_data(self) -> dict:
-        if self._recent_chest_data:
-            return self._recent_chest_data
-        recent_chest_data = self.get_json("data/recent_chest_data.json")
-        if recent_chest_data is None:
-            t = time.time()
-            interested_types = ["chestsLargeSupplies", "chestsLargeAncient"]
-            recent_chest_data = {
-                marker.id: t for marker in self.markers
-                if marker.type in interested_types
-            }
-            self.write_json(recent_chest_data, "data/recent_chest_data.json")
-
-        self._recent_chest_data = recent_chest_data
-        return recent_chest_data
+        return LootHistory.objects.filter(reset_time__gt=datetime.datetime.now())
 
     def is_chest_reset(self, chest_id) -> datetime.timedelta:
-        rcd = self.recent_chest_data
-        chest_respawns_at = rcd.get(chest_id, 0)
-        respawns_in_seconds = chest_respawns_at - time.time()
-        if respawns_in_seconds < 0:
+        loot_history_obj = self.recent_chest_data.filter(chest_id=chest_id).first()
+        if loot_history_obj is None:
             return datetime.timedelta(seconds=0)
-        return datetime.timedelta(seconds=respawns_in_seconds)
+        return datetime.timedelta(seconds=(loot_history_obj.reset_time - datetime.datetime.now()).seconds)
 
     def mark_chest_used(self, chest_id, respawn_time=60 * 60) -> datetime.timedelta:
         resets_at = self.is_chest_reset(chest_id)
         if resets_at > datetime.timedelta(seconds=0):
             return resets_at
-        rcd = self.recent_chest_data
         self.increment_total_chests()
-        rcd[chest_id] = time.time() + respawn_time
-        self.add_to_history(chest_id)
-        with open("data/recent_chest_data.json", "w") as f:
-            json.dump(rcd, f, indent=2)
+        self.add_to_history(chest_id, respawn_time)
         return resets_at
 
     def nearby_pois(self) -> dict:
@@ -128,17 +90,20 @@ class Data:
                 info = poi.dict()
                 nearby[poi.id] = info
                 nearby_list.append(poi)
-        self.write_json(nearby, "data/nearby.json")
+        write_json(nearby, "data/nearby.json")
         return nearby_list
 
-    def add_to_history(self, chest_id):
-        history = self.get_json("data/history.json") or []
-        history.append({"chest_id": chest_id, "time": time.time()})
-        self.write_json(history, "data/history.json")
+    def add_to_history(self, chest_id, respawn_time):
+        history_obj = LootHistory(chest_id=chest_id, reset_time=respawn_time, loot_time=datetime.datetime.now())
+        history_obj.save()
 
-    def get_history(self) -> List[dict]:
-        return self.get_json("data/history.json") or []
+    def get_last_24h(self) -> List[dict]:
+        one_day_prior = datetime.datetime.now() - datetime.timedelta(hours=24)
+        return LootHistory.objects.filter(loot_time__gte=one_day_prior)
+
+    def flush(self):
+        # todo: track if there was any change
+        self.player_obj.save()
 
 
-
-DATA = Data()
+DATA = Data("Nightshark")
