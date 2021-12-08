@@ -67,6 +67,7 @@ def root():
 
 
 def is_self(request: Request) -> bool:
+    print(request.client.host,  SETTINGS.my_ip)
     return request.client.host == SETTINGS.my_ip
 
 
