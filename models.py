@@ -8,16 +8,17 @@ from shapely.geometry.polygon import Polygon
 
 from data import chest_alias_list
 
+REGION_DATA = get_json("data/region_data.json")
+
 
 class Location(BaseModel):
     x: float  # e/w
     y: float  # n/s
 
     def get_zone(self) -> str:
-        j = get_json("data/region_data.json")
-        point = Point(self.location.y, self.location.x)
-        for region in j:
-            poly_points = j[region]["latlngs"]
+        point = Point(self.y, self.x)
+        for region in REGION_DATA:
+            poly_points = REGION_DATA[region]["latlngs"]
             polygon = Polygon(poly_points)
             if polygon.contains(point):
                 return region.replace("region_", "").replace("_", " ").title()
