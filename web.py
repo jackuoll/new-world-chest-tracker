@@ -26,7 +26,7 @@ def timedelta_to_time(td: timedelta):
 
 
 @app.get("/data/")
-def root() -> JSONResponse:
+def root():
     player = PlayerData.objects.get(player_name="Nightshark")
     total_chests_opened = player.chests_looted
     reset_timers = LootHistory.recent_loot()
@@ -63,7 +63,7 @@ def root() -> JSONResponse:
             }
         }
     }
-    return JSONResponse(content=data, status_code=200)
+    return data
 
 
 def is_self(request: Request) -> bool:
