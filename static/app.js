@@ -99,6 +99,7 @@ const showRecentChests = (data) => {
               refreshPaused = true;
           });
           input.addEventListener('focusout', (event) => {
+            refreshPaused = false;
             const tr = input.closest("tr")
             const markerId = tr.dataset.markerId;
             fetch(`/set_marker_name/${markerId}/`, {
@@ -107,9 +108,6 @@ const showRecentChests = (data) => {
                 headers: {"Content-Type": "application/json"},
             })
                 .then((response) => response.json())
-                .then((data) => {
-                    refreshPaused = false;
-                })
                 .catch((err) => {
                     if(!refreshPaused) {
                         togglePause();
