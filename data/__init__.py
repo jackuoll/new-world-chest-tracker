@@ -244,3 +244,16 @@ chest_alias_list = {
   }
 }
 
+# def get_region(loc: Location):
+#   from data.utils import get_json
+#   from shapely.geometry import Point
+#   from shapely.geometry.polygon import Polygon
+#
+#   j = get_json("data/region_data.json")
+#   point = Point(7205.36, 13446.36)
+#   for region in j:
+#     poly_points = j[region]["latlngs"]
+#     polygon = Polygon(poly_points)
+#     if polygon.contains(point):
+#       print(region)
+#       break
