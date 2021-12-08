@@ -1,5 +1,22 @@
 let lastReceivedData = null;
 let refreshPaused = false;
+let onTab = "stockpiles";
+
+
+const setTab = (value) => {
+    onTab = value;
+    const tabs = document.getElementById("tabs");
+    refreshStats();
+    const children = Array.prototype.slice.call(tabs.children);
+    children.forEach((elem) => {
+        if(elem.id != value) {
+            elem.classList.remove("is-active");
+        } else {
+            elem.classList.add("is-active");
+        }
+    });
+};
+
 
 const loadData = () => {
     return fetch("/data/")
@@ -43,7 +60,14 @@ const refreshStats = () => {
       document.getElementById("24h-opened").textContent=data["opened_last_24h"];
       const recent = document.getElementById("recent-chests");
       let replaceWith = "";
-      for (let [id, info] of Object.entries(data["reset_timers"])) {
+      console.log(onTab);
+      console.log(data["reset_timers"]);
+      console.log(data["reset_timers"][onTab]);
+      if(Object.keys(data["reset_timers"][onTab]).length == 0) {
+          recent.innerHTML = `<td>All ${onTab} reset!</td>`;
+          return;
+      }
+      for (let [id, info] of Object.entries(data["reset_timers"][onTab])) {
           const fakeApp = false;
           const zone = fakeApp && "z" || info["zone"];
           const name = fakeApp && "name" || info["name"];

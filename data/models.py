@@ -19,10 +19,16 @@ class LootHistory(models.Model):
     loot_time = models.DateTimeField()
     reset_time = models.DateTimeField()
 
+    @property
+    def is_elite(self):
+        from data_store import DATA
+        return "Elite" in DATA.markers.get(self.chest_id).type
+
+
 
 class PlayerData(models.Model):
     player_name = models.CharField(primary_key=True, max_length=100)
     chests_looted = models.IntegerField(default=0)
-    nearby = models.TextField(null=True, blank=True)  # json field
+    nearby = models.TextField(null=True, blank=True, default="{}")  # json field
     current_location = models.CharField(null=True, blank=True, max_length=100)
     last_location = models.CharField(null=True, blank=True, max_length=100)

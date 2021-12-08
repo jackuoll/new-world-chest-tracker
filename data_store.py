@@ -1,4 +1,5 @@
 import datetime
+import json
 from typing import List, Any, Dict, Tuple
 
 import requests
@@ -90,7 +91,7 @@ class Data:
                 info = poi.dict()
                 nearby[poi.id] = info
                 nearby_list.append(poi)
-        write_json(nearby, "data/nearby.json")
+        self.player_obj.nearby = json.dumps(nearby_list)
         return nearby_list
 
     def add_to_history(self, chest_id, respawn_time):
