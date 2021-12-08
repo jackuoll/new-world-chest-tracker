@@ -70,13 +70,15 @@ def page(request: Request):
     return templates.TemplateResponse("page.html", {"request": request, "id": id})
 
 
-# @app.patch("/set_marker_location/{marker_id}/")
-# def set_market_loc(marker_id: str):
-#     from data_store import DATA
-#     cur_loc = Location(**json.loads(DATA.player_obj.current_location))
-#     med = Marker.objects.get(marker_id=marker_id)
-#     med.location = cur_loc.json()
-#     med.save()
-#     return {"status": "ok"}
+@app.patch("/set_marker_location/{marker_id}/")
+def set_market_loc(request: Request, marker_id: str):
+    return {"host": request.client.host}
+    player = PlayerData.objects.get(player_name="Nightshark")
+    cur_loc = player.location
+    med = Marker.objects.get(marker_id=marker_id)
+    med.location_x = cur_loc.x
+    med.location_y = cur_loc.y
+    med.save()
+    return {"status": "ok"}
 
 # 614f0374519d9fd5eba646ec
