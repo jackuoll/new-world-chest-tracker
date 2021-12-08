@@ -1,6 +1,12 @@
 let lastReceivedData = null;
 let refreshPaused = false;
 let onTab = "stockpiles";
+let repositionButtonEnabled = false;
+
+
+const canResposition = (value) => {
+    repositionButtonEnabled = value;
+};
 
 
 const setTab = (value) => {
@@ -74,9 +80,13 @@ const showRecentChests = (data) => {
           id = fakeApp && "id" || id;
           const reset = info["reset"];
           const resetsIn = info["resets_in"]
+          let repos = "";
+          if(repositionButtonEnabled) {
+              repos = `<a onClick='setLocation("${id}");'><i class="fa-solid fa-location-crosshairs"></i></a>`;
+          }
           replaceWith += `
             <tr>
-              <td><a onClick='setLocation("${id}");'><i class="fa-solid fa-location-crosshairs"></i></a> ${zone}</td>
+              <td>${repos} ${zone}</td>
               <td>${name}</td>
               <td>${reset}</td>
               <td>${resetsIn}</td>

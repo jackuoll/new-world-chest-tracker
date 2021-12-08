@@ -26,7 +26,7 @@ def timedelta_to_time(td: timedelta):
 
 
 @app.get("/data/")
-def root():
+def root() -> JSONResponse:
     player = PlayerData.objects.get(player_name="Nightshark")
     total_chests_opened = player.chests_looted
     reset_timers = LootHistory.recent_loot()
@@ -63,17 +63,21 @@ def root():
             }
         }
     }
-    return data
+    return JSONResponse(content=data, status_code=200)
+
+
+def is_self(request: Request) -> bool:
+    return request.client.host == SETTINGS.my_ip
 
 
 @app.get("/")
-def page(request: Request):
-    return templates.TemplateResponse("page.html", {"request": request, "id": id})
+def page(request: Request) -> templates.TemplateResponse:
+    return templates.TemplateResponse("page.html", {"request": request, "id": id, "repos": is_self(request)})
 
 
 @app.patch("/set_marker_location/{marker_id}/")
 def set_market_loc(request: Request, marker_id: str) -> JSONResponse:
-    if request.client.host != SETTINGS.my_ip:
+    if not is_self(request):
         return JSONResponse(content={"status": "forbidden"}, status_code=500)
 
     player = PlayerData.objects.get(player_name="Nightshark")
@@ -83,5 +87,3 @@ def set_market_loc(request: Request, marker_id: str) -> JSONResponse:
     med.location_y = cur_loc.y
     med.save()
     return JSONResponse(content={"status": "ok"}, status_code=200)
-
-# 614f0374519d9fd5eba646ec
