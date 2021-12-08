@@ -3,11 +3,12 @@ from datetime import datetime, timedelta
 
 from fastapi import FastAPI
 from starlette.requests import Request
+from starlette.responses import JSONResponse
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
 from data.models import Marker, LootHistory, PlayerData
-from models import Location
+from settings import SETTINGS
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -71,14 +72,16 @@ def page(request: Request):
 
 
 @app.patch("/set_marker_location/{marker_id}/")
-def set_market_loc(request: Request, marker_id: str):
-    return {"host": request.client.host}
+def set_market_loc(request: Request, marker_id: str) -> JSONResponse:
+    if request.client.host != SETTINGS.my_ip:
+        return JSONResponse(content={"status": "forbidden"}, status_code=500)
+
     player = PlayerData.objects.get(player_name="Nightshark")
     cur_loc = player.location
     med = Marker.objects.get(marker_id=marker_id)
     med.location_x = cur_loc.x
     med.location_y = cur_loc.y
     med.save()
-    return {"status": "ok"}
+    return JSONResponse(content={"status": "ok"}, status_code=200)
 
 # 614f0374519d9fd5eba646ec

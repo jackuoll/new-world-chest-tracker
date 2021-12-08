@@ -2,6 +2,7 @@ from pydantic import BaseSettings
 
 
 class Settings(BaseSettings):
+    my_ip: str = "127.0.0.1"  # some budget security
     db_name: str = "nw_dev"
     db_host: str = "192.168.0.11"
     db_user: str = "nw"
