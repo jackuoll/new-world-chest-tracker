@@ -33,6 +33,7 @@ def root():
     from data_store import DATA
     total_chests_opened = DATA.total_chests_opened
     reset_timers = DATA.recent_chest_data
+    DATA.player_obj.refresh_from_db()
     nearby = json.loads(DATA.player_obj.nearby or "{}")
     with open("data/recent_chest_data.json") as f, open("data/nearby.json") as chest_f:
         cur_time = datetime.now()
@@ -40,7 +41,7 @@ def root():
             "opened_last_24h": len(DATA.get_last_24h()),
             "total_opened": total_chests_opened,
             "nearby": {
-                k: DATA.markers.get(k).dict() for k, v in nearby.items()
+                p["id"]: DATA.markers.get(p["id"]).dict() for p in nearby
             },
             "reset_timers": {
                 "elites": {

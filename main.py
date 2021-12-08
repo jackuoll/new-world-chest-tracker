@@ -9,6 +9,7 @@ from models import Location
 from data_store import DATA
 from data import chest_alias_list
 from settings import SETTINGS
+from asgiref.sync import sync_to_async
 
 
 def handle_position_update(event):
@@ -38,8 +39,10 @@ async def connect_to_websocket():
             if event["type"] != "LOCAL_POSITION_UPDATE":
                 logging.warning(f"dunno what {event} is")
             else:
-                handle_position_update(event)
-                DATA.flush()
+                h = sync_to_async(handle_position_update)
+                await h(event)
+                await sync_to_async(DATA.flush, thread_sensitive=True)()
+                #DATA.flush()
 
 
 while True:

@@ -85,17 +85,19 @@ class Data:
         nearby = {}
         nearby_list = []
         if self._current_player_location is None:
+            self.player_obj.nearby = {}
             return {}
         for _, poi in DATA.markers.items():
             if self.is_nearby(self._current_player_location, poi.location):
                 info = poi.dict()
                 nearby[poi.id] = info
                 nearby_list.append(poi)
-        self.player_obj.nearby = json.dumps(nearby_list)
+        print(nearby_list)
+        self.player_obj.nearby = json.dumps([poi.dict() for poi in nearby_list])
         return nearby_list
 
     def add_to_history(self, chest_id, respawn_time):
-        history_obj = LootHistory(chest_id=chest_id, reset_time=respawn_time, loot_time=datetime.datetime.now())
+        history_obj = LootHistory(chest_id=chest_id, reset_time=datetime.datetime.now() + datetime.timedelta(seconds=respawn_time), loot_time=datetime.datetime.now())
         history_obj.save()
 
     def get_last_24h(self) -> List[dict]:
