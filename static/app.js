@@ -67,40 +67,12 @@ const showRecentChests = (data) => {
           id = fakeApp && "id" || id;
           const reset = info["reset"];
           const resetsIn = info["resets_in"]
-          const dropdownContent = `
-                     <a href="#" class="dropdown-item">
-                        x
-                      </a>
-                      <a class="dropdown-item">
-                        y
-                      </a>
-                      <a href="#" class="dropdown-item">
-                        z
-                      </a>
-                      <a href="#" class="dropdown-item">
-                        m
-                      </a>
-                      <hr class="dropdown-divider">
-                      <a href="#" class="dropdown-item">
-                        ${id}
-                      </a>
-          `;
           replaceWith += `
-            <td>
-                <div class="dropdown" onclick="dropdown('${id}-{name}')" id="${id}-{name}">
-                  <div class="dropdown-trigger">
-                    <div class="is-small" aria-haspopup="true" aria-controls="dropdown-menu">
-                      <span>${zone}</span>
-                    </div>
-                  </div>
-                  <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                    <div class="dropdown-content">
-                        ${dropdownContent}
-                    </div>
-                  </div>
-                </div>
-            </td>
-                 <td>${name}</td><td>${reset}</td><td>${resetsIn}</td>
+            <tr>
+              <td>${zone}</td>
+              <td>${name}</td>
+              <td>${reset}</td>
+              <td>${resetsIn}</td>
             </tr>`;
       }
       recent.innerHTML = replaceWith;
