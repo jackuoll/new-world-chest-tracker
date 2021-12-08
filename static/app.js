@@ -74,25 +74,51 @@ const showRecentChests = (data) => {
           return;
       }
       for (let [id, info] of Object.entries(data["reset_timers"][onTab])) {
-          const fakeApp = false;
-          const zone = fakeApp && "z" || info["zone"];
-          const name = fakeApp && "name" || info["name"];
-          id = fakeApp && "id" || id;
+          const zone = info["zone"];
           const reset = info["reset"];
           const resetsIn = info["resets_in"]
           let repos = "";
+          let locationName = info["name"];
           if(repositionButtonEnabled) {
               repos = `<a onClick='setLocation("${id}");'><i class="fa-solid fa-location-crosshairs"></i></a>`;
+              locationName = `<input type="text" value="${locationName}" class="hidden-input"></input>`;
           }
           replaceWith += `
-            <tr>
+            <tr data-marker-id="${id}">
               <td>${repos} ${zone}</td>
-              <td>${name}</td>
+              <td>${locationName}</td>
               <td>${reset}</td>
               <td>${resetsIn}</td>
             </tr>`;
       }
       recent.innerHTML = replaceWith;
+      const hiddenInputs = document.getElementsByClassName("hidden-input");
+      for (let i = 0; i < hiddenInputs.length; i++) {
+          const input = hiddenInputs[i];
+          input.addEventListener('focusin', (event) => {
+              refreshPaused = true;
+          });
+          input.addEventListener('focusout', (event) => {
+            const tr = input.closest("tr")
+            const markerId = tr.dataset.markerId;
+            fetch(`/set_marker_name/${markerId}/`, {
+                method: "PATCH",
+                body: JSON.stringify({"new_name": input.value}),
+                headers: {"Content-Type": "application/json"},
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    refreshPaused = false;
+                })
+                .catch((err) => {
+                    if(!refreshPaused) {
+                        togglePause();
+                    }
+                })
+          });
+      }
+
+
 };
 
 const refreshAll = () => {
@@ -100,6 +126,7 @@ const refreshAll = () => {
         return;
     }
     loadData().then((data) => {
+      // todo: doesn't work anymore since we send seconds remaining from python
       if(JSON.stringify(lastReceivedData) == JSON.stringify(data)) {
           return;
       }

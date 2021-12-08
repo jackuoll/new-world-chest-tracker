@@ -1,7 +1,8 @@
 import json
 from datetime import datetime, timedelta
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Body
+from pydantic import BaseModel
 from starlette.requests import Request
 from starlette.responses import JSONResponse
 from starlette.staticfiles import StaticFiles
@@ -86,5 +87,20 @@ def set_market_loc(request: Request, marker_id: str) -> JSONResponse:
     med = Marker.objects.get(marker_id=marker_id)
     med.location_x = cur_loc.x
     med.location_y = cur_loc.y
+    med.save()
+    return JSONResponse(content={"status": "ok"}, status_code=200)
+
+
+class NewNameData(BaseModel):
+    new_name: str
+
+
+@app.patch("/set_marker_name/{marker_id}/")
+def set_marker_name(request: Request, marker_id: str, data: NewNameData) -> JSONResponse:
+    if not is_self(request):
+        return JSONResponse(content={"status": "forbidden"}, status_code=500)
+
+    med = Marker.objects.get(marker_id=marker_id)
+    med.name = data.new_name
     med.save()
     return JSONResponse(content={"status": "ok"}, status_code=200)
