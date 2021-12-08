@@ -2,6 +2,9 @@ from __future__ import annotations
 from typing import List, Optional
 
 from pydantic import Field, BaseModel, validator, root_validator
+from data.utils import get_json
+from shapely.geometry import Point
+from shapely.geometry.polygon import Polygon
 
 from data import chest_alias_list
 
@@ -41,6 +44,22 @@ class Marker(BaseModel):
 
     @property
     def zone(self) -> str:
+        if not self.extra_data:
+            j = get_json("data/region_data.json")
+            point = Point(self.location.y, self.location.x)
+            region_name = "Unknown"
+            for region in j:
+                poly_points = j[region]["latlngs"]
+                polygon = Polygon(poly_points)
+                if polygon.contains(point):
+                    region_name = region.replace("region_", "").replace("_", " ").title()
+                    break
+
+            self.extra_data = MarkerExtraData(
+                name="Unknown",
+                zone=region_name,
+                unreachable=False
+            )
         return self.extra_data.zone if self.extra_data else "Unknown"
 
     @property

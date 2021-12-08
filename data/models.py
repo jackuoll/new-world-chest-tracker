@@ -13,6 +13,13 @@ except RuntimeError:
     pass
 
 
+class MarkerExtraData(models.Model):
+    marker_id = models.CharField(primary_key=True, max_length=255)
+    zone = models.CharField(max_length=255)
+    name = models.CharField(max_length=255)
+    unreachable = models.BooleanField(default=False)
+
+
 class LootHistory(models.Model):
     id = models.AutoField(primary_key=True)
     chest_id = models.CharField(max_length=100)
@@ -23,7 +30,6 @@ class LootHistory(models.Model):
     def is_elite(self):
         from data_store import DATA
         return "Elite" in DATA.markers.get(self.chest_id).type
-
 
 
 class PlayerData(models.Model):
