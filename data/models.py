@@ -27,6 +27,7 @@ class Marker(models.Model):
     name = models.CharField(max_length=255)
     location_x = models.DecimalField(max_digits=10, decimal_places=2, null=True)
     location_y = models.DecimalField(max_digits=10, decimal_places=2, null=True)
+    is_deleted = models.BooleanField(default=False)
 
     def __str__(self) -> str:
         return f"<Marker: {self.type}, {self.name}>"
@@ -108,5 +109,6 @@ class PlayerData(models.Model):
             location_x__gt=self.location.x - 3,
             location_x__lt=self.location.x + 3,
             location_y__gt=self.location.y - 3,
-            location_y__lt=self.location.y + 3
+            location_y__lt=self.location.y + 3,
+            is_deleted=False
         )

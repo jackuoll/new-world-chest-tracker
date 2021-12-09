@@ -1,1 +1,2972 @@
-{"al1":{"category":"chests","category_name":"Chests","sub_category":"Alchemy Stockpile","sub_category_img":"alcy_2","img":"al1","image_name":"alcy_2","name":"Alchemy Stockpile t1"},"al2":{"category":"chests","category_name":"Chests","sub_category":"Alchemy Stockpile","sub_category_img":"alcy_2","img":"al2","image_name":"alcy_2","name":"Alchemy Stockpile t2"},"al3":{"category":"chests","category_name":"Chests","sub_category":"Alchemy Stockpile","sub_category_img":"alcy_2","img":"al3","image_name":"alcy_2","name":"Alchemy Stockpile t3"},"am1":{"category":"chests","category_name":"Chests","sub_category":"Alchemy Crate","sub_category_img":"alcy_1","img":"am1","image_name":"alcy_1","name":"Alchemy Crate t1"},"am2":{"category":"chests","category_name":"Chests","sub_category":"Alchemy Crate","sub_category_img":"alcy_1","img":"am2","image_name":"alcy_1","name":"Alchemy Crate t2"},"am3":{"category":"chests","category_name":"Chests","sub_category":"Alchemy Crate","sub_category_img":"alcy_1","img":"am3","image_name":"alcy_1","name":"Alchemy Crate t3"},"cl1":{"category":"chests","category_name":"Chests","sub_category":"Provisions Stockpile","sub_category_img":"provisions_3","img":"cl1","image_name":"provisions_3","name":"Provisions Stockpile t1"},"cl2":{"category":"chests","category_name":"Chests","sub_category":"Provisions Stockpile","sub_category_img":"provisions_3","img":"cl2","image_name":"provisions_3","name":"Provisions Stockpile t2"},"cl3":{"category":"chests","category_name":"Chests","sub_category":"Provisions Stockpile","sub_category_img":"provisions_3","img":"cl3","image_name":"provisions_3","name":"Provisions Stockpile t3"},"cm1":{"category":"chests","category_name":"Chests","sub_category":"Provisions Crate","sub_category_img":"provisions_2","img":"cm1","image_name":"provisions_2","name":"Provisions Crate t1"},"cm2":{"category":"chests","category_name":"Chests","sub_category":"Provisions Crate","sub_category_img":"provisions_2","img":"cm2","image_name":"provisions_2","name":"Provisions Crate t2"},"cm3":{"category":"chests","category_name":"Chests","sub_category":"Provisions Crate","sub_category_img":"provisions_2","img":"cm3","image_name":"provisions_2","name":"Provisions Crate t3"},"cs1":{"category":"chests","category_name":"Chests","sub_category":"Provisions Cache","sub_category_img":"provisions_1","img":"cs1","image_name":"provisions_1","name":"Provision Cache t1"},"ol1":{"category":"chests","category_name":"Chests","sub_category":"Ancient Chest","sub_category_img":"ancient_chest","img":"ol1","image_name":"ancient_chest","name":"Ancient Chest t1"},"ol2":{"category":"chests","category_name":"Chests","sub_category":"Ancient Chest","sub_category_img":"ancient_chest","img":"ol2","image_name":"ancient_chest","name":"Ancient Chest t2"},"ol3":{"category":"chests","category_name":"Chests","sub_category":"Ancient Chest","sub_category_img":"ancient_chest","img":"ol3","image_name":"ancient_chest","name":"Ancient Chest t3"},"om1":{"category":"chests","category_name":"Chests","sub_category":"Ancient Coffer","sub_category_img":"ancient_coffer","img":"om1","image_name":"ancient_coffer","name":"Ancient Coffer t1"},"om2":{"category":"chests","category_name":"Chests","sub_category":"Ancient Coffer","sub_category_img":"ancient_coffer","img":"om2","image_name":"ancient_coffer","name":"Ancient Coffer t2"},"om3":{"category":"chests","category_name":"Chests","sub_category":"Ancient Coffer","sub_category_img":"ancient_coffer","img":"om3","image_name":"ancient_coffer","name":"Ancient Coffer t3"},"os1":{"category":"chests","category_name":"Chests","sub_category":"Ancient Urn","sub_category_img":"ancient_urn","img":"os1","image_name":"ancient_urn","name":"Ancient Urn t1"},"os2":{"category":"chests","category_name":"Chests","sub_category":"Ancient Urn","sub_category_img":"ancient_urn","img":"os2","image_name":"ancient_urn","name":"Ancient Urn t2"},"os3":{"category":"chests","category_name":"Chests","sub_category":"Ancient Urn","sub_category_img":"ancient_urn","img":"os3","image_name":"ancient_urn","name":"Ancient Urn t3"},"oe4":{"category":"chests","category_name":"Chests","sub_category":"Ancient Chest (Elite)","sub_category_img":"ancient_chest","img":"oe4","image_name":"ancient_chest","name":"Ancient Chest (Elite) t4"},"oe5":{"category":"chests","category_name":"Chests","sub_category":"Ancient Chest (Elite)","sub_category_img":"ancient_chest","img":"oe5","image_name":"ancient_chest","name":"Ancient Chest (Elite) t5"},"sl1":{"category":"chests","category_name":"Chests","sub_category":"Supply Stockpile","sub_category_img":"supply_3","img":"sl1","image_name":"supply_3","name":"Supply Stockpile t1"},"sl2":{"category":"chests","category_name":"Chests","sub_category":"Supply Stockpile","sub_category_img":"supply_3","img":"sl2","image_name":"supply_3","name":"Supply Stockpile t2"},"se2":{"category":"chests","category_name":"Chests","sub_category":"Supply Stockpile","sub_category_img":"supply_3","img":"se2","image_name":"supply_3","name":"Supply Stockpile (Elite) t2"},"sl3":{"category":"chests","category_name":"Chests","sub_category":"Supply Stockpile","sub_category_img":"supply_3","img":"sl3","image_name":"supply_3","name":"Supply Stockpile t3"},"sm1":{"category":"chests","category_name":"Chests","sub_category":"Supply Crate","sub_category_img":"supply_1","img":"sm1","image_name":"supply_1","name":"Supply Crate t1"},"sm2":{"category":"chests","category_name":"Chests","sub_category":"Supply Crate","sub_category_img":"supply_1","img":"sm2","image_name":"supply_1","name":"Supply Crate t2"},"sm3":{"category":"chests","category_name":"Chests","sub_category":"Supply Crate","sub_category_img":"supply_1","img":"sm3","image_name":"supply_1","name":"Supply Crate t3"},"ss1":{"category":"chests","category_name":"Chests","sub_category":"Supply Cache","sub_category_img":"supply_2","img":"ss1","image_name":"supply_2","name":"Supply Cache t1"},"ss2":{"category":"chests","category_name":"Chests","sub_category":"Supply Cache","sub_category_img":"supply_2","img":"ss2","image_name":"supply_2","name":"Supply Cache t2"},"ss3":{"category":"chests","category_name":"Chests","sub_category":"Supply Cache","sub_category_img":"supply_2","img":"ss3","image_name":"supply_2","name":"Supply Cache t3"},"se4":{"category":"chests","category_name":"Chests","sub_category":"Supply Stockpile","sub_category_img":"supply_3","img":"se4","image_name":"supply_3","name":"Supply Stockpile (Elite) t4 "},"se5":{"category":"chests","category_name":"Chests","sub_category":"Supply Stockpile","sub_category_img":"supply_3","img":"se5","image_name":"supply_3","name":"Supply Stockpile (Elite) t5 "},"00_Aeternum_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_01","image_name":"document","name":"00_Aeternum_Chapter_01"},"00_Aeternum_Chapter_02":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_02","image_name":"document","name":"00_Aeternum_Chapter_02"},"00_Aeternum_Chapter_03":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_03","image_name":"document","name":"00_Aeternum_Chapter_03"},"00_Aeternum_Chapter_07":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_07","image_name":"document","name":"00_Aeternum_Chapter_07"},"00_Aeternum_Chapter_08":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_08","image_name":"document","name":"00_Aeternum_Chapter_08"},"00_Aeternum_Chapter_09":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_09","image_name":"document","name":"00_Aeternum_Chapter_09"},"00_Aeternum_Chapter_10":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_10","image_name":"document","name":"00_Aeternum_Chapter_10"},"00_Aeternum_Chapter_11":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_11","image_name":"document","name":"00_Aeternum_Chapter_11"},"00_Aeternum_Chapter_12":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_12","image_name":"document","name":"00_Aeternum_Chapter_12"},"00_Aeternum_Chapter_13":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_13","image_name":"document","name":"00_Aeternum_Chapter_13"},"00_Aeternum_Chapter_14":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_14","image_name":"document","name":"00_Aeternum_Chapter_14"},"00_Aeternum_Chapter_15":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_15","image_name":"document","name":"00_Aeternum_Chapter_15"},"00_Aeternum_Chapter_17":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_17","image_name":"document","name":"00_Aeternum_Chapter_17"},"00_Aeternum_Chapter_18":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_18","image_name":"document","name":"00_Aeternum_Chapter_18"},"00_Aeternum_Chapter_19":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_19","image_name":"document","name":"00_Aeternum_Chapter_19"},"00_Aeternum_Chapter_20":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_20","image_name":"document","name":"00_Aeternum_Chapter_20"},"00_Aeternum_Chapter_21":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_21","image_name":"document","name":"00_Aeternum_Chapter_21"},"00_Aeternum_Chapter_22":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_22","image_name":"document","name":"00_Aeternum_Chapter_22"},"00_Aeternum_Chapter_24":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_24","image_name":"document","name":"00_Aeternum_Chapter_24"},"00_Aeternum_Chapter_25":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_25","image_name":"document","name":"00_Aeternum_Chapter_25"},"00_Aeternum_Chapter_27":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_27","image_name":"document","name":"00_Aeternum_Chapter_27"},"00_Aeternum_Chapter_28":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_28","image_name":"document","name":"00_Aeternum_Chapter_28"},"00_Aeternum_Chapter_29":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_29","image_name":"document","name":"00_Aeternum_Chapter_29"},"00_Aeternum_Chapter_30":{"category":"documents","category_name":"Documents","sub_category":"Tales of Aeternum","sub_category_img":"document","img":"00_Aeternum_Chapter_30","image_name":"document","name":"00_Aeternum_Chapter_30"},"02_Brightwood_Chapter_04":{"category":"documents","category_name":"Documents","sub_category":"Tales of Brightwood","sub_category_img":"document","img":"02_Brightwood_Chapter_04","image_name":"document","name":"02_Brightwood_Chapter_04"},"03_GreatCleave_Chapter_05":{"category":"documents","category_name":"Documents","sub_category":"Tales of GreatCleave","sub_category_img":"document","img":"03_GreatCleave_Chapter_05","image_name":"document","name":"03_GreatCleave_Chapter_05"},"03_GreatCleave_Chapter_06":{"category":"documents","category_name":"Documents","sub_category":"Tales of GreatCleave","sub_category_img":"document","img":"03_GreatCleave_Chapter_06","image_name":"document","name":"03_GreatCleave_Chapter_06"},"03_GreatCleave_Chapter_07":{"category":"documents","category_name":"Documents","sub_category":"Tales of GreatCleave","sub_category_img":"document","img":"03_GreatCleave_Chapter_07","image_name":"document","name":"03_GreatCleave_Chapter_07"},"03_GreatCleave_Chapter_08":{"category":"documents","category_name":"Documents","sub_category":"Tales of GreatCleave","sub_category_img":"document","img":"03_GreatCleave_Chapter_08","image_name":"document","name":"03_GreatCleave_Chapter_08"},"03_GreatCleave_Chapter_09":{"category":"documents","category_name":"Documents","sub_category":"Tales of GreatCleave","sub_category_img":"document","img":"03_GreatCleave_Chapter_09","image_name":"document","name":"03_GreatCleave_Chapter_09"},"04_Everfall_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_01","image_name":"document","name":"04_Everfall_Chapter_01"},"04_Everfall_Chapter_02":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_02","image_name":"document","name":"04_Everfall_Chapter_02"},"04_Everfall_Chapter_03":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_03","image_name":"document","name":"04_Everfall_Chapter_03"},"04_Everfall_Chapter_04":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_04","image_name":"document","name":"04_Everfall_Chapter_04"},"04_Everfall_Chapter_05":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_05","image_name":"document","name":"04_Everfall_Chapter_05"},"04_Everfall_Chapter_06":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_06","image_name":"document","name":"04_Everfall_Chapter_06"},"04_Everfall_Chapter_07":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_07","image_name":"document","name":"04_Everfall_Chapter_07"},"04_Everfall_Chapter_08":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_08","image_name":"document","name":"04_Everfall_Chapter_08"},"04_Everfall_Chapter_09":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_09","image_name":"document","name":"04_Everfall_Chapter_09"},"04_Everfall_Chapter_10":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_10","image_name":"document","name":"04_Everfall_Chapter_10"},"04_Everfall_Chapter_11":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_11","image_name":"document","name":"04_Everfall_Chapter_11"},"04_Everfall_Chapter_12":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_12","image_name":"document","name":"04_Everfall_Chapter_12"},"04_Everfall_Chapter_13":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_13","image_name":"document","name":"04_Everfall_Chapter_13"},"04_Everfall_Chapter_14":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_14","image_name":"document","name":"04_Everfall_Chapter_14"},"04_Everfall_Chapter_15":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_15","image_name":"document","name":"04_Everfall_Chapter_15"},"04_Everfall_Chapter_16":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_16","image_name":"document","name":"04_Everfall_Chapter_16"},"04_Everfall_Chapter_17":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_17","image_name":"document","name":"04_Everfall_Chapter_17"},"04_Everfall_Chapter_18":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_18","image_name":"document","name":"04_Everfall_Chapter_18"},"04_Everfall_Chapter_19":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_19","image_name":"document","name":"04_Everfall_Chapter_19"},"04_Everfall_Chapter_20":{"category":"documents","category_name":"Documents","sub_category":"Tales of Everfall","sub_category_img":"document","img":"04_Everfall_Chapter_20","image_name":"document","name":"04_Everfall_Chapter_20"},"05_Reekwater_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Tales of Reekwater","sub_category_img":"document","img":"05_Reekwater_Chapter_01","image_name":"document","name":"05_Reekwater_Chapter_01"},"05_Reekwater_Chapter_02":{"category":"documents","category_name":"Documents","sub_category":"Tales of Reekwater","sub_category_img":"document","img":"05_Reekwater_Chapter_02","image_name":"document","name":"05_Reekwater_Chapter_02"},"05_Reekwater_Chapter_03":{"category":"documents","category_name":"Documents","sub_category":"Tales of Reekwater","sub_category_img":"document","img":"05_Reekwater_Chapter_03","image_name":"document","name":"05_Reekwater_Chapter_03"},"05_Reekwater_Chapter_04":{"category":"documents","category_name":"Documents","sub_category":"Tales of Reekwater","sub_category_img":"document","img":"05_Reekwater_Chapter_04","image_name":"document","name":"05_Reekwater_Chapter_04"},"05_Reekwater_Chapter_05":{"category":"documents","category_name":"Documents","sub_category":"Tales of Reekwater","sub_category_img":"document","img":"05_Reekwater_Chapter_05","image_name":"document","name":"05_Reekwater_Chapter_05"},"05_Reekwater_Chapter_06":{"category":"documents","category_name":"Documents","sub_category":"Tales of Reekwater","sub_category_img":"document","img":"05_Reekwater_Chapter_06","image_name":"document","name":"05_Reekwater_Chapter_06"},"05_Reekwater_Chapter_07":{"category":"documents","category_name":"Documents","sub_category":"Tales of Reekwater","sub_category_img":"document","img":"05_Reekwater_Chapter_07","image_name":"document","name":"05_Reekwater_Chapter_07"},"05_Reekwater_Chapter_08":{"category":"documents","category_name":"Documents","sub_category":"Tales of Reekwater","sub_category_img":"document","img":"05_Reekwater_Chapter_08","image_name":"document","name":"05_Reekwater_Chapter_08"},"05_Reekwater_Chapter_09":{"category":"documents","category_name":"Documents","sub_category":"Tales of Reekwater","sub_category_img":"document","img":"05_Reekwater_Chapter_09","image_name":"document","name":"05_Reekwater_Chapter_09"},"05_Reekwater_Chapter_10":{"category":"documents","category_name":"Documents","sub_category":"Tales of Reekwater","sub_category_img":"document","img":"05_Reekwater_Chapter_10","image_name":"document","name":"05_Reekwater_Chapter_10"},"05_Reekwater_Chapter_11":{"category":"documents","category_name":"Documents","sub_category":"Tales of Reekwater","sub_category_img":"document","img":"05_Reekwater_Chapter_11","image_name":"document","name":"05_Reekwater_Chapter_11"},"06_Windsward_Chapter_03":{"category":"documents","category_name":"Documents","sub_category":"Tales of Windsward","sub_category_img":"document","img":"06_Windsward_Chapter_03","image_name":"document","name":"06_Windsward_Chapter_03"},"06_Windsward_Chapter_04":{"category":"documents","category_name":"Documents","sub_category":"Tales of Windsward","sub_category_img":"document","img":"06_Windsward_Chapter_04","image_name":"document","name":"06_Windsward_Chapter_04"},"06_Windsward_Chapter_05":{"category":"documents","category_name":"Documents","sub_category":"Tales of Windsward","sub_category_img":"document","img":"06_Windsward_Chapter_05","image_name":"document","name":"06_Windsward_Chapter_05"},"06_Windsward_Chapter_06":{"category":"documents","category_name":"Documents","sub_category":"Tales of Windsward","sub_category_img":"document","img":"06_Windsward_Chapter_06","image_name":"document","name":"06_Windsward_Chapter_06"},"06_Windsward_Chapter_07":{"category":"documents","category_name":"Documents","sub_category":"Tales of Windsward","sub_category_img":"document","img":"06_Windsward_Chapter_07","image_name":"document","name":"06_Windsward_Chapter_07"},"06_Windsward_Chapter_08":{"category":"documents","category_name":"Documents","sub_category":"Tales of Windsward","sub_category_img":"document","img":"06_Windsward_Chapter_08","image_name":"document","name":"06_Windsward_Chapter_08"},"06_Windsward_Chapter_10":{"category":"documents","category_name":"Documents","sub_category":"Tales of Windsward","sub_category_img":"document","img":"06_Windsward_Chapter_10","image_name":"document","name":"06_Windsward_Chapter_10"},"06_Windsward_Chapter_11":{"category":"documents","category_name":"Documents","sub_category":"Tales of Windsward","sub_category_img":"document","img":"06_Windsward_Chapter_11","image_name":"document","name":"06_Windsward_Chapter_11"},"06_Windsward_Chapter_12":{"category":"documents","category_name":"Documents","sub_category":"Tales of Windsward","sub_category_img":"document","img":"06_Windsward_Chapter_12","image_name":"document","name":"06_Windsward_Chapter_12"},"06_Windsward_Chapter_13":{"category":"documents","category_name":"Documents","sub_category":"Tales of Windsward","sub_category_img":"document","img":"06_Windsward_Chapter_13","image_name":"document","name":"06_Windsward_Chapter_13"},"06_Windsward_Chapter_14":{"category":"documents","category_name":"Documents","sub_category":"Tales of Windsward","sub_category_img":"document","img":"06_Windsward_Chapter_14","image_name":"document","name":"06_Windsward_Chapter_14"},"06_Windsward_Chapter_15":{"category":"documents","category_name":"Documents","sub_category":"Tales of Windsward","sub_category_img":"document","img":"06_Windsward_Chapter_15","image_name":"document","name":"06_Windsward_Chapter_15"},"06_Windsward_Chapter_16":{"category":"documents","category_name":"Documents","sub_category":"Tales of Windsward","sub_category_img":"document","img":"06_Windsward_Chapter_16","image_name":"document","name":"06_Windsward_Chapter_16"},"06_Windsward_Chapter_17":{"category":"documents","category_name":"Documents","sub_category":"Tales of Windsward","sub_category_img":"document","img":"06_Windsward_Chapter_17","image_name":"document","name":"06_Windsward_Chapter_17"},"07_ShatteredMountain_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Tales of ShatteredMountain","sub_category_img":"document","img":"07_ShatteredMountain_Chapter_01","image_name":"document","name":"07_ShatteredMountain_Chapter_01"},"07_ShatteredMountain_Chapter_02":{"category":"documents","category_name":"Documents","sub_category":"Tales of ShatteredMountain","sub_category_img":"document","img":"07_ShatteredMountain_Chapter_02","image_name":"document","name":"07_ShatteredMountain_Chapter_02"},"07_ShatteredMountain_Chapter_03":{"category":"documents","category_name":"Documents","sub_category":"Tales of ShatteredMountain","sub_category_img":"document","img":"07_ShatteredMountain_Chapter_03","image_name":"document","name":"07_ShatteredMountain_Chapter_03"},"08_EbonscaleReach_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Tales of EbonscaleReach","sub_category_img":"document","img":"08_EbonscaleReach_Chapter_01","image_name":"document","name":"08_EbonscaleReach_Chapter_01"},"08_EbonscaleReach_Chapter_02":{"category":"documents","category_name":"Documents","sub_category":"Tales of EbonscaleReach","sub_category_img":"document","img":"08_EbonscaleReach_Chapter_02","image_name":"document","name":"08_EbonscaleReach_Chapter_02"},"08_EbonscaleReach_Chapter_03":{"category":"documents","category_name":"Documents","sub_category":"Tales of EbonscaleReach","sub_category_img":"document","img":"08_EbonscaleReach_Chapter_03","image_name":"document","name":"08_EbonscaleReach_Chapter_03"},"08_EbonscaleReach_Chapter_04":{"category":"documents","category_name":"Documents","sub_category":"Tales of EbonscaleReach","sub_category_img":"document","img":"08_EbonscaleReach_Chapter_04","image_name":"document","name":"08_EbonscaleReach_Chapter_04"},"08_EbonscaleReach_Chapter_05":{"category":"documents","category_name":"Documents","sub_category":"Tales of EbonscaleReach","sub_category_img":"document","img":"08_EbonscaleReach_Chapter_05","image_name":"document","name":"08_EbonscaleReach_Chapter_05"},"08_EbonscaleReach_Chapter_06":{"category":"documents","category_name":"Documents","sub_category":"Tales of EbonscaleReach","sub_category_img":"document","img":"08_EbonscaleReach_Chapter_06","image_name":"document","name":"08_EbonscaleReach_Chapter_06"},"08_EbonscaleReach_Chapter_07":{"category":"documents","category_name":"Documents","sub_category":"Tales of EbonscaleReach","sub_category_img":"document","img":"08_EbonscaleReach_Chapter_07","image_name":"document","name":"08_EbonscaleReach_Chapter_07"},"08_EbonscaleReach_Chapter_08":{"category":"documents","category_name":"Documents","sub_category":"Tales of EbonscaleReach","sub_category_img":"document","img":"08_EbonscaleReach_Chapter_08","image_name":"document","name":"08_EbonscaleReach_Chapter_08"},"08_EbonscaleReach_Chapter_10":{"category":"documents","category_name":"Documents","sub_category":"Tales of EbonscaleReach","sub_category_img":"document","img":"08_EbonscaleReach_Chapter_10","image_name":"document","name":"08_EbonscaleReach_Chapter_10"},"08_EbonscaleReach_Chapter_11":{"category":"documents","category_name":"Documents","sub_category":"Tales of EbonscaleReach","sub_category_img":"document","img":"08_EbonscaleReach_Chapter_11","image_name":"document","name":"08_EbonscaleReach_Chapter_11"},"08_EbonscaleReach_Chapter_12":{"category":"documents","category_name":"Documents","sub_category":"Tales of EbonscaleReach","sub_category_img":"document","img":"08_EbonscaleReach_Chapter_12","image_name":"document","name":"08_EbonscaleReach_Chapter_12"},"09_FirstLight_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Tales of FirstLight","sub_category_img":"document","img":"09_FirstLight_Chapter_01","image_name":"document","name":"09_FirstLight_Chapter_01"},"09_FirstLight_Chapter_02":{"category":"documents","category_name":"Documents","sub_category":"Tales of FirstLight","sub_category_img":"document","img":"09_FirstLight_Chapter_02","image_name":"document","name":"09_FirstLight_Chapter_02"},"09_FirstLight_Chapter_03":{"category":"documents","category_name":"Documents","sub_category":"Tales of FirstLight","sub_category_img":"document","img":"09_FirstLight_Chapter_03","image_name":"document","name":"09_FirstLight_Chapter_03"},"09_FirstLight_Chapter_04":{"category":"documents","category_name":"Documents","sub_category":"Tales of FirstLight","sub_category_img":"document","img":"09_FirstLight_Chapter_04","image_name":"document","name":"09_FirstLight_Chapter_04"},"09_FirstLight_Chapter_05":{"category":"documents","category_name":"Documents","sub_category":"Tales of FirstLight","sub_category_img":"document","img":"09_FirstLight_Chapter_05","image_name":"document","name":"09_FirstLight_Chapter_05"},"09_FirstLight_Chapter_06":{"category":"documents","category_name":"Documents","sub_category":"Tales of FirstLight","sub_category_img":"document","img":"09_FirstLight_Chapter_06","image_name":"document","name":"09_FirstLight_Chapter_06"},"09_FirstLight_Chapter_07":{"category":"documents","category_name":"Documents","sub_category":"Tales of FirstLight","sub_category_img":"document","img":"09_FirstLight_Chapter_07","image_name":"document","name":"09_FirstLight_Chapter_07"},"09_FirstLight_Chapter_08":{"category":"documents","category_name":"Documents","sub_category":"Tales of FirstLight","sub_category_img":"document","img":"09_FirstLight_Chapter_08","image_name":"document","name":"09_FirstLight_Chapter_08"},"09_FirstLight_Chapter_09":{"category":"documents","category_name":"Documents","sub_category":"Tales of FirstLight","sub_category_img":"document","img":"09_FirstLight_Chapter_09","image_name":"document","name":"09_FirstLight_Chapter_09"},"09_FirstLight_Chapter_10":{"category":"documents","category_name":"Documents","sub_category":"Tales of FirstLight","sub_category_img":"document","img":"09_FirstLight_Chapter_10","image_name":"document","name":"09_FirstLight_Chapter_10"},"09_FirstLight_Chapter_11":{"category":"documents","category_name":"Documents","sub_category":"Tales of FirstLight","sub_category_img":"document","img":"09_FirstLight_Chapter_11","image_name":"document","name":"09_FirstLight_Chapter_11"},"09_FirstLight_Chapter_12":{"category":"documents","category_name":"Documents","sub_category":"Tales of FirstLight","sub_category_img":"document","img":"09_FirstLight_Chapter_12","image_name":"document","name":"09_FirstLight_Chapter_12"},"09_FirstLight_Chapter_13":{"category":"documents","category_name":"Documents","sub_category":"Tales of FirstLight","sub_category_img":"document","img":"09_FirstLight_Chapter_13","image_name":"document","name":"09_FirstLight_Chapter_13"},"09_FirstLight_Chapter_14":{"category":"documents","category_name":"Documents","sub_category":"Tales of FirstLight","sub_category_img":"document","img":"09_FirstLight_Chapter_14","image_name":"document","name":"09_FirstLight_Chapter_14"},"09_FirstLight_Chapter_15":{"category":"documents","category_name":"Documents","sub_category":"Tales of FirstLight","sub_category_img":"document","img":"09_FirstLight_Chapter_15","image_name":"document","name":"09_FirstLight_Chapter_15"},"10_CutlassKeys_Chapter_02":{"category":"documents","category_name":"Documents","sub_category":"Tales of CutlassKeys","sub_category_img":"document","img":"10_CutlassKeys_Chapter_02","image_name":"document","name":"10_CutlassKeys_Chapter_02"},"10_CutlassKeys_Chapter_03":{"category":"documents","category_name":"Documents","sub_category":"Tales of CutlassKeys","sub_category_img":"document","img":"10_CutlassKeys_Chapter_03","image_name":"document","name":"10_CutlassKeys_Chapter_03"},"10_CutlassKeys_Chapter_04":{"category":"documents","category_name":"Documents","sub_category":"Tales of CutlassKeys","sub_category_img":"document","img":"10_CutlassKeys_Chapter_04","image_name":"document","name":"10_CutlassKeys_Chapter_04"},"10_CutlassKeys_Chapter_05":{"category":"documents","category_name":"Documents","sub_category":"Tales of CutlassKeys","sub_category_img":"document","img":"10_CutlassKeys_Chapter_05","image_name":"document","name":"10_CutlassKeys_Chapter_05"},"11_Mourningdale_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Tales of Mourningdale","sub_category_img":"document","img":"11_Mourningdale_Chapter_01","image_name":"document","name":"11_Mourningdale_Chapter_01"},"11_Mourningdale_Chapter_02":{"category":"documents","category_name":"Documents","sub_category":"Tales of Mourningdale","sub_category_img":"document","img":"11_Mourningdale_Chapter_02","image_name":"document","name":"11_Mourningdale_Chapter_02"},"11_Mourningdale_Chapter_04":{"category":"documents","category_name":"Documents","sub_category":"Tales of Mourningdale","sub_category_img":"document","img":"11_Mourningdale_Chapter_04","image_name":"document","name":"11_Mourningdale_Chapter_04"},"11_Mourningdale_Chapter_05":{"category":"documents","category_name":"Documents","sub_category":"Tales of Mourningdale","sub_category_img":"document","img":"11_Mourningdale_Chapter_05","image_name":"document","name":"11_Mourningdale_Chapter_05"},"11_Mourningdale_Chapter_06":{"category":"documents","category_name":"Documents","sub_category":"Tales of Mourningdale","sub_category_img":"document","img":"11_Mourningdale_Chapter_06","image_name":"document","name":"11_Mourningdale_Chapter_06"},"11_Mourningdale_Chapter_07":{"category":"documents","category_name":"Documents","sub_category":"Tales of Mourningdale","sub_category_img":"document","img":"11_Mourningdale_Chapter_07","image_name":"document","name":"11_Mourningdale_Chapter_07"},"11_Mourningdale_Chapter_09":{"category":"documents","category_name":"Documents","sub_category":"Tales of Mourningdale","sub_category_img":"document","img":"11_Mourningdale_Chapter_09","image_name":"document","name":"11_Mourningdale_Chapter_09"},"12_MonarchsBluffs_Chapter_03":{"category":"documents","category_name":"Documents","sub_category":"Tales of MonarchsBluffs","sub_category_img":"document","img":"12_MonarchsBluffs_Chapter_03","image_name":"document","name":"12_MonarchsBluffs_Chapter_03"},"12_MonarchsBluffs_Chapter_04":{"category":"documents","category_name":"Documents","sub_category":"Tales of MonarchsBluffs","sub_category_img":"document","img":"12_MonarchsBluffs_Chapter_04","image_name":"document","name":"12_MonarchsBluffs_Chapter_04"},"12_MonarchsBluffs_Chapter_05":{"category":"documents","category_name":"Documents","sub_category":"Tales of MonarchsBluffs","sub_category_img":"document","img":"12_MonarchsBluffs_Chapter_05","image_name":"document","name":"12_MonarchsBluffs_Chapter_05"},"12_MonarchsBluffs_Chapter_06":{"category":"documents","category_name":"Documents","sub_category":"Tales of MonarchsBluffs","sub_category_img":"document","img":"12_MonarchsBluffs_Chapter_06","image_name":"document","name":"12_MonarchsBluffs_Chapter_06"},"12_MonarchsBluffs_Chapter_07":{"category":"documents","category_name":"Documents","sub_category":"Tales of MonarchsBluffs","sub_category_img":"document","img":"12_MonarchsBluffs_Chapter_07","image_name":"document","name":"12_MonarchsBluffs_Chapter_07"},"12_MonarchsBluffs_Chapter_08":{"category":"documents","category_name":"Documents","sub_category":"Tales of MonarchsBluffs","sub_category_img":"document","img":"12_MonarchsBluffs_Chapter_08","image_name":"document","name":"12_MonarchsBluffs_Chapter_08"},"12_MonarchsBluffs_Chapter_11":{"category":"documents","category_name":"Documents","sub_category":"Tales of MonarchsBluffs","sub_category_img":"document","img":"12_MonarchsBluffs_Chapter_11","image_name":"document","name":"12_MonarchsBluffs_Chapter_11"},"12_MonarchsBluffs_Chapter_12":{"category":"documents","category_name":"Documents","sub_category":"Tales of MonarchsBluffs","sub_category_img":"document","img":"12_MonarchsBluffs_Chapter_12","image_name":"document","name":"12_MonarchsBluffs_Chapter_12"},"12_MonarchsBluffs_Chapter_13":{"category":"documents","category_name":"Documents","sub_category":"Tales of MonarchsBluffs","sub_category_img":"document","img":"12_MonarchsBluffs_Chapter_13","image_name":"document","name":"12_MonarchsBluffs_Chapter_13"},"12_MonarchsBluffs_Chapter_14":{"category":"documents","category_name":"Documents","sub_category":"Tales of MonarchsBluffs","sub_category_img":"document","img":"12_MonarchsBluffs_Chapter_14","image_name":"document","name":"12_MonarchsBluffs_Chapter_14"},"12_MonarchsBluffs_Chapter_15":{"category":"documents","category_name":"Documents","sub_category":"Tales of MonarchsBluffs","sub_category_img":"document","img":"12_MonarchsBluffs_Chapter_15","image_name":"document","name":"12_MonarchsBluffs_Chapter_15"},"12_MonarchsBluffs_Chapter_16":{"category":"documents","category_name":"Documents","sub_category":"Tales of MonarchsBluffs","sub_category_img":"document","img":"12_MonarchsBluffs_Chapter_16","image_name":"document","name":"12_MonarchsBluffs_Chapter_16"},"12_MonarchsBluffs_Chapter_17":{"category":"documents","category_name":"Documents","sub_category":"Tales of MonarchsBluffs","sub_category_img":"document","img":"12_MonarchsBluffs_Chapter_17","image_name":"document","name":"12_MonarchsBluffs_Chapter_17"},"12_MonarchsBluffs_Chapter_18":{"category":"documents","category_name":"Documents","sub_category":"Tales of MonarchsBluffs","sub_category_img":"document","img":"12_MonarchsBluffs_Chapter_18","image_name":"document","name":"12_MonarchsBluffs_Chapter_18"},"12_MonarchsBluffs_Chapter_19":{"category":"documents","category_name":"Documents","sub_category":"Tales of MonarchsBluffs","sub_category_img":"document","img":"12_MonarchsBluffs_Chapter_19","image_name":"document","name":"12_MonarchsBluffs_Chapter_19"},"13_WeaversFen_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Tales of WeaversFen","sub_category_img":"document","img":"13_WeaversFen_Chapter_01","image_name":"document","name":"13_WeaversFen_Chapter_01"},"13_WeaversFen_Chapter_02":{"category":"documents","category_name":"Documents","sub_category":"Tales of WeaversFen","sub_category_img":"document","img":"13_WeaversFen_Chapter_02","image_name":"document","name":"13_WeaversFen_Chapter_02"},"13_WeaversFen_Chapter_03":{"category":"documents","category_name":"Documents","sub_category":"Tales of WeaversFen","sub_category_img":"document","img":"13_WeaversFen_Chapter_03","image_name":"document","name":"13_WeaversFen_Chapter_03"},"13_WeaversFen_Chapter_04":{"category":"documents","category_name":"Documents","sub_category":"Tales of WeaversFen","sub_category_img":"document","img":"13_WeaversFen_Chapter_04","image_name":"document","name":"13_WeaversFen_Chapter_04"},"13_WeaversFen_Chapter_05":{"category":"documents","category_name":"Documents","sub_category":"Tales of WeaversFen","sub_category_img":"document","img":"13_WeaversFen_Chapter_05","image_name":"document","name":"13_WeaversFen_Chapter_05"},"13_WeaversFen_Chapter_06":{"category":"documents","category_name":"Documents","sub_category":"Tales of WeaversFen","sub_category_img":"document","img":"13_WeaversFen_Chapter_06","image_name":"document","name":"13_WeaversFen_Chapter_06"},"13_WeaversFen_Chapter_07":{"category":"documents","category_name":"Documents","sub_category":"Tales of WeaversFen","sub_category_img":"document","img":"13_WeaversFen_Chapter_07","image_name":"document","name":"13_WeaversFen_Chapter_07"},"13_WeaversFen_Chapter_08":{"category":"documents","category_name":"Documents","sub_category":"Tales of WeaversFen","sub_category_img":"document","img":"13_WeaversFen_Chapter_08","image_name":"document","name":"13_WeaversFen_Chapter_08"},"13_WeaversFen_Chapter_10":{"category":"documents","category_name":"Documents","sub_category":"Tales of WeaversFen","sub_category_img":"document","img":"13_WeaversFen_Chapter_10","image_name":"document","name":"13_WeaversFen_Chapter_10"},"14_Edengrove_Chapter_03":{"category":"documents","category_name":"Documents","sub_category":"Tales of Edengrove","sub_category_img":"document","img":"14_Edengrove_Chapter_03","image_name":"document","name":"14_Edengrove_Chapter_03"},"15_RestlessShore_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Tales of RestlessShore","sub_category_img":"document","img":"15_RestlessShore_Chapter_01","image_name":"document","name":"15_RestlessShore_Chapter_01"},"15_RestlessShore_Chapter_02":{"category":"documents","category_name":"Documents","sub_category":"Tales of RestlessShore","sub_category_img":"document","img":"15_RestlessShore_Chapter_02","image_name":"document","name":"15_RestlessShore_Chapter_02"},"15_RestlessShore_Chapter_03":{"category":"documents","category_name":"Documents","sub_category":"Tales of RestlessShore","sub_category_img":"document","img":"15_RestlessShore_Chapter_03","image_name":"document","name":"15_RestlessShore_Chapter_03"},"15_RestlessShore_Chapter_04":{"category":"documents","category_name":"Documents","sub_category":"Tales of RestlessShore","sub_category_img":"document","img":"15_RestlessShore_Chapter_04","image_name":"document","name":"15_RestlessShore_Chapter_04"},"15_RestlessShore_Chapter_05":{"category":"documents","category_name":"Documents","sub_category":"Tales of RestlessShore","sub_category_img":"document","img":"15_RestlessShore_Chapter_05","image_name":"document","name":"15_RestlessShore_Chapter_05"},"15_RestlessShore_Chapter_06":{"category":"documents","category_name":"Documents","sub_category":"Tales of RestlessShore","sub_category_img":"document","img":"15_RestlessShore_Chapter_06","image_name":"document","name":"15_RestlessShore_Chapter_06"},"15_RestlessShore_Chapter_07":{"category":"documents","category_name":"Documents","sub_category":"Tales of RestlessShore","sub_category_img":"document","img":"15_RestlessShore_Chapter_07","image_name":"document","name":"15_RestlessShore_Chapter_07"},"15_RestlessShore_Chapter_08":{"category":"documents","category_name":"Documents","sub_category":"Tales of RestlessShore","sub_category_img":"document","img":"15_RestlessShore_Chapter_08","image_name":"document","name":"15_RestlessShore_Chapter_08"},"99_MSQ_Aeternum_Chapter_03":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"99_MSQ_Aeternum_Chapter_03","image_name":"document","name":"99_MSQ_Aeternum_Chapter_03"},"99_MSQ_Aeternum_Chapter_2":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"99_MSQ_Aeternum_Chapter_2","image_name":"document","name":"99_MSQ_Aeternum_Chapter_2"},"99_MSQ_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"99_MSQ_Chapter_01","image_name":"document","name":"99_MSQ_Chapter_01"},"Alchemist_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"Alchemist_Chapter_01","image_name":"document","name":"Alchemist_Chapter_01"},"AnonymousManuscripts_Chapter_02":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"AnonymousManuscripts_Chapter_02","image_name":"document","name":"AnonymousManuscripts_Chapter_02"},"AnonymousManuscripts_Chapter_03":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"AnonymousManuscripts_Chapter_03","image_name":"document","name":"AnonymousManuscripts_Chapter_03"},"AnonymousManuscripts_Chapter_04":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"AnonymousManuscripts_Chapter_04","image_name":"document","name":"AnonymousManuscripts_Chapter_04"},"AzothTree_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"AzothTree_Chapter_01","image_name":"document","name":"AzothTree_Chapter_01"},"DrownedPages_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"DrownedPages_Chapter_01","image_name":"document","name":"DrownedPages_Chapter_01"},"Eastburn_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"Eastburn_Chapter_01","image_name":"document","name":"Eastburn_Chapter_01"},"Excavation_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"Excavation_Chapter_01","image_name":"document","name":"Excavation_Chapter_01"},"Expedition_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"Expedition_Chapter_01","image_name":"document","name":"Expedition_Chapter_01"},"Expedition_Chapter_02":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"Expedition_Chapter_02","image_name":"document","name":"Expedition_Chapter_02"},"FiveFarms_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"FiveFarms_Chapter_01","image_name":"document","name":"FiveFarms_Chapter_01"},"GreatBridge_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"GreatBridge_Chapter_01","image_name":"document","name":"GreatBridge_Chapter_01"},"Grenville_Chapter_02":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"Grenville_Chapter_02","image_name":"document","name":"Grenville_Chapter_02"},"HuntersCabin_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"HuntersCabin_Chapter_01","image_name":"document","name":"HuntersCabin_Chapter_01"},"Lore_Chapter_Archaeologist":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"Lore_Chapter_Archaeologist","image_name":"document","name":"Lore_Chapter_Archaeologist"},"Seadogs_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"Seadogs_Chapter_01","image_name":"document","name":"Seadogs_Chapter_01"},"TalesofExpeditions_Chapter_02":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"TalesofExpeditions_Chapter_02","image_name":"document","name":"TalesofExpeditions_Chapter_02"},"ThreeFactions_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"ThreeFactions_Chapter_01","image_name":"document","name":"ThreeFactions_Chapter_01"},"ThreeFactions_Chapter_02":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"ThreeFactions_Chapter_02","image_name":"document","name":"ThreeFactions_Chapter_02"},"TideBattle_Chapter_01":{"category":"documents","category_name":"Documents","sub_category":"Unknown Topic","sub_category_img":"document","img":"TideBattle_Chapter_01","image_name":"document","name":"TideBattle_Chapter_01"},"air_boid":{"category":"essences","category_name":"Essences","sub_category":"Air Essence","sub_category_img":"wind_plant","img":"air_boid","image_name":"wind_boid","name":"Lightning Beetle"},"air_plant":{"category":"essences","category_name":"Essences","sub_category":"Air Essence","sub_category_img":"wind_plant","img":"air_plant","image_name":"wind_plant","name":"Shockbulb"},"air_stone":{"category":"essences","category_name":"Essences","sub_category":"Air Essence","sub_category_img":"wind_plant","img":"air_stone","image_name":"wind_stone","name":"Shockspire"},"death_boid":{"category":"essences","category_name":"Essences","sub_category":"Death Essence","sub_category_img":"death_plant","img":"death_boid","image_name":"death_boid","name":"Blightmoth"},"death_plant":{"category":"essences","category_name":"Essences","sub_category":"Death Essence","sub_category_img":"death_plant","img":"death_plant","image_name":"death_plant","name":"Blightroot"},"death_stone":{"category":"essences","category_name":"Essences","sub_category":"Death Essence","sub_category_img":"death_plant","img":"death_stone","image_name":"death_stone","name":"Blightcrag"},"earth_boid":{"category":"essences","category_name":"Essences","sub_category":"Earth Essence","sub_category_img":"earth_plant","img":"earth_boid","image_name":"earth_boid","name":"Earthshell Turtle"},"earth_plant":{"category":"essences","category_name":"Essences","sub_category":"Earth Essence","sub_category_img":"earth_plant","img":"earth_plant","image_name":"earth_plant","name":"Earthspine"},"earth_stone":{"category":"essences","category_name":"Essences","sub_category":"Earth Essence","sub_category_img":"earth_plant","img":"earth_stone","image_name":"earth_stone","name":"Eartcrag"},"fire_boid":{"category":"essences","category_name":"Essences","sub_category":"Fire Essence","sub_category_img":"fire_plant","img":"fire_boid","image_name":"fire_boid","name":"Salamander Snail"},"fire_plant":{"category":"essences","category_name":"Essences","sub_category":"Fire Essence","sub_category_img":"fire_plant","img":"fire_plant","image_name":"fire_plant","name":"Dragonglory"},"fire_stone":{"category":"essences","category_name":"Essences","sub_category":"Fire Essence","sub_category_img":"fire_plant","img":"fire_stone","image_name":"fire_stone","name":"Scorchstone"},"life_boid":{"category":"essences","category_name":"Essences","sub_category":"Life Essence","sub_category_img":"life_plant","img":"life_boid","image_name":"life_boid","name":"Lifemoth"},"life_plant":{"category":"essences","category_name":"Essences","sub_category":"Life Essence","sub_category_img":"life_plant","img":"life_plant","image_name":"life_plant","name":"Lifebloom"},"life_stone":{"category":"essences","category_name":"Essences","sub_category":"Life Essence","sub_category_img":"life_plant","img":"life_stone","image_name":"life_stone","name":"Lifejewel"},"soul_boid":{"category":"essences","category_name":"Essences","sub_category":"Spirit Essence","sub_category_img":"spirit_plant","img":"soul_boid","image_name":"spirit_boid","name":"Soulwyrm"},"soul_plant":{"category":"essences","category_name":"Essences","sub_category":"Spirit Essence","sub_category_img":"spirit_plant","img":"soul_plant","image_name":"spirit_plant","name":"Soulsprout"},"soul_stone":{"category":"essences","category_name":"Essences","sub_category":"Spirit Essence","sub_category_img":"spirit_plant","img":"soul_stone","image_name":"spirit_stone","name":"Soulspire"},"water_boid":{"category":"essences","category_name":"Essences","sub_category":"Water Essence","sub_category_img":"water_plant","img":"water_boid","image_name":"water_boid","name":"Floating Spinefish"},"water_plant":{"category":"essences","category_name":"Essences","sub_category":"Water Essence","sub_category_img":"water_plant","img":"water_plant","image_name":"water_plant","name":"Rivercress"},"water_stone":{"category":"essences","category_name":"Essences","sub_category":"Water Essence","sub_category_img":"water_plant","img":"water_stone","image_name":"water_stone","name":"Springstone"},"hotspot_broad":{"category":"fishing","category_name":"Fishing","sub_category":"","sub_category_img":"","img":"hotspot_broad","image_name":"hotspot_broad","name":"Hotspot (Broad)"},"hotspot_rare":{"category":"fishing","category_name":"Fishing","sub_category":"","sub_category_img":"","img":"hotspot_rare","image_name":"hotspot_rare","name":"Hotspot (Rare)"},"hotspot_secret":{"category":"fishing","category_name":"Fishing","sub_category":"","sub_category_img":"","img":"hotspot_secret","image_name":"hotspot_secret","name":"Hotspot (Secret)"},"alligator":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"alligator","image_name":"alligator","name":"Aligator"},"bear":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"bear","image_name":"bear","name":"Bear"},"bear_elemental":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"bear_elemental","image_name":"bear_elemental","name":"Elemental Bear"},"bison":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"bison","image_name":"bison","name":"Bison"},"boar":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"boar","image_name":"boar","name":"Boar"},"cow":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"cow","image_name":"cow","name":"Cow"},"elk":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"elk","image_name":"elk","name":"Elk"},"elk_elemental":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"elk_elemental","image_name":"elk","name":"Elemental Elk"},"goat":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"goat","image_name":"goat","name":"Goat"},"leopard":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"leopard","image_name":"puma","name":"Leopard"},"lion":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"lion","image_name":"puma","name":"Lion"},"lynx":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"lynx","image_name":"lynx","name":"Lynx"},"named":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"named","image_name":"named","name":"Named Mob"},"pig":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"pig","image_name":"pig","name":"Pig"},"rabbit":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"rabbit","image_name":"rabbit","name":"Rabbit"},"sheep":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"sheep","image_name":"sheep","name":"Sheep"},"turkey":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"turkey","image_name":"turkey","name":"Turkey"},"turkey_nest":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"turkey_nest","image_name":"turkey_nest","name":"Turkey Nest"},"wolf":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"wolf","image_name":"wolf","name":"Wolf"},"wolf_elemental":{"category":"monsters","category_name":"Monsters","sub_category":"","sub_category_img":"","img":"wolf_elemental","image_name":"wolf","name":"Elemental Wolf"},"crystal":{"category":"ores","category_name":"Ores","sub_category":"","sub_category_img":"","img":"crystal","image_name":"crystal","name":"Crystal"},"gold":{"category":"ores","category_name":"Ores","sub_category":"","sub_category_img":"","img":"gold","image_name":"gold","name":"Gold"},"iron":{"category":"ores","category_name":"Ores","sub_category":"","sub_category_img":"","img":"iron","image_name":"iron","name":"Iron"},"lodestone":{"category":"ores","category_name":"Ores","sub_category":"","sub_category_img":"","img":"lodestone","image_name":"lodestone","name":"Lodestone"},"orichalcum":{"category":"ores","category_name":"Ores","sub_category":"","sub_category_img":"","img":"orichalcum","image_name":"orichalcum","name":"Orichalcum"},"platinium":{"category":"ores","category_name":"Ores","sub_category":"","sub_category_img":"","img":"platinium","image_name":"platinum","name":"Platinium"},"saltpeter":{"category":"ores","category_name":"Ores","sub_category":"","sub_category_img":"","img":"saltpeter","image_name":"saltpeter","name":"Saltpeter"},"seeping_stone":{"category":"ores","category_name":"Ores","sub_category":"","sub_category_img":"","img":"seeping_stone","image_name":"oil","name":"Oil"},"silver":{"category":"ores","category_name":"Ores","sub_category":"","sub_category_img":"","img":"silver","image_name":"silver","name":"Silver"},"starmetal":{"category":"ores","category_name":"Ores","sub_category":"","sub_category_img":"","img":"starmetal","image_name":"starmetal","name":"Starmetal"},"azoth_water":{"category":"plants","category_name":"Plants","sub_category":"","sub_category_img":"","img":"azoth_water","image_name":"azoth_water","name":"Azoth Spring"},"barley":{"category":"plants","category_name":"Plants","sub_category":"Cooking Ingredients","sub_category_img":"grain","img":"barley","image_name":"grain","name":"Barley"},"berry":{"category":"plants","category_name":"Plants","sub_category":"Cooking Ingredients","sub_category_img":"grain","img":"berry","image_name":"berry","name":"Berry"},"blueberry":{"category":"plants","category_name":"Plants","sub_category":"Cooking Ingredients","sub_category_img":"grain","img":"blueberry","image_name":"blueberry","name":"Blueberry"},"broccoli":{"category":"plants","category_name":"Plants","sub_category":"Cooking Ingredients","sub_category_img":"grain","img":"broccoli","image_name":"brocolli","name":"Broccoli"},"cabbage":{"category":"plants","category_name":"Plants","sub_category":"Cooking Ingredients","sub_category_img":"grain","img":"cabbage","image_name":"cabbage","name":"Cabbage"},"carrot":{"category":"plants","category_name":"Plants","sub_category":"Cooking Ingredients","sub_category_img":"grain","img":"carrot","image_name":"carrot","name":"Carrot"},"corn":{"category":"plants","category_name":"Plants","sub_category":"Cooking Ingredients","sub_category_img":"grain","img":"corn","image_name":"corn","name":"Corn"},"cranberry":{"category":"plants","category_name":"Plants","sub_category":"Cooking Ingredients","sub_category_img":"grain","img":"cranberry","image_name":"cranberry","name":"Cranberry"},"dye_plant_black":{"category":"plants","category_name":"Plants","sub_category":"Dye","sub_category_img":"dye","img":"dye_plant_black","image_name":"dye_plant_black","name":"Black Prismabloom"},"dye_plant_blue":{"category":"plants","category_name":"Plants","sub_category":"Dye","sub_category_img":"dye","img":"dye_plant_blue","image_name":"dye_plant_blue","name":"Blue Prismabloom"},"dye_plant_brown":{"category":"plants","category_name":"Plants","sub_category":"Dye","sub_category_img":"dye","img":"dye_plant_brown","image_name":"dye_plant_brown","name":"Brown Prismabloom"},"dye_plant_cyan":{"category":"plants","category_name":"Plants","sub_category":"Dye","sub_category_img":"dye","img":"dye_plant_cyan","image_name":"dye_plant_cyan","name":"Cyan Prismabloom"},"dye_plant_green":{"category":"plants","category_name":"Plants","sub_category":"Dye","sub_category_img":"dye","img":"dye_plant_green","image_name":"dye_plant_green","name":"Green Prismabloom"},"dye_plant_magenta":{"category":"plants","category_name":"Plants","sub_category":"Dye","sub_category_img":"dye","img":"dye_plant_magenta","image_name":"dye_plant_magenta","name":"Magenta Prismabloom"},"dye_plant_orange":{"category":"plants","category_name":"Plants","sub_category":"Dye","sub_category_img":"dye","img":"dye_plant_orange","image_name":"dye_plant_orange","name":"Orange Prismabloom"},"dye_plant_red":{"category":"plants","category_name":"Plants","sub_category":"Dye","sub_category_img":"dye","img":"dye_plant_red","image_name":"dye_plant_red","name":"Red Prismabloom"},"dye_plant_turquoise":{"category":"plants","category_name":"Plants","sub_category":"Dye","sub_category_img":"dye","img":"dye_plant_turquoise","image_name":"dye_plant_turquoise","name":"Turquoise Prismabloom"},"dye_plant_violet":{"category":"plants","category_name":"Plants","sub_category":"Dye","sub_category_img":"dye","img":"dye_plant_violet","image_name":"dye_plant_violet","name":"Violet Prismabloom"},"dye_plant_white":{"category":"plants","category_name":"Plants","sub_category":"Dye","sub_category_img":"dye","img":"dye_plant_white","image_name":"dye_plant_white","name":"White Prismabloom"},"dye_plant_yellow":{"category":"plants","category_name":"Plants","sub_category":"Dye","sub_category_img":"dye","img":"dye_plant_yellow","image_name":"dye_plant_yellow","name":"Yellow Prismabloom"},"hemp":{"category":"plants","category_name":"Plants","sub_category":"","sub_category_img":"","img":"hemp","image_name":"hemp","name":"Hemp"},"hemp_t4":{"category":"plants","category_name":"Plants","sub_category":"","sub_category_img":"","img":"hemp_t4","image_name":"silkweed","name":"Silkweed"},"hemp_t5":{"category":"plants","category_name":"Plants","sub_category":"","sub_category_img":"","img":"hemp_t5","image_name":"wirefiber","name":"Wirefiber"},"herb":{"category":"plants","category_name":"Plants","sub_category":"","sub_category_img":"","img":"herb","image_name":"herb","name":"Herb"},"honey":{"category":"plants","category_name":"Plants","sub_category":"Cooking Ingredients","sub_category_img":"grain","img":"honey","image_name":"honey","name":"Honey"},"nut":{"category":"plants","category_name":"Plants","sub_category":"Cooking Ingredients","sub_category_img":"grain","img":"nut","image_name":"fruit","name":"Nut"},"pigment_plant_black":{"category":"plants","category_name":"Plants","sub_category":"Fungus","sub_category_img":"fungi","img":"pigment_plant_black","image_name":"pigment_plant_black","name":"Void Pitcher"},"pigment_plant_blue_dark":{"category":"plants","category_name":"Plants","sub_category":"Fungus","sub_category_img":"fungi","img":"pigment_plant_blue_dark","image_name":"pigment_plant_blue_dark","name":"Toadpot"},"pigment_plant_blue_light":{"category":"plants","category_name":"Plants","sub_category":"Fungus","sub_category_img":"fungi","img":"pigment_plant_blue_light","image_name":"pigment_plant_blue_light","name":"Tanglewisp"},"pigment_plant_brown":{"category":"plants","category_name":"Plants","sub_category":"Fungus","sub_category_img":"fungi","img":"pigment_plant_brown","image_name":"pigment_plant_brown","name":"Bumbleblossom"},"pigment_plant_cyan":{"category":"plants","category_name":"Plants","sub_category":"Fungus","sub_category_img":"fungi","img":"pigment_plant_cyan","image_name":"pigment_plant_cyan","name":"Capped Tanglewisp"},"pigment_plant_green_dark":{"category":"plants","category_name":"Plants","sub_category":"Fungus","sub_category_img":"fungi","img":"pigment_plant_green_dark","image_name":"pigment_plant_green_dark","name":"Spinecap"},"pigment_plant_green_light":{"category":"plants","category_name":"Plants","sub_category":"Fungus","sub_category_img":"fungi","img":"pigment_plant_green_light","image_name":"pigment_plant_green_light","name":"Fronded Petalcap"},"pigment_plant_magenta":{"category":"plants","category_name":"Plants","sub_category":"Fungus","sub_category_img":"fungi","img":"pigment_plant_magenta","image_name":"pigment_plant_magenta","name":"Weeping Shellbed"},"pigment_plant_orange":{"category":"plants","category_name":"Plants","sub_category":"Fungus","sub_category_img":"fungi","img":"pigment_plant_orange","image_name":"pigment_plant_orange","name":"Warm Platecap"},"pigment_plant_pink":{"category":"plants","category_name":"Plants","sub_category":"Fungus","sub_category_img":"fungi","img":"pigment_plant_pink","image_name":"pigment_plant_pink","name":"Tendrilspine"},"pigment_plant_purple_dark":{"category":"plants","category_name":"Plants","sub_category":"Fungus","sub_category_img":"fungi","img":"pigment_plant_purple_dark","image_name":"pigment_plant_purple_dark","name":"Weeping Shellbed"},"pigment_plant_red":{"category":"plants","category_name":"Plants","sub_category":"Fungus","sub_category_img":"fungi","img":"pigment_plant_red","image_name":"pigment_plant_red","name":"Corrupted Bloodspore"},"pigment_plant_tan":{"category":"plants","category_name":"Plants","sub_category":"Fungus","sub_category_img":"fungi","img":"pigment_plant_tan","image_name":"pigment_plant_tan","name":"Slimy Twistcap"},"pigment_plant_white":{"category":"plants","category_name":"Plants","sub_category":"Fungus","sub_category_img":"fungi","img":"pigment_plant_white","image_name":"pigment_plant_white","name":"Cascaded Gillflower"},"pigment_plant_yellow":{"category":"plants","category_name":"Plants","sub_category":"Fungus","sub_category_img":"fungi","img":"pigment_plant_yellow","image_name":"pigment_plant_yellow","name":"Suncreeper"},"potato":{"category":"plants","category_name":"Plants","sub_category":"Cooking Ingredients","sub_category_img":"grain","img":"potato","image_name":"potato","name":"Potato"},"squash":{"category":"plants","category_name":"Plants","sub_category":"Cooking Ingredients","sub_category_img":"grain","img":"squash","image_name":"squash","name":"Squash"},"strawberries":{"category":"plants","category_name":"Plants","sub_category":"Cooking Ingredients","sub_category_img":"grain","img":"strawberries","image_name":"strawberry","name":"Strawberries"},"Briar":{"category":"woods","category_name":"Woods","sub_category":"","sub_category_img":"","img":"Briar","image_name":"briar","name":"Briar"},"ironwood":{"category":"woods","category_name":"Woods","sub_category":"","sub_category_img":"","img":"ironwood","image_name":"ironwood","name":"Ironwood"},"wyrdwood":{"category":"woods","category_name":"Woods","sub_category":"","sub_category_img":"","img":"wyrdwood","image_name":"wyrdwood","name":"Wyrdwood"},"arcane_repository":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"arcane_repository","image_name":"arcane_repository","name":"Arcane Repository"},"covenant_npc":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"covenant_npc","image_name":"covenant_npc","name":"Covenant Npc"},"forge":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"forge","image_name":"forge","name":"Forge"},"stonecutting_table":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"stonecutting_table","image_name":"stonecutting_table","name":"Stonecutting Table"},"governors_desk":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"governors_desk","image_name":"governors_desk","name":"Governors Desk"},"inn":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"inn","image_name":"inn","name":"Inn"},"kitchen":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"kitchen","image_name":"kitchen","name":"Kitchen"},"loom":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"loom","image_name":"loom","name":"Loom"},"marauder_npc":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"marauder_npc","image_name":"marauder_npc","name":"Marauder Npc"},"outfitting_station":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"outfitting_station","image_name":"outfitting_station","name":"Outfitting Station"},"spirit_shrine":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"spirit_shrine","image_name":"spirit_shrine","name":"Spirit Shrine"},"smelter":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"smelter","image_name":"smelter","name":"Smelter"},"storage_shed":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"storage_shed","image_name":"storage_shed","name":"Storage Shed"},"syndicate_npc":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"syndicate_npc","image_name":"syndicate_npc","name":"Syndicate Npc"},"tannery":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"tannery","image_name":"tannery","name":"Tannery"},"territory_board":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"territory_board","image_name":"territory_board","name":"Territory Board"},"town_board":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"town_board","image_name":"town_board","name":"Town Board"},"trading_post":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"trading_post","image_name":"trading_post","name":"Trading Post"},"war_board":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"war_board","image_name":"war_board","name":"War Board"},"woodshop":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"woodshop","image_name":"woodshop","name":"Woodshop"},"workshop":{"category":"town","category_name":"Town","sub_category":"","sub_category_img":"","img":"workshop","image_name":"workshop","name":"Workshop"}}
+{
+  "al1": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Alchemy Stockpile",
+    "sub_category_img": "alcy_2",
+    "img": "al1",
+    "image_name": "alcy_2",
+    "name": "Alchemy Stockpile t1"
+  },
+  "al2": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Alchemy Stockpile",
+    "sub_category_img": "alcy_2",
+    "img": "al2",
+    "image_name": "alcy_2",
+    "name": "Alchemy Stockpile t2"
+  },
+  "al3": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Alchemy Stockpile",
+    "sub_category_img": "alcy_2",
+    "img": "al3",
+    "image_name": "alcy_2",
+    "name": "Alchemy Stockpile t3"
+  },
+  "am1": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Alchemy Crate",
+    "sub_category_img": "alcy_1",
+    "img": "am1",
+    "image_name": "alcy_1",
+    "name": "Alchemy Crate t1"
+  },
+  "am2": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Alchemy Crate",
+    "sub_category_img": "alcy_1",
+    "img": "am2",
+    "image_name": "alcy_1",
+    "name": "Alchemy Crate t2"
+  },
+  "am3": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Alchemy Crate",
+    "sub_category_img": "alcy_1",
+    "img": "am3",
+    "image_name": "alcy_1",
+    "name": "Alchemy Crate t3"
+  },
+  "cl1": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Provisions Stockpile",
+    "sub_category_img": "provisions_3",
+    "img": "cl1",
+    "image_name": "provisions_3",
+    "name": "Provisions Stockpile t1"
+  },
+  "cl2": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Provisions Stockpile",
+    "sub_category_img": "provisions_3",
+    "img": "cl2",
+    "image_name": "provisions_3",
+    "name": "Provisions Stockpile t2"
+  },
+  "cl3": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Provisions Stockpile",
+    "sub_category_img": "provisions_3",
+    "img": "cl3",
+    "image_name": "provisions_3",
+    "name": "Provisions Stockpile t3"
+  },
+  "cm1": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Provisions Crate",
+    "sub_category_img": "provisions_2",
+    "img": "cm1",
+    "image_name": "provisions_2",
+    "name": "Provisions Crate t1"
+  },
+  "cm2": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Provisions Crate",
+    "sub_category_img": "provisions_2",
+    "img": "cm2",
+    "image_name": "provisions_2",
+    "name": "Provisions Crate t2"
+  },
+  "cm3": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Provisions Crate",
+    "sub_category_img": "provisions_2",
+    "img": "cm3",
+    "image_name": "provisions_2",
+    "name": "Provisions Crate t3"
+  },
+  "cs1": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Provisions Cache",
+    "sub_category_img": "provisions_1",
+    "img": "cs1",
+    "image_name": "provisions_1",
+    "name": "Provision Cache t1"
+  },
+  "ol1": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Ancient Chest",
+    "sub_category_img": "ancient_chest",
+    "img": "ol1",
+    "image_name": "ancient_chest",
+    "name": "Ancient Chest t1"
+  },
+  "ol2": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Ancient Chest",
+    "sub_category_img": "ancient_chest",
+    "img": "ol2",
+    "image_name": "ancient_chest",
+    "name": "Ancient Chest t2"
+  },
+  "ol3": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Ancient Chest",
+    "sub_category_img": "ancient_chest",
+    "img": "ol3",
+    "image_name": "ancient_chest",
+    "name": "Ancient Chest t3"
+  },
+  "om1": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Ancient Coffer",
+    "sub_category_img": "ancient_coffer",
+    "img": "om1",
+    "image_name": "ancient_coffer",
+    "name": "Ancient Coffer t1"
+  },
+  "om2": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Ancient Coffer",
+    "sub_category_img": "ancient_coffer",
+    "img": "om2",
+    "image_name": "ancient_coffer",
+    "name": "Ancient Coffer t2"
+  },
+  "om3": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Ancient Coffer",
+    "sub_category_img": "ancient_coffer",
+    "img": "om3",
+    "image_name": "ancient_coffer",
+    "name": "Ancient Coffer t3"
+  },
+  "os1": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Ancient Urn",
+    "sub_category_img": "ancient_urn",
+    "img": "os1",
+    "image_name": "ancient_urn",
+    "name": "Ancient Urn t1"
+  },
+  "os2": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Ancient Urn",
+    "sub_category_img": "ancient_urn",
+    "img": "os2",
+    "image_name": "ancient_urn",
+    "name": "Ancient Urn t2"
+  },
+  "os3": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Ancient Urn",
+    "sub_category_img": "ancient_urn",
+    "img": "os3",
+    "image_name": "ancient_urn",
+    "name": "Ancient Urn t3"
+  },
+  "oe4": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Ancient Chest (Elite)",
+    "sub_category_img": "ancient_chest",
+    "img": "oe4",
+    "image_name": "ancient_chest",
+    "name": "Ancient Chest (Elite) t4"
+  },
+  "oe5": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Ancient Chest (Elite)",
+    "sub_category_img": "ancient_chest",
+    "img": "oe5",
+    "image_name": "ancient_chest",
+    "name": "Ancient Chest (Elite) t5"
+  },
+  "sl1": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Supply Stockpile",
+    "sub_category_img": "supply_3",
+    "img": "sl1",
+    "image_name": "supply_3",
+    "name": "Supply Stockpile t1"
+  },
+  "sl2": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Supply Stockpile",
+    "sub_category_img": "supply_3",
+    "img": "sl2",
+    "image_name": "supply_3",
+    "name": "Supply Stockpile t2"
+  },
+  "se2": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Supply Stockpile",
+    "sub_category_img": "supply_3",
+    "img": "se2",
+    "image_name": "supply_3",
+    "name": "Supply Stockpile (Elite) t2"
+  },
+  "sl3": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Supply Stockpile",
+    "sub_category_img": "supply_3",
+    "img": "sl3",
+    "image_name": "supply_3",
+    "name": "Supply Stockpile t3"
+  },
+  "sm1": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Supply Crate",
+    "sub_category_img": "supply_1",
+    "img": "sm1",
+    "image_name": "supply_1",
+    "name": "Supply Crate t1"
+  },
+  "sm2": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Supply Crate",
+    "sub_category_img": "supply_1",
+    "img": "sm2",
+    "image_name": "supply_1",
+    "name": "Supply Crate t2"
+  },
+  "sm3": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Supply Crate",
+    "sub_category_img": "supply_1",
+    "img": "sm3",
+    "image_name": "supply_1",
+    "name": "Supply Crate t3"
+  },
+  "ss1": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Supply Cache",
+    "sub_category_img": "supply_2",
+    "img": "ss1",
+    "image_name": "supply_2",
+    "name": "Supply Cache t1"
+  },
+  "ss2": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Supply Cache",
+    "sub_category_img": "supply_2",
+    "img": "ss2",
+    "image_name": "supply_2",
+    "name": "Supply Cache t2"
+  },
+  "ss3": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Supply Cache",
+    "sub_category_img": "supply_2",
+    "img": "ss3",
+    "image_name": "supply_2",
+    "name": "Supply Cache t3"
+  },
+  "se4": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Supply Stockpile",
+    "sub_category_img": "supply_3",
+    "img": "se4",
+    "image_name": "supply_3",
+    "name": "Supply Stockpile (Elite) t4 "
+  },
+  "se5": {
+    "category": "chests",
+    "category_name": "Chests",
+    "sub_category": "Supply Stockpile",
+    "sub_category_img": "supply_3",
+    "img": "se5",
+    "image_name": "supply_3",
+    "name": "Supply Stockpile (Elite) t5 "
+  },
+  "00_Aeternum_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_01",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_01"
+  },
+  "00_Aeternum_Chapter_02": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_02",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_02"
+  },
+  "00_Aeternum_Chapter_03": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_03",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_03"
+  },
+  "00_Aeternum_Chapter_07": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_07",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_07"
+  },
+  "00_Aeternum_Chapter_08": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_08",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_08"
+  },
+  "00_Aeternum_Chapter_09": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_09",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_09"
+  },
+  "00_Aeternum_Chapter_10": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_10",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_10"
+  },
+  "00_Aeternum_Chapter_11": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_11",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_11"
+  },
+  "00_Aeternum_Chapter_12": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_12",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_12"
+  },
+  "00_Aeternum_Chapter_13": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_13",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_13"
+  },
+  "00_Aeternum_Chapter_14": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_14",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_14"
+  },
+  "00_Aeternum_Chapter_15": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_15",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_15"
+  },
+  "00_Aeternum_Chapter_17": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_17",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_17"
+  },
+  "00_Aeternum_Chapter_18": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_18",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_18"
+  },
+  "00_Aeternum_Chapter_19": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_19",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_19"
+  },
+  "00_Aeternum_Chapter_20": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_20",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_20"
+  },
+  "00_Aeternum_Chapter_21": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_21",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_21"
+  },
+  "00_Aeternum_Chapter_22": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_22",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_22"
+  },
+  "00_Aeternum_Chapter_24": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_24",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_24"
+  },
+  "00_Aeternum_Chapter_25": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_25",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_25"
+  },
+  "00_Aeternum_Chapter_27": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_27",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_27"
+  },
+  "00_Aeternum_Chapter_28": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_28",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_28"
+  },
+  "00_Aeternum_Chapter_29": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_29",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_29"
+  },
+  "00_Aeternum_Chapter_30": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Aeternum",
+    "sub_category_img": "document",
+    "img": "00_Aeternum_Chapter_30",
+    "image_name": "document",
+    "name": "00_Aeternum_Chapter_30"
+  },
+  "02_Brightwood_Chapter_04": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Brightwood",
+    "sub_category_img": "document",
+    "img": "02_Brightwood_Chapter_04",
+    "image_name": "document",
+    "name": "02_Brightwood_Chapter_04"
+  },
+  "03_GreatCleave_Chapter_05": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of GreatCleave",
+    "sub_category_img": "document",
+    "img": "03_GreatCleave_Chapter_05",
+    "image_name": "document",
+    "name": "03_GreatCleave_Chapter_05"
+  },
+  "03_GreatCleave_Chapter_06": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of GreatCleave",
+    "sub_category_img": "document",
+    "img": "03_GreatCleave_Chapter_06",
+    "image_name": "document",
+    "name": "03_GreatCleave_Chapter_06"
+  },
+  "03_GreatCleave_Chapter_07": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of GreatCleave",
+    "sub_category_img": "document",
+    "img": "03_GreatCleave_Chapter_07",
+    "image_name": "document",
+    "name": "03_GreatCleave_Chapter_07"
+  },
+  "03_GreatCleave_Chapter_08": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of GreatCleave",
+    "sub_category_img": "document",
+    "img": "03_GreatCleave_Chapter_08",
+    "image_name": "document",
+    "name": "03_GreatCleave_Chapter_08"
+  },
+  "03_GreatCleave_Chapter_09": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of GreatCleave",
+    "sub_category_img": "document",
+    "img": "03_GreatCleave_Chapter_09",
+    "image_name": "document",
+    "name": "03_GreatCleave_Chapter_09"
+  },
+  "04_Everfall_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_01",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_01"
+  },
+  "04_Everfall_Chapter_02": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_02",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_02"
+  },
+  "04_Everfall_Chapter_03": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_03",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_03"
+  },
+  "04_Everfall_Chapter_04": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_04",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_04"
+  },
+  "04_Everfall_Chapter_05": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_05",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_05"
+  },
+  "04_Everfall_Chapter_06": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_06",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_06"
+  },
+  "04_Everfall_Chapter_07": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_07",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_07"
+  },
+  "04_Everfall_Chapter_08": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_08",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_08"
+  },
+  "04_Everfall_Chapter_09": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_09",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_09"
+  },
+  "04_Everfall_Chapter_10": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_10",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_10"
+  },
+  "04_Everfall_Chapter_11": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_11",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_11"
+  },
+  "04_Everfall_Chapter_12": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_12",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_12"
+  },
+  "04_Everfall_Chapter_13": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_13",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_13"
+  },
+  "04_Everfall_Chapter_14": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_14",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_14"
+  },
+  "04_Everfall_Chapter_15": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_15",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_15"
+  },
+  "04_Everfall_Chapter_16": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_16",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_16"
+  },
+  "04_Everfall_Chapter_17": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_17",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_17"
+  },
+  "04_Everfall_Chapter_18": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_18",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_18"
+  },
+  "04_Everfall_Chapter_19": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_19",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_19"
+  },
+  "04_Everfall_Chapter_20": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Everfall",
+    "sub_category_img": "document",
+    "img": "04_Everfall_Chapter_20",
+    "image_name": "document",
+    "name": "04_Everfall_Chapter_20"
+  },
+  "05_Reekwater_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Reekwater",
+    "sub_category_img": "document",
+    "img": "05_Reekwater_Chapter_01",
+    "image_name": "document",
+    "name": "05_Reekwater_Chapter_01"
+  },
+  "05_Reekwater_Chapter_02": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Reekwater",
+    "sub_category_img": "document",
+    "img": "05_Reekwater_Chapter_02",
+    "image_name": "document",
+    "name": "05_Reekwater_Chapter_02"
+  },
+  "05_Reekwater_Chapter_03": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Reekwater",
+    "sub_category_img": "document",
+    "img": "05_Reekwater_Chapter_03",
+    "image_name": "document",
+    "name": "05_Reekwater_Chapter_03"
+  },
+  "05_Reekwater_Chapter_04": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Reekwater",
+    "sub_category_img": "document",
+    "img": "05_Reekwater_Chapter_04",
+    "image_name": "document",
+    "name": "05_Reekwater_Chapter_04"
+  },
+  "05_Reekwater_Chapter_05": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Reekwater",
+    "sub_category_img": "document",
+    "img": "05_Reekwater_Chapter_05",
+    "image_name": "document",
+    "name": "05_Reekwater_Chapter_05"
+  },
+  "05_Reekwater_Chapter_06": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Reekwater",
+    "sub_category_img": "document",
+    "img": "05_Reekwater_Chapter_06",
+    "image_name": "document",
+    "name": "05_Reekwater_Chapter_06"
+  },
+  "05_Reekwater_Chapter_07": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Reekwater",
+    "sub_category_img": "document",
+    "img": "05_Reekwater_Chapter_07",
+    "image_name": "document",
+    "name": "05_Reekwater_Chapter_07"
+  },
+  "05_Reekwater_Chapter_08": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Reekwater",
+    "sub_category_img": "document",
+    "img": "05_Reekwater_Chapter_08",
+    "image_name": "document",
+    "name": "05_Reekwater_Chapter_08"
+  },
+  "05_Reekwater_Chapter_09": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Reekwater",
+    "sub_category_img": "document",
+    "img": "05_Reekwater_Chapter_09",
+    "image_name": "document",
+    "name": "05_Reekwater_Chapter_09"
+  },
+  "05_Reekwater_Chapter_10": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Reekwater",
+    "sub_category_img": "document",
+    "img": "05_Reekwater_Chapter_10",
+    "image_name": "document",
+    "name": "05_Reekwater_Chapter_10"
+  },
+  "05_Reekwater_Chapter_11": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Reekwater",
+    "sub_category_img": "document",
+    "img": "05_Reekwater_Chapter_11",
+    "image_name": "document",
+    "name": "05_Reekwater_Chapter_11"
+  },
+  "06_Windsward_Chapter_03": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Windsward",
+    "sub_category_img": "document",
+    "img": "06_Windsward_Chapter_03",
+    "image_name": "document",
+    "name": "06_Windsward_Chapter_03"
+  },
+  "06_Windsward_Chapter_04": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Windsward",
+    "sub_category_img": "document",
+    "img": "06_Windsward_Chapter_04",
+    "image_name": "document",
+    "name": "06_Windsward_Chapter_04"
+  },
+  "06_Windsward_Chapter_05": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Windsward",
+    "sub_category_img": "document",
+    "img": "06_Windsward_Chapter_05",
+    "image_name": "document",
+    "name": "06_Windsward_Chapter_05"
+  },
+  "06_Windsward_Chapter_06": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Windsward",
+    "sub_category_img": "document",
+    "img": "06_Windsward_Chapter_06",
+    "image_name": "document",
+    "name": "06_Windsward_Chapter_06"
+  },
+  "06_Windsward_Chapter_07": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Windsward",
+    "sub_category_img": "document",
+    "img": "06_Windsward_Chapter_07",
+    "image_name": "document",
+    "name": "06_Windsward_Chapter_07"
+  },
+  "06_Windsward_Chapter_08": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Windsward",
+    "sub_category_img": "document",
+    "img": "06_Windsward_Chapter_08",
+    "image_name": "document",
+    "name": "06_Windsward_Chapter_08"
+  },
+  "06_Windsward_Chapter_10": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Windsward",
+    "sub_category_img": "document",
+    "img": "06_Windsward_Chapter_10",
+    "image_name": "document",
+    "name": "06_Windsward_Chapter_10"
+  },
+  "06_Windsward_Chapter_11": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Windsward",
+    "sub_category_img": "document",
+    "img": "06_Windsward_Chapter_11",
+    "image_name": "document",
+    "name": "06_Windsward_Chapter_11"
+  },
+  "06_Windsward_Chapter_12": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Windsward",
+    "sub_category_img": "document",
+    "img": "06_Windsward_Chapter_12",
+    "image_name": "document",
+    "name": "06_Windsward_Chapter_12"
+  },
+  "06_Windsward_Chapter_13": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Windsward",
+    "sub_category_img": "document",
+    "img": "06_Windsward_Chapter_13",
+    "image_name": "document",
+    "name": "06_Windsward_Chapter_13"
+  },
+  "06_Windsward_Chapter_14": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Windsward",
+    "sub_category_img": "document",
+    "img": "06_Windsward_Chapter_14",
+    "image_name": "document",
+    "name": "06_Windsward_Chapter_14"
+  },
+  "06_Windsward_Chapter_15": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Windsward",
+    "sub_category_img": "document",
+    "img": "06_Windsward_Chapter_15",
+    "image_name": "document",
+    "name": "06_Windsward_Chapter_15"
+  },
+  "06_Windsward_Chapter_16": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Windsward",
+    "sub_category_img": "document",
+    "img": "06_Windsward_Chapter_16",
+    "image_name": "document",
+    "name": "06_Windsward_Chapter_16"
+  },
+  "06_Windsward_Chapter_17": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Windsward",
+    "sub_category_img": "document",
+    "img": "06_Windsward_Chapter_17",
+    "image_name": "document",
+    "name": "06_Windsward_Chapter_17"
+  },
+  "07_ShatteredMountain_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of ShatteredMountain",
+    "sub_category_img": "document",
+    "img": "07_ShatteredMountain_Chapter_01",
+    "image_name": "document",
+    "name": "07_ShatteredMountain_Chapter_01"
+  },
+  "07_ShatteredMountain_Chapter_02": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of ShatteredMountain",
+    "sub_category_img": "document",
+    "img": "07_ShatteredMountain_Chapter_02",
+    "image_name": "document",
+    "name": "07_ShatteredMountain_Chapter_02"
+  },
+  "07_ShatteredMountain_Chapter_03": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of ShatteredMountain",
+    "sub_category_img": "document",
+    "img": "07_ShatteredMountain_Chapter_03",
+    "image_name": "document",
+    "name": "07_ShatteredMountain_Chapter_03"
+  },
+  "08_EbonscaleReach_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of EbonscaleReach",
+    "sub_category_img": "document",
+    "img": "08_EbonscaleReach_Chapter_01",
+    "image_name": "document",
+    "name": "08_EbonscaleReach_Chapter_01"
+  },
+  "08_EbonscaleReach_Chapter_02": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of EbonscaleReach",
+    "sub_category_img": "document",
+    "img": "08_EbonscaleReach_Chapter_02",
+    "image_name": "document",
+    "name": "08_EbonscaleReach_Chapter_02"
+  },
+  "08_EbonscaleReach_Chapter_03": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of EbonscaleReach",
+    "sub_category_img": "document",
+    "img": "08_EbonscaleReach_Chapter_03",
+    "image_name": "document",
+    "name": "08_EbonscaleReach_Chapter_03"
+  },
+  "08_EbonscaleReach_Chapter_04": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of EbonscaleReach",
+    "sub_category_img": "document",
+    "img": "08_EbonscaleReach_Chapter_04",
+    "image_name": "document",
+    "name": "08_EbonscaleReach_Chapter_04"
+  },
+  "08_EbonscaleReach_Chapter_05": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of EbonscaleReach",
+    "sub_category_img": "document",
+    "img": "08_EbonscaleReach_Chapter_05",
+    "image_name": "document",
+    "name": "08_EbonscaleReach_Chapter_05"
+  },
+  "08_EbonscaleReach_Chapter_06": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of EbonscaleReach",
+    "sub_category_img": "document",
+    "img": "08_EbonscaleReach_Chapter_06",
+    "image_name": "document",
+    "name": "08_EbonscaleReach_Chapter_06"
+  },
+  "08_EbonscaleReach_Chapter_07": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of EbonscaleReach",
+    "sub_category_img": "document",
+    "img": "08_EbonscaleReach_Chapter_07",
+    "image_name": "document",
+    "name": "08_EbonscaleReach_Chapter_07"
+  },
+  "08_EbonscaleReach_Chapter_08": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of EbonscaleReach",
+    "sub_category_img": "document",
+    "img": "08_EbonscaleReach_Chapter_08",
+    "image_name": "document",
+    "name": "08_EbonscaleReach_Chapter_08"
+  },
+  "08_EbonscaleReach_Chapter_10": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of EbonscaleReach",
+    "sub_category_img": "document",
+    "img": "08_EbonscaleReach_Chapter_10",
+    "image_name": "document",
+    "name": "08_EbonscaleReach_Chapter_10"
+  },
+  "08_EbonscaleReach_Chapter_11": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of EbonscaleReach",
+    "sub_category_img": "document",
+    "img": "08_EbonscaleReach_Chapter_11",
+    "image_name": "document",
+    "name": "08_EbonscaleReach_Chapter_11"
+  },
+  "08_EbonscaleReach_Chapter_12": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of EbonscaleReach",
+    "sub_category_img": "document",
+    "img": "08_EbonscaleReach_Chapter_12",
+    "image_name": "document",
+    "name": "08_EbonscaleReach_Chapter_12"
+  },
+  "09_FirstLight_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of FirstLight",
+    "sub_category_img": "document",
+    "img": "09_FirstLight_Chapter_01",
+    "image_name": "document",
+    "name": "09_FirstLight_Chapter_01"
+  },
+  "09_FirstLight_Chapter_02": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of FirstLight",
+    "sub_category_img": "document",
+    "img": "09_FirstLight_Chapter_02",
+    "image_name": "document",
+    "name": "09_FirstLight_Chapter_02"
+  },
+  "09_FirstLight_Chapter_03": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of FirstLight",
+    "sub_category_img": "document",
+    "img": "09_FirstLight_Chapter_03",
+    "image_name": "document",
+    "name": "09_FirstLight_Chapter_03"
+  },
+  "09_FirstLight_Chapter_04": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of FirstLight",
+    "sub_category_img": "document",
+    "img": "09_FirstLight_Chapter_04",
+    "image_name": "document",
+    "name": "09_FirstLight_Chapter_04"
+  },
+  "09_FirstLight_Chapter_05": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of FirstLight",
+    "sub_category_img": "document",
+    "img": "09_FirstLight_Chapter_05",
+    "image_name": "document",
+    "name": "09_FirstLight_Chapter_05"
+  },
+  "09_FirstLight_Chapter_06": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of FirstLight",
+    "sub_category_img": "document",
+    "img": "09_FirstLight_Chapter_06",
+    "image_name": "document",
+    "name": "09_FirstLight_Chapter_06"
+  },
+  "09_FirstLight_Chapter_07": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of FirstLight",
+    "sub_category_img": "document",
+    "img": "09_FirstLight_Chapter_07",
+    "image_name": "document",
+    "name": "09_FirstLight_Chapter_07"
+  },
+  "09_FirstLight_Chapter_08": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of FirstLight",
+    "sub_category_img": "document",
+    "img": "09_FirstLight_Chapter_08",
+    "image_name": "document",
+    "name": "09_FirstLight_Chapter_08"
+  },
+  "09_FirstLight_Chapter_09": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of FirstLight",
+    "sub_category_img": "document",
+    "img": "09_FirstLight_Chapter_09",
+    "image_name": "document",
+    "name": "09_FirstLight_Chapter_09"
+  },
+  "09_FirstLight_Chapter_10": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of FirstLight",
+    "sub_category_img": "document",
+    "img": "09_FirstLight_Chapter_10",
+    "image_name": "document",
+    "name": "09_FirstLight_Chapter_10"
+  },
+  "09_FirstLight_Chapter_11": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of FirstLight",
+    "sub_category_img": "document",
+    "img": "09_FirstLight_Chapter_11",
+    "image_name": "document",
+    "name": "09_FirstLight_Chapter_11"
+  },
+  "09_FirstLight_Chapter_12": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of FirstLight",
+    "sub_category_img": "document",
+    "img": "09_FirstLight_Chapter_12",
+    "image_name": "document",
+    "name": "09_FirstLight_Chapter_12"
+  },
+  "09_FirstLight_Chapter_13": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of FirstLight",
+    "sub_category_img": "document",
+    "img": "09_FirstLight_Chapter_13",
+    "image_name": "document",
+    "name": "09_FirstLight_Chapter_13"
+  },
+  "09_FirstLight_Chapter_14": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of FirstLight",
+    "sub_category_img": "document",
+    "img": "09_FirstLight_Chapter_14",
+    "image_name": "document",
+    "name": "09_FirstLight_Chapter_14"
+  },
+  "09_FirstLight_Chapter_15": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of FirstLight",
+    "sub_category_img": "document",
+    "img": "09_FirstLight_Chapter_15",
+    "image_name": "document",
+    "name": "09_FirstLight_Chapter_15"
+  },
+  "10_CutlassKeys_Chapter_02": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of CutlassKeys",
+    "sub_category_img": "document",
+    "img": "10_CutlassKeys_Chapter_02",
+    "image_name": "document",
+    "name": "10_CutlassKeys_Chapter_02"
+  },
+  "10_CutlassKeys_Chapter_03": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of CutlassKeys",
+    "sub_category_img": "document",
+    "img": "10_CutlassKeys_Chapter_03",
+    "image_name": "document",
+    "name": "10_CutlassKeys_Chapter_03"
+  },
+  "10_CutlassKeys_Chapter_04": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of CutlassKeys",
+    "sub_category_img": "document",
+    "img": "10_CutlassKeys_Chapter_04",
+    "image_name": "document",
+    "name": "10_CutlassKeys_Chapter_04"
+  },
+  "10_CutlassKeys_Chapter_05": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of CutlassKeys",
+    "sub_category_img": "document",
+    "img": "10_CutlassKeys_Chapter_05",
+    "image_name": "document",
+    "name": "10_CutlassKeys_Chapter_05"
+  },
+  "11_Mourningdale_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Mourningdale",
+    "sub_category_img": "document",
+    "img": "11_Mourningdale_Chapter_01",
+    "image_name": "document",
+    "name": "11_Mourningdale_Chapter_01"
+  },
+  "11_Mourningdale_Chapter_02": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Mourningdale",
+    "sub_category_img": "document",
+    "img": "11_Mourningdale_Chapter_02",
+    "image_name": "document",
+    "name": "11_Mourningdale_Chapter_02"
+  },
+  "11_Mourningdale_Chapter_04": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Mourningdale",
+    "sub_category_img": "document",
+    "img": "11_Mourningdale_Chapter_04",
+    "image_name": "document",
+    "name": "11_Mourningdale_Chapter_04"
+  },
+  "11_Mourningdale_Chapter_05": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Mourningdale",
+    "sub_category_img": "document",
+    "img": "11_Mourningdale_Chapter_05",
+    "image_name": "document",
+    "name": "11_Mourningdale_Chapter_05"
+  },
+  "11_Mourningdale_Chapter_06": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Mourningdale",
+    "sub_category_img": "document",
+    "img": "11_Mourningdale_Chapter_06",
+    "image_name": "document",
+    "name": "11_Mourningdale_Chapter_06"
+  },
+  "11_Mourningdale_Chapter_07": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Mourningdale",
+    "sub_category_img": "document",
+    "img": "11_Mourningdale_Chapter_07",
+    "image_name": "document",
+    "name": "11_Mourningdale_Chapter_07"
+  },
+  "11_Mourningdale_Chapter_09": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Mourningdale",
+    "sub_category_img": "document",
+    "img": "11_Mourningdale_Chapter_09",
+    "image_name": "document",
+    "name": "11_Mourningdale_Chapter_09"
+  },
+  "12_MonarchsBluffs_Chapter_03": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of MonarchsBluffs",
+    "sub_category_img": "document",
+    "img": "12_MonarchsBluffs_Chapter_03",
+    "image_name": "document",
+    "name": "12_MonarchsBluffs_Chapter_03"
+  },
+  "12_MonarchsBluffs_Chapter_04": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of MonarchsBluffs",
+    "sub_category_img": "document",
+    "img": "12_MonarchsBluffs_Chapter_04",
+    "image_name": "document",
+    "name": "12_MonarchsBluffs_Chapter_04"
+  },
+  "12_MonarchsBluffs_Chapter_05": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of MonarchsBluffs",
+    "sub_category_img": "document",
+    "img": "12_MonarchsBluffs_Chapter_05",
+    "image_name": "document",
+    "name": "12_MonarchsBluffs_Chapter_05"
+  },
+  "12_MonarchsBluffs_Chapter_06": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of MonarchsBluffs",
+    "sub_category_img": "document",
+    "img": "12_MonarchsBluffs_Chapter_06",
+    "image_name": "document",
+    "name": "12_MonarchsBluffs_Chapter_06"
+  },
+  "12_MonarchsBluffs_Chapter_07": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of MonarchsBluffs",
+    "sub_category_img": "document",
+    "img": "12_MonarchsBluffs_Chapter_07",
+    "image_name": "document",
+    "name": "12_MonarchsBluffs_Chapter_07"
+  },
+  "12_MonarchsBluffs_Chapter_08": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of MonarchsBluffs",
+    "sub_category_img": "document",
+    "img": "12_MonarchsBluffs_Chapter_08",
+    "image_name": "document",
+    "name": "12_MonarchsBluffs_Chapter_08"
+  },
+  "12_MonarchsBluffs_Chapter_11": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of MonarchsBluffs",
+    "sub_category_img": "document",
+    "img": "12_MonarchsBluffs_Chapter_11",
+    "image_name": "document",
+    "name": "12_MonarchsBluffs_Chapter_11"
+  },
+  "12_MonarchsBluffs_Chapter_12": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of MonarchsBluffs",
+    "sub_category_img": "document",
+    "img": "12_MonarchsBluffs_Chapter_12",
+    "image_name": "document",
+    "name": "12_MonarchsBluffs_Chapter_12"
+  },
+  "12_MonarchsBluffs_Chapter_13": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of MonarchsBluffs",
+    "sub_category_img": "document",
+    "img": "12_MonarchsBluffs_Chapter_13",
+    "image_name": "document",
+    "name": "12_MonarchsBluffs_Chapter_13"
+  },
+  "12_MonarchsBluffs_Chapter_14": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of MonarchsBluffs",
+    "sub_category_img": "document",
+    "img": "12_MonarchsBluffs_Chapter_14",
+    "image_name": "document",
+    "name": "12_MonarchsBluffs_Chapter_14"
+  },
+  "12_MonarchsBluffs_Chapter_15": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of MonarchsBluffs",
+    "sub_category_img": "document",
+    "img": "12_MonarchsBluffs_Chapter_15",
+    "image_name": "document",
+    "name": "12_MonarchsBluffs_Chapter_15"
+  },
+  "12_MonarchsBluffs_Chapter_16": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of MonarchsBluffs",
+    "sub_category_img": "document",
+    "img": "12_MonarchsBluffs_Chapter_16",
+    "image_name": "document",
+    "name": "12_MonarchsBluffs_Chapter_16"
+  },
+  "12_MonarchsBluffs_Chapter_17": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of MonarchsBluffs",
+    "sub_category_img": "document",
+    "img": "12_MonarchsBluffs_Chapter_17",
+    "image_name": "document",
+    "name": "12_MonarchsBluffs_Chapter_17"
+  },
+  "12_MonarchsBluffs_Chapter_18": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of MonarchsBluffs",
+    "sub_category_img": "document",
+    "img": "12_MonarchsBluffs_Chapter_18",
+    "image_name": "document",
+    "name": "12_MonarchsBluffs_Chapter_18"
+  },
+  "12_MonarchsBluffs_Chapter_19": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of MonarchsBluffs",
+    "sub_category_img": "document",
+    "img": "12_MonarchsBluffs_Chapter_19",
+    "image_name": "document",
+    "name": "12_MonarchsBluffs_Chapter_19"
+  },
+  "13_WeaversFen_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of WeaversFen",
+    "sub_category_img": "document",
+    "img": "13_WeaversFen_Chapter_01",
+    "image_name": "document",
+    "name": "13_WeaversFen_Chapter_01"
+  },
+  "13_WeaversFen_Chapter_02": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of WeaversFen",
+    "sub_category_img": "document",
+    "img": "13_WeaversFen_Chapter_02",
+    "image_name": "document",
+    "name": "13_WeaversFen_Chapter_02"
+  },
+  "13_WeaversFen_Chapter_03": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of WeaversFen",
+    "sub_category_img": "document",
+    "img": "13_WeaversFen_Chapter_03",
+    "image_name": "document",
+    "name": "13_WeaversFen_Chapter_03"
+  },
+  "13_WeaversFen_Chapter_04": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of WeaversFen",
+    "sub_category_img": "document",
+    "img": "13_WeaversFen_Chapter_04",
+    "image_name": "document",
+    "name": "13_WeaversFen_Chapter_04"
+  },
+  "13_WeaversFen_Chapter_05": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of WeaversFen",
+    "sub_category_img": "document",
+    "img": "13_WeaversFen_Chapter_05",
+    "image_name": "document",
+    "name": "13_WeaversFen_Chapter_05"
+  },
+  "13_WeaversFen_Chapter_06": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of WeaversFen",
+    "sub_category_img": "document",
+    "img": "13_WeaversFen_Chapter_06",
+    "image_name": "document",
+    "name": "13_WeaversFen_Chapter_06"
+  },
+  "13_WeaversFen_Chapter_07": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of WeaversFen",
+    "sub_category_img": "document",
+    "img": "13_WeaversFen_Chapter_07",
+    "image_name": "document",
+    "name": "13_WeaversFen_Chapter_07"
+  },
+  "13_WeaversFen_Chapter_08": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of WeaversFen",
+    "sub_category_img": "document",
+    "img": "13_WeaversFen_Chapter_08",
+    "image_name": "document",
+    "name": "13_WeaversFen_Chapter_08"
+  },
+  "13_WeaversFen_Chapter_10": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of WeaversFen",
+    "sub_category_img": "document",
+    "img": "13_WeaversFen_Chapter_10",
+    "image_name": "document",
+    "name": "13_WeaversFen_Chapter_10"
+  },
+  "14_Edengrove_Chapter_03": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of Edengrove",
+    "sub_category_img": "document",
+    "img": "14_Edengrove_Chapter_03",
+    "image_name": "document",
+    "name": "14_Edengrove_Chapter_03"
+  },
+  "15_RestlessShore_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of RestlessShore",
+    "sub_category_img": "document",
+    "img": "15_RestlessShore_Chapter_01",
+    "image_name": "document",
+    "name": "15_RestlessShore_Chapter_01"
+  },
+  "15_RestlessShore_Chapter_02": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of RestlessShore",
+    "sub_category_img": "document",
+    "img": "15_RestlessShore_Chapter_02",
+    "image_name": "document",
+    "name": "15_RestlessShore_Chapter_02"
+  },
+  "15_RestlessShore_Chapter_03": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of RestlessShore",
+    "sub_category_img": "document",
+    "img": "15_RestlessShore_Chapter_03",
+    "image_name": "document",
+    "name": "15_RestlessShore_Chapter_03"
+  },
+  "15_RestlessShore_Chapter_04": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of RestlessShore",
+    "sub_category_img": "document",
+    "img": "15_RestlessShore_Chapter_04",
+    "image_name": "document",
+    "name": "15_RestlessShore_Chapter_04"
+  },
+  "15_RestlessShore_Chapter_05": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of RestlessShore",
+    "sub_category_img": "document",
+    "img": "15_RestlessShore_Chapter_05",
+    "image_name": "document",
+    "name": "15_RestlessShore_Chapter_05"
+  },
+  "15_RestlessShore_Chapter_06": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of RestlessShore",
+    "sub_category_img": "document",
+    "img": "15_RestlessShore_Chapter_06",
+    "image_name": "document",
+    "name": "15_RestlessShore_Chapter_06"
+  },
+  "15_RestlessShore_Chapter_07": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of RestlessShore",
+    "sub_category_img": "document",
+    "img": "15_RestlessShore_Chapter_07",
+    "image_name": "document",
+    "name": "15_RestlessShore_Chapter_07"
+  },
+  "15_RestlessShore_Chapter_08": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Tales of RestlessShore",
+    "sub_category_img": "document",
+    "img": "15_RestlessShore_Chapter_08",
+    "image_name": "document",
+    "name": "15_RestlessShore_Chapter_08"
+  },
+  "99_MSQ_Aeternum_Chapter_03": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "99_MSQ_Aeternum_Chapter_03",
+    "image_name": "document",
+    "name": "99_MSQ_Aeternum_Chapter_03"
+  },
+  "99_MSQ_Aeternum_Chapter_2": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "99_MSQ_Aeternum_Chapter_2",
+    "image_name": "document",
+    "name": "99_MSQ_Aeternum_Chapter_2"
+  },
+  "99_MSQ_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "99_MSQ_Chapter_01",
+    "image_name": "document",
+    "name": "99_MSQ_Chapter_01"
+  },
+  "Alchemist_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "Alchemist_Chapter_01",
+    "image_name": "document",
+    "name": "Alchemist_Chapter_01"
+  },
+  "AnonymousManuscripts_Chapter_02": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "AnonymousManuscripts_Chapter_02",
+    "image_name": "document",
+    "name": "AnonymousManuscripts_Chapter_02"
+  },
+  "AnonymousManuscripts_Chapter_03": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "AnonymousManuscripts_Chapter_03",
+    "image_name": "document",
+    "name": "AnonymousManuscripts_Chapter_03"
+  },
+  "AnonymousManuscripts_Chapter_04": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "AnonymousManuscripts_Chapter_04",
+    "image_name": "document",
+    "name": "AnonymousManuscripts_Chapter_04"
+  },
+  "AzothTree_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "AzothTree_Chapter_01",
+    "image_name": "document",
+    "name": "AzothTree_Chapter_01"
+  },
+  "DrownedPages_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "DrownedPages_Chapter_01",
+    "image_name": "document",
+    "name": "DrownedPages_Chapter_01"
+  },
+  "Eastburn_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "Eastburn_Chapter_01",
+    "image_name": "document",
+    "name": "Eastburn_Chapter_01"
+  },
+  "Excavation_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "Excavation_Chapter_01",
+    "image_name": "document",
+    "name": "Excavation_Chapter_01"
+  },
+  "Expedition_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "Expedition_Chapter_01",
+    "image_name": "document",
+    "name": "Expedition_Chapter_01"
+  },
+  "Expedition_Chapter_02": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "Expedition_Chapter_02",
+    "image_name": "document",
+    "name": "Expedition_Chapter_02"
+  },
+  "FiveFarms_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "FiveFarms_Chapter_01",
+    "image_name": "document",
+    "name": "FiveFarms_Chapter_01"
+  },
+  "GreatBridge_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "GreatBridge_Chapter_01",
+    "image_name": "document",
+    "name": "GreatBridge_Chapter_01"
+  },
+  "Grenville_Chapter_02": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "Grenville_Chapter_02",
+    "image_name": "document",
+    "name": "Grenville_Chapter_02"
+  },
+  "HuntersCabin_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "HuntersCabin_Chapter_01",
+    "image_name": "document",
+    "name": "HuntersCabin_Chapter_01"
+  },
+  "Lore_Chapter_Archaeologist": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "Lore_Chapter_Archaeologist",
+    "image_name": "document",
+    "name": "Lore_Chapter_Archaeologist"
+  },
+  "Seadogs_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "Seadogs_Chapter_01",
+    "image_name": "document",
+    "name": "Seadogs_Chapter_01"
+  },
+  "TalesofExpeditions_Chapter_02": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "TalesofExpeditions_Chapter_02",
+    "image_name": "document",
+    "name": "TalesofExpeditions_Chapter_02"
+  },
+  "ThreeFactions_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "ThreeFactions_Chapter_01",
+    "image_name": "document",
+    "name": "ThreeFactions_Chapter_01"
+  },
+  "ThreeFactions_Chapter_02": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "ThreeFactions_Chapter_02",
+    "image_name": "document",
+    "name": "ThreeFactions_Chapter_02"
+  },
+  "TideBattle_Chapter_01": {
+    "category": "documents",
+    "category_name": "Documents",
+    "sub_category": "Unknown Topic",
+    "sub_category_img": "document",
+    "img": "TideBattle_Chapter_01",
+    "image_name": "document",
+    "name": "TideBattle_Chapter_01"
+  },
+  "air_boid": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Air Essence",
+    "sub_category_img": "wind_plant",
+    "img": "air_boid",
+    "image_name": "wind_boid",
+    "name": "Lightning Beetle"
+  },
+  "air_plant": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Air Essence",
+    "sub_category_img": "wind_plant",
+    "img": "air_plant",
+    "image_name": "wind_plant",
+    "name": "Shockbulb"
+  },
+  "air_stone": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Air Essence",
+    "sub_category_img": "wind_plant",
+    "img": "air_stone",
+    "image_name": "wind_stone",
+    "name": "Shockspire"
+  },
+  "death_boid": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Death Essence",
+    "sub_category_img": "death_plant",
+    "img": "death_boid",
+    "image_name": "death_boid",
+    "name": "Blightmoth"
+  },
+  "death_plant": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Death Essence",
+    "sub_category_img": "death_plant",
+    "img": "death_plant",
+    "image_name": "death_plant",
+    "name": "Blightroot"
+  },
+  "death_stone": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Death Essence",
+    "sub_category_img": "death_plant",
+    "img": "death_stone",
+    "image_name": "death_stone",
+    "name": "Blightcrag"
+  },
+  "earth_boid": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Earth Essence",
+    "sub_category_img": "earth_plant",
+    "img": "earth_boid",
+    "image_name": "earth_boid",
+    "name": "Earthshell Turtle"
+  },
+  "earth_plant": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Earth Essence",
+    "sub_category_img": "earth_plant",
+    "img": "earth_plant",
+    "image_name": "earth_plant",
+    "name": "Earthspine"
+  },
+  "earth_stone": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Earth Essence",
+    "sub_category_img": "earth_plant",
+    "img": "earth_stone",
+    "image_name": "earth_stone",
+    "name": "Eartcrag"
+  },
+  "fire_boid": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Fire Essence",
+    "sub_category_img": "fire_plant",
+    "img": "fire_boid",
+    "image_name": "fire_boid",
+    "name": "Salamander Snail"
+  },
+  "fire_plant": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Fire Essence",
+    "sub_category_img": "fire_plant",
+    "img": "fire_plant",
+    "image_name": "fire_plant",
+    "name": "Dragonglory"
+  },
+  "fire_stone": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Fire Essence",
+    "sub_category_img": "fire_plant",
+    "img": "fire_stone",
+    "image_name": "fire_stone",
+    "name": "Scorchstone"
+  },
+  "life_boid": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Life Essence",
+    "sub_category_img": "life_plant",
+    "img": "life_boid",
+    "image_name": "life_boid",
+    "name": "Lifemoth"
+  },
+  "life_plant": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Life Essence",
+    "sub_category_img": "life_plant",
+    "img": "life_plant",
+    "image_name": "life_plant",
+    "name": "Lifebloom"
+  },
+  "life_stone": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Life Essence",
+    "sub_category_img": "life_plant",
+    "img": "life_stone",
+    "image_name": "life_stone",
+    "name": "Lifejewel"
+  },
+  "soul_boid": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Spirit Essence",
+    "sub_category_img": "spirit_plant",
+    "img": "soul_boid",
+    "image_name": "spirit_boid",
+    "name": "Soulwyrm"
+  },
+  "soul_plant": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Spirit Essence",
+    "sub_category_img": "spirit_plant",
+    "img": "soul_plant",
+    "image_name": "spirit_plant",
+    "name": "Soulsprout"
+  },
+  "soul_stone": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Spirit Essence",
+    "sub_category_img": "spirit_plant",
+    "img": "soul_stone",
+    "image_name": "spirit_stone",
+    "name": "Soulspire"
+  },
+  "water_boid": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Water Essence",
+    "sub_category_img": "water_plant",
+    "img": "water_boid",
+    "image_name": "water_boid",
+    "name": "Floating Spinefish"
+  },
+  "water_plant": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Water Essence",
+    "sub_category_img": "water_plant",
+    "img": "water_plant",
+    "image_name": "water_plant",
+    "name": "Rivercress"
+  },
+  "water_stone": {
+    "category": "essences",
+    "category_name": "Essences",
+    "sub_category": "Water Essence",
+    "sub_category_img": "water_plant",
+    "img": "water_stone",
+    "image_name": "water_stone",
+    "name": "Springstone"
+  },
+  "hotspot_broad": {
+    "category": "fishing",
+    "category_name": "Fishing",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "hotspot_broad",
+    "image_name": "hotspot_broad",
+    "name": "Hotspot (Broad)"
+  },
+  "hotspot_rare": {
+    "category": "fishing",
+    "category_name": "Fishing",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "hotspot_rare",
+    "image_name": "hotspot_rare",
+    "name": "Hotspot (Rare)"
+  },
+  "hotspot_secret": {
+    "category": "fishing",
+    "category_name": "Fishing",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "hotspot_secret",
+    "image_name": "hotspot_secret",
+    "name": "Hotspot (Secret)"
+  },
+  "alligator": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "alligator",
+    "image_name": "alligator",
+    "name": "Aligator"
+  },
+  "bear": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "bear",
+    "image_name": "bear",
+    "name": "Bear"
+  },
+  "bear_elemental": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "bear_elemental",
+    "image_name": "bear_elemental",
+    "name": "Elemental Bear"
+  },
+  "bison": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "bison",
+    "image_name": "bison",
+    "name": "Bison"
+  },
+  "boar": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "boar",
+    "image_name": "boar",
+    "name": "Boar"
+  },
+  "cow": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "cow",
+    "image_name": "cow",
+    "name": "Cow"
+  },
+  "elk": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "elk",
+    "image_name": "elk",
+    "name": "Elk"
+  },
+  "elk_elemental": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "elk_elemental",
+    "image_name": "elk",
+    "name": "Elemental Elk"
+  },
+  "goat": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "goat",
+    "image_name": "goat",
+    "name": "Goat"
+  },
+  "leopard": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "leopard",
+    "image_name": "puma",
+    "name": "Leopard"
+  },
+  "lion": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "lion",
+    "image_name": "puma",
+    "name": "Lion"
+  },
+  "lynx": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "lynx",
+    "image_name": "lynx",
+    "name": "Lynx"
+  },
+  "named": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "named",
+    "image_name": "named",
+    "name": "Named Mob"
+  },
+  "pig": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "pig",
+    "image_name": "pig",
+    "name": "Pig"
+  },
+  "rabbit": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "rabbit",
+    "image_name": "rabbit",
+    "name": "Rabbit"
+  },
+  "sheep": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "sheep",
+    "image_name": "sheep",
+    "name": "Sheep"
+  },
+  "turkey": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "turkey",
+    "image_name": "turkey",
+    "name": "Turkey"
+  },
+  "turkey_nest": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "turkey_nest",
+    "image_name": "turkey_nest",
+    "name": "Turkey Nest"
+  },
+  "wolf": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "wolf",
+    "image_name": "wolf",
+    "name": "Wolf"
+  },
+  "wolf_elemental": {
+    "category": "monsters",
+    "category_name": "Monsters",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "wolf_elemental",
+    "image_name": "wolf",
+    "name": "Elemental Wolf"
+  },
+  "crystal": {
+    "category": "ores",
+    "category_name": "Ores",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "crystal",
+    "image_name": "crystal",
+    "name": "Crystal"
+  },
+  "gold": {
+    "category": "ores",
+    "category_name": "Ores",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "gold",
+    "image_name": "gold",
+    "name": "Gold"
+  },
+  "iron": {
+    "category": "ores",
+    "category_name": "Ores",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "iron",
+    "image_name": "iron",
+    "name": "Iron"
+  },
+  "lodestone": {
+    "category": "ores",
+    "category_name": "Ores",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "lodestone",
+    "image_name": "lodestone",
+    "name": "Lodestone"
+  },
+  "orichalcum": {
+    "category": "ores",
+    "category_name": "Ores",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "orichalcum",
+    "image_name": "orichalcum",
+    "name": "Orichalcum"
+  },
+  "platinium": {
+    "category": "ores",
+    "category_name": "Ores",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "platinium",
+    "image_name": "platinum",
+    "name": "Platinium"
+  },
+  "saltpeter": {
+    "category": "ores",
+    "category_name": "Ores",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "saltpeter",
+    "image_name": "saltpeter",
+    "name": "Saltpeter"
+  },
+  "seeping_stone": {
+    "category": "ores",
+    "category_name": "Ores",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "seeping_stone",
+    "image_name": "oil",
+    "name": "Oil"
+  },
+  "silver": {
+    "category": "ores",
+    "category_name": "Ores",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "silver",
+    "image_name": "silver",
+    "name": "Silver"
+  },
+  "starmetal": {
+    "category": "ores",
+    "category_name": "Ores",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "starmetal",
+    "image_name": "starmetal",
+    "name": "Starmetal"
+  },
+  "azoth_water": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "azoth_water",
+    "image_name": "azoth_water",
+    "name": "Azoth Spring"
+  },
+  "barley": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Cooking Ingredients",
+    "sub_category_img": "grain",
+    "img": "barley",
+    "image_name": "grain",
+    "name": "Barley"
+  },
+  "berry": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Cooking Ingredients",
+    "sub_category_img": "grain",
+    "img": "berry",
+    "image_name": "berry",
+    "name": "Berry"
+  },
+  "blueberry": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Cooking Ingredients",
+    "sub_category_img": "grain",
+    "img": "blueberry",
+    "image_name": "blueberry",
+    "name": "Blueberry"
+  },
+  "broccoli": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Cooking Ingredients",
+    "sub_category_img": "grain",
+    "img": "broccoli",
+    "image_name": "brocolli",
+    "name": "Broccoli"
+  },
+  "cabbage": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Cooking Ingredients",
+    "sub_category_img": "grain",
+    "img": "cabbage",
+    "image_name": "cabbage",
+    "name": "Cabbage"
+  },
+  "carrot": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Cooking Ingredients",
+    "sub_category_img": "grain",
+    "img": "carrot",
+    "image_name": "carrot",
+    "name": "Carrot"
+  },
+  "corn": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Cooking Ingredients",
+    "sub_category_img": "grain",
+    "img": "corn",
+    "image_name": "corn",
+    "name": "Corn"
+  },
+  "cranberry": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Cooking Ingredients",
+    "sub_category_img": "grain",
+    "img": "cranberry",
+    "image_name": "cranberry",
+    "name": "Cranberry"
+  },
+  "dye_plant_black": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Dye",
+    "sub_category_img": "dye",
+    "img": "dye_plant_black",
+    "image_name": "dye_plant_black",
+    "name": "Black Prismabloom"
+  },
+  "dye_plant_blue": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Dye",
+    "sub_category_img": "dye",
+    "img": "dye_plant_blue",
+    "image_name": "dye_plant_blue",
+    "name": "Blue Prismabloom"
+  },
+  "dye_plant_brown": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Dye",
+    "sub_category_img": "dye",
+    "img": "dye_plant_brown",
+    "image_name": "dye_plant_brown",
+    "name": "Brown Prismabloom"
+  },
+  "dye_plant_cyan": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Dye",
+    "sub_category_img": "dye",
+    "img": "dye_plant_cyan",
+    "image_name": "dye_plant_cyan",
+    "name": "Cyan Prismabloom"
+  },
+  "dye_plant_green": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Dye",
+    "sub_category_img": "dye",
+    "img": "dye_plant_green",
+    "image_name": "dye_plant_green",
+    "name": "Green Prismabloom"
+  },
+  "dye_plant_magenta": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Dye",
+    "sub_category_img": "dye",
+    "img": "dye_plant_magenta",
+    "image_name": "dye_plant_magenta",
+    "name": "Magenta Prismabloom"
+  },
+  "dye_plant_orange": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Dye",
+    "sub_category_img": "dye",
+    "img": "dye_plant_orange",
+    "image_name": "dye_plant_orange",
+    "name": "Orange Prismabloom"
+  },
+  "dye_plant_red": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Dye",
+    "sub_category_img": "dye",
+    "img": "dye_plant_red",
+    "image_name": "dye_plant_red",
+    "name": "Red Prismabloom"
+  },
+  "dye_plant_turquoise": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Dye",
+    "sub_category_img": "dye",
+    "img": "dye_plant_turquoise",
+    "image_name": "dye_plant_turquoise",
+    "name": "Turquoise Prismabloom"
+  },
+  "dye_plant_violet": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Dye",
+    "sub_category_img": "dye",
+    "img": "dye_plant_violet",
+    "image_name": "dye_plant_violet",
+    "name": "Violet Prismabloom"
+  },
+  "dye_plant_white": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Dye",
+    "sub_category_img": "dye",
+    "img": "dye_plant_white",
+    "image_name": "dye_plant_white",
+    "name": "White Prismabloom"
+  },
+  "dye_plant_yellow": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Dye",
+    "sub_category_img": "dye",
+    "img": "dye_plant_yellow",
+    "image_name": "dye_plant_yellow",
+    "name": "Yellow Prismabloom"
+  },
+  "hemp": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "hemp",
+    "image_name": "hemp",
+    "name": "Hemp"
+  },
+  "hemp_t4": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "hemp_t4",
+    "image_name": "silkweed",
+    "name": "Silkweed"
+  },
+  "hemp_t5": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "hemp_t5",
+    "image_name": "wirefiber",
+    "name": "Wirefiber"
+  },
+  "herb": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "herb",
+    "image_name": "herb",
+    "name": "Herb"
+  },
+  "honey": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Cooking Ingredients",
+    "sub_category_img": "grain",
+    "img": "honey",
+    "image_name": "honey",
+    "name": "Honey"
+  },
+  "nut": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Cooking Ingredients",
+    "sub_category_img": "grain",
+    "img": "nut",
+    "image_name": "fruit",
+    "name": "Nut"
+  },
+  "pigment_plant_black": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Fungus",
+    "sub_category_img": "fungi",
+    "img": "pigment_plant_black",
+    "image_name": "pigment_plant_black",
+    "name": "Void Pitcher"
+  },
+  "pigment_plant_blue_dark": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Fungus",
+    "sub_category_img": "fungi",
+    "img": "pigment_plant_blue_dark",
+    "image_name": "pigment_plant_blue_dark",
+    "name": "Toadpot"
+  },
+  "pigment_plant_blue_light": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Fungus",
+    "sub_category_img": "fungi",
+    "img": "pigment_plant_blue_light",
+    "image_name": "pigment_plant_blue_light",
+    "name": "Tanglewisp"
+  },
+  "pigment_plant_brown": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Fungus",
+    "sub_category_img": "fungi",
+    "img": "pigment_plant_brown",
+    "image_name": "pigment_plant_brown",
+    "name": "Bumbleblossom"
+  },
+  "pigment_plant_cyan": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Fungus",
+    "sub_category_img": "fungi",
+    "img": "pigment_plant_cyan",
+    "image_name": "pigment_plant_cyan",
+    "name": "Capped Tanglewisp"
+  },
+  "pigment_plant_green_dark": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Fungus",
+    "sub_category_img": "fungi",
+    "img": "pigment_plant_green_dark",
+    "image_name": "pigment_plant_green_dark",
+    "name": "Spinecap"
+  },
+  "pigment_plant_green_light": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Fungus",
+    "sub_category_img": "fungi",
+    "img": "pigment_plant_green_light",
+    "image_name": "pigment_plant_green_light",
+    "name": "Fronded Petalcap"
+  },
+  "pigment_plant_magenta": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Fungus",
+    "sub_category_img": "fungi",
+    "img": "pigment_plant_magenta",
+    "image_name": "pigment_plant_magenta",
+    "name": "Weeping Shellbed"
+  },
+  "pigment_plant_orange": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Fungus",
+    "sub_category_img": "fungi",
+    "img": "pigment_plant_orange",
+    "image_name": "pigment_plant_orange",
+    "name": "Warm Platecap"
+  },
+  "pigment_plant_pink": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Fungus",
+    "sub_category_img": "fungi",
+    "img": "pigment_plant_pink",
+    "image_name": "pigment_plant_pink",
+    "name": "Tendrilspine"
+  },
+  "pigment_plant_purple_dark": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Fungus",
+    "sub_category_img": "fungi",
+    "img": "pigment_plant_purple_dark",
+    "image_name": "pigment_plant_purple_dark",
+    "name": "Weeping Shellbed"
+  },
+  "pigment_plant_red": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Fungus",
+    "sub_category_img": "fungi",
+    "img": "pigment_plant_red",
+    "image_name": "pigment_plant_red",
+    "name": "Corrupted Bloodspore"
+  },
+  "pigment_plant_tan": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Fungus",
+    "sub_category_img": "fungi",
+    "img": "pigment_plant_tan",
+    "image_name": "pigment_plant_tan",
+    "name": "Slimy Twistcap"
+  },
+  "pigment_plant_white": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Fungus",
+    "sub_category_img": "fungi",
+    "img": "pigment_plant_white",
+    "image_name": "pigment_plant_white",
+    "name": "Cascaded Gillflower"
+  },
+  "pigment_plant_yellow": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Fungus",
+    "sub_category_img": "fungi",
+    "img": "pigment_plant_yellow",
+    "image_name": "pigment_plant_yellow",
+    "name": "Suncreeper"
+  },
+  "potato": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Cooking Ingredients",
+    "sub_category_img": "grain",
+    "img": "potato",
+    "image_name": "potato",
+    "name": "Potato"
+  },
+  "squash": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Cooking Ingredients",
+    "sub_category_img": "grain",
+    "img": "squash",
+    "image_name": "squash",
+    "name": "Squash"
+  },
+  "strawberries": {
+    "category": "plants",
+    "category_name": "Plants",
+    "sub_category": "Cooking Ingredients",
+    "sub_category_img": "grain",
+    "img": "strawberries",
+    "image_name": "strawberry",
+    "name": "Strawberries"
+  },
+  "Briar": {
+    "category": "woods",
+    "category_name": "Woods",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "Briar",
+    "image_name": "briar",
+    "name": "Briar"
+  },
+  "ironwood": {
+    "category": "woods",
+    "category_name": "Woods",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "ironwood",
+    "image_name": "ironwood",
+    "name": "Ironwood"
+  },
+  "wyrdwood": {
+    "category": "woods",
+    "category_name": "Woods",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "wyrdwood",
+    "image_name": "wyrdwood",
+    "name": "Wyrdwood"
+  },
+  "arcane_repository": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "arcane_repository",
+    "image_name": "arcane_repository",
+    "name": "Arcane Repository"
+  },
+  "covenant_npc": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "covenant_npc",
+    "image_name": "covenant_npc",
+    "name": "Covenant Npc"
+  },
+  "forge": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "forge",
+    "image_name": "forge",
+    "name": "Forge"
+  },
+  "stonecutting_table": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "stonecutting_table",
+    "image_name": "stonecutting_table",
+    "name": "Stonecutting Table"
+  },
+  "governors_desk": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "governors_desk",
+    "image_name": "governors_desk",
+    "name": "Governors Desk"
+  },
+  "inn": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "inn",
+    "image_name": "inn",
+    "name": "Inn"
+  },
+  "kitchen": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "kitchen",
+    "image_name": "kitchen",
+    "name": "Kitchen"
+  },
+  "loom": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "loom",
+    "image_name": "loom",
+    "name": "Loom"
+  },
+  "marauder_npc": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "marauder_npc",
+    "image_name": "marauder_npc",
+    "name": "Marauder Npc"
+  },
+  "outfitting_station": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "outfitting_station",
+    "image_name": "outfitting_station",
+    "name": "Outfitting Station"
+  },
+  "spirit_shrine": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "spirit_shrine",
+    "image_name": "spirit_shrine",
+    "name": "Spirit Shrine"
+  },
+  "smelter": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "smelter",
+    "image_name": "smelter",
+    "name": "Smelter"
+  },
+  "storage_shed": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "storage_shed",
+    "image_name": "storage_shed",
+    "name": "Storage Shed"
+  },
+  "syndicate_npc": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "syndicate_npc",
+    "image_name": "syndicate_npc",
+    "name": "Syndicate Npc"
+  },
+  "tannery": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "tannery",
+    "image_name": "tannery",
+    "name": "Tannery"
+  },
+  "territory_board": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "territory_board",
+    "image_name": "territory_board",
+    "name": "Territory Board"
+  },
+  "town_board": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "town_board",
+    "image_name": "town_board",
+    "name": "Town Board"
+  },
+  "trading_post": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "trading_post",
+    "image_name": "trading_post",
+    "name": "Trading Post"
+  },
+  "war_board": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "war_board",
+    "image_name": "war_board",
+    "name": "War Board"
+  },
+  "woodshop": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "woodshop",
+    "image_name": "woodshop",
+    "name": "Woodshop"
+  },
+  "workshop": {
+    "category": "town",
+    "category_name": "Town",
+    "sub_category": "",
+    "sub_category_img": "",
+    "img": "workshop",
+    "image_name": "workshop",
+    "name": "Workshop"
+  }
+}

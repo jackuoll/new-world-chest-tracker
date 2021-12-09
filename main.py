@@ -21,7 +21,7 @@ def handle_position_update(event):
     loc = Location(y=loc_arr[0], x=loc_arr[1])
     PLAYER.update_location(loc)
     markers = PLAYER.nearby_markers
-    interested_types = ["chestsLargeSupplies", "chestsLargeAncient", "chestsEliteSupplies", "chestsEliteAncient"]
+    interested_types = ["Provisions Stockpile", "Ancient Chest (Elite)", "Ancient Chest"]
     for poi in markers:
         is_chest = poi.type in interested_types
         if poi.location.is_entering(PLAYER.old_location, PLAYER.location) and not poi.unreachable:

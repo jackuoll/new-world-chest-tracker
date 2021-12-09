@@ -29,7 +29,7 @@ def timedelta_to_time(td: timedelta):
 @app.get("/data/")
 def root():
     player = PlayerData.objects.get(player_name="Nightshark")
-    total_chests_opened = player.chests_looted
+    total_chests_opened = LootHistory.objects.count()
     reset_timers = LootHistory.recent_loot()
     nearby = player.nearby_markers
     cur_time = datetime.now()
