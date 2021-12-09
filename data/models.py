@@ -45,7 +45,7 @@ class LootHistory(models.Model):
 
     @property
     def is_elite(self):
-        return "Elite" in self.chest.type
+        return "Elite" in self.chest.name
 
     @classmethod
     def mark_looted(cls, chest_id, respawn_time=60 * 60) -> LootHistory:
