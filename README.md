@@ -2,6 +2,8 @@
 
 Application to track chest cooldowns in the New World MMORPG. Currently tracks Supply Stockpiles, Ancient Chests (elite and non elite).
 
+![image](https://user-images.githubusercontent.com/14029546/145473428-fc88862c-7412-45d3-ba72-92e6622a5426.png)
+
 ### Requirements:
 * Mysql (could change the DB engine to sqlite and probably would not have any issues)
 * New World Mini Map (Overwolf extension - provides websocket to hook player location)
