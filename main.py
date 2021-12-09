@@ -15,6 +15,19 @@ from asgiref.sync import sync_to_async
 PLAYER = PlayerData.objects.get(player_name="Nightshark")
 print(PLAYER)
 
+# {
+#   "97cc5950638baba65179603164ccda7c": {
+#     "marker_id": "97cc5950638baba65179603164ccda7c",
+#     "zone": "Shattered Mountain",
+#     "type": "Supply Stockpile",
+#     "unreachable": false,
+#     "name": "Supply Stockpile (Elite) t5 ",
+#     "location_x": 9302.81,
+#     "location_y": 8969.1,
+#     "is_deleted": false
+#   }
+# }
+
 def handle_position_update(event):
     loc_arr = event["position"]
     loc = Location(y=loc_arr[0], x=loc_arr[1])

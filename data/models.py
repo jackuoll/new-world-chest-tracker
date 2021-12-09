@@ -27,6 +27,7 @@ class Marker(models.Model):
     name = models.CharField(max_length=255)
     location_x = models.DecimalField(max_digits=10, decimal_places=2, null=True)
     location_y = models.DecimalField(max_digits=10, decimal_places=2, null=True)
+    is_elite = models.BooleanField(default=False)
     is_deleted = models.BooleanField(default=False)
 
     def __str__(self) -> str:
@@ -45,7 +46,7 @@ class LootHistory(models.Model):
 
     @property
     def is_elite(self):
-        return "Elite" in self.chest.name
+        return self.chest.is_elite
 
     @classmethod
     def mark_looted(cls, chest_id, respawn_time=60 * 60) -> LootHistory:
