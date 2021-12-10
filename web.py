@@ -1,10 +1,10 @@
-import json
 from datetime import datetime, timedelta
+from io import BytesIO
 
 from fastapi import FastAPI, Body
 from pydantic import BaseModel
 from starlette.requests import Request
-from starlette.responses import JSONResponse
+from starlette.responses import JSONResponse, StreamingResponse
 from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
@@ -80,7 +80,7 @@ def page(request: Request) -> templates.TemplateResponse:
 @app.patch("/set_marker_location/{marker_id}/")
 def set_market_loc(request: Request, marker_id: str) -> JSONResponse:
     if not is_self(request):
-        return JSONResponse(content={"status": "forbidden"}, status_code=500)
+        return JSONResponse(content={"status": "forbidden"}, status_code=401)
 
     player = PlayerData.objects.get(player_name="Nightshark")
     cur_loc = player.location
@@ -103,4 +103,27 @@ def set_marker_name(request: Request, marker_id: str, data: NewNameData) -> JSON
     med = Marker.objects.get(marker_id=marker_id)
     med.name = data.new_name
     med.save()
-    return JSONResponse(content={"status": "ok"}, status_code=200)
+    return JSONResponse(status_code=204)
+
+
+@app.get("/map/{x}/{y}/")
+def get_map(x: int, y: int) -> StreamingResponse:
+    pixels = 256
+    # image 0, 0 = max Y, min X
+    max_y = pixels * 56  # 56 images, 256 pix each
+    y_img_val = int((max_y - y) / pixels)
+    x_img_val = int(x / pixels)
+    filename = f"static/map_images/{x_img_val}_{y_img_val}.png"
+    if min(x_img_val, y_img_val) < 0:
+        return JSONResponse({
+            "status_code": 422,
+            "info": f"Value is out of bounds"
+        })
+    try:
+        with open(filename, "rb") as f:
+            return StreamingResponse(BytesIO(f.read()), media_type="image/png")
+    except FileNotFoundError:
+        return JSONResponse({
+            "status_code": 404,
+            "info": f"No image {filename} found"
+        })
