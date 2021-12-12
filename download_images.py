@@ -18,7 +18,7 @@ def download_files_from_report():
 
     async def fetch_file(x, y):
         url = url_format(x=x, y=y)
-        fname = f"{x}_{y}.png"
+        fname = f"{x}_{abs(y-56)}.png"
         print(f"downloading {fname}")
         async with sema, aiohttp.ClientSession() as session:
             async with session.get(url) as resp:

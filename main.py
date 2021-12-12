@@ -37,9 +37,8 @@ def handle_position_update(event):
     for poi in markers:
         is_chest = poi.type in interested_types
         if poi.location.is_entering(PLAYER.old_location, PLAYER.location) and not poi.unreachable:
-            is_elite = "Elite" in poi.name
             if is_chest:
-                lh = LootHistory.mark_looted(poi.marker_id, 60 * 60 * 23 if is_elite else 60 * 60)
+                lh = LootHistory.mark_looted(poi.marker_id, 60 * 60 * 23 if poi.is_elite else 60 * 60)
                 print(f"Approach - {poi.type}, {poi.name} - resets: {lh.resets.total_seconds()}")
             else:
                 print(f"Approach - {poi.type}, {poi.name}")

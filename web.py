@@ -108,17 +108,18 @@ def set_marker_name(request: Request, marker_id: str, data: NewNameData) -> JSON
 
 @app.get("/map/{x}/{y}/")
 def get_map(x: int, y: int) -> StreamingResponse:
-    pixels = 256
-    # image 0, 0 = max Y, min X
-    max_y = pixels * 56  # 56 images, 256 pix each
-    y_img_val = int((max_y - y) / pixels)
-    x_img_val = int(x / pixels)
-    filename = f"static/map_images/{x_img_val}_{y_img_val}.png"
-    if min(x_img_val, y_img_val) < 0:
-        return JSONResponse({
-            "status_code": 422,
-            "info": f"Value is out of bounds"
-        })
+    # pixels = 256
+    # # image 0, 0 = max Y, min X
+    # max_y = pixels * 56  # 56 images, 256 pix each
+    # y_img_val = int((max_y - y) / pixels)
+    # x_img_val = int(x / pixels)
+    # filename = f"static/map_images/{x_img_val}_{y_img_val}.png"
+    # if min(x_img_val, y_img_val) < 0:
+    #     return JSONResponse({
+    #         "status_code": 422,
+    #         "info": f"Value is out of bounds"
+    #     })
+    filename = f"static/map_images/{x}_{y}.png"
     try:
         with open(filename, "rb") as f:
             return StreamingResponse(BytesIO(f.read()), media_type="image/png")
@@ -127,3 +128,8 @@ def get_map(x: int, y: int) -> StreamingResponse:
             "status_code": 404,
             "info": f"No image {filename} found"
         })
+
+
+@app.get("/map/")
+def show_position(request: Request):
+    return templates.TemplateResponse("draw.html", {"request": request, "id": id, "repos": is_self(request)})
