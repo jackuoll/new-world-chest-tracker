@@ -77,7 +77,7 @@ const showRecentChests = (data) => {
       for (let [id, info] of Object.entries(data["reset_timers"][onTab])) {
           const zone = info["zone"];
           const resetTimestamp = info["reset"];
-          const reset = moment.unix(resetTimestamp).format("h:mA").toLowerCase();
+          const reset = moment.unix(resetTimestamp).format("h:mmA").toLowerCase();
           const resetsIn = info["resets_in"]
           let repos = "";
           let locationName = info["name"];

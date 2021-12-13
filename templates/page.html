@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>nightshark's chest resets</title>
     <script src="/static/app.js"></script>
+    <script src="/static/modal.js"></script>
+    <script src="/static/map.js"></script>
     <script src="/static/moment.min.js"></script>
     <link rel="stylesheet" href="/static/custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
@@ -21,6 +23,9 @@
         Nightshark's Chest Resets
       </h1>
         <div class="column has-text-right">
+          <span class="icon has-background-link is-medium has-text-white-bis" style="border-radius: 5px;" onClick="addMapModal()" id="map">
+            <i class='fa fa-globe' ></i>
+          </span>
           <span class="icon has-background-link is-medium has-text-white-bis" style="border-radius: 5px;" onClick="togglePause()" id="pause">
             <i class='fa fa-pause' ></i>
           </span>
