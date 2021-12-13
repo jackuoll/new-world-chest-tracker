@@ -52,10 +52,10 @@ class Map {
         this.canvas.width = size * 3;
         this.canvas.height = size * 3;
         this.ctx = canvas.getContext("2d");
-        this.ctx.transform(1, 0, 0, -1, 0, canvas.height);
+        // this.ctx.transform(1, 0, 0, -1, 0, canvas.height);
         this.blocks = this.getMapBlocks();
         this.draw();
-        this.addTreasure(100, 100);
+        // this.addTreasure(100, 100);
     }
 
     getMapBlocks() {
@@ -108,15 +108,16 @@ class Map {
             image.src = block.imageUrl;
             image.onload = function () {
                 blocksLoaded++;
-                const xPos = -(block.realXStart - map.x_center + 256 * 2.5);
-                const yPos = -(block.realYStart - map.y_center + 256 * 2.5);
+                // todo: this logic is too confusing.. draw everything we need and THEN shift it
+                const xPos = (block.realXStart - map.x_center + 256 * 2.5) - 256;
+                const imageSize = 5 * 256;
+                const yPos = Math.abs(imageSize - (block.realYStart - map.y_center + 256 * 2.5)) - 256;
                 console.log(`${xPos}, ${yPos}`)
                 ctx.drawImage(image, xPos, yPos);
                 if(blocksLoaded == totalBlocks) {
-                    // const imageData = ctx.getImageData(map.x_center, map.y_center, ctx.canvas.width, ctx.canvas.height);
-                    // ctx.putImageData(imageData, -256, -256);
-                    // now clear the right-most pixels:
-                    //ctx.clearRect(ctx.canvas.width-1, 0, 1, ctx.canvas.height);
+                    ctx.beginPath();
+                    ctx.arc(ctx.canvas.height / 2, ctx.canvas.width / 2, 2, 0, 2 * Math.PI);
+                    ctx.stroke();
                 }
             }
         });
@@ -125,7 +126,7 @@ class Map {
 
 const drawMap = () => {
     const canvas = document.getElementById('canvas');
-    const map = new Map(canvas, 10947, 3310);
+    const map = new Map(canvas, 10387.24, 3381.99);
 }
 
 const addMapModal = () => {
@@ -133,9 +134,10 @@ const addMapModal = () => {
         createModal({
             title: "Map",
             content: data,
-            customWidth: 500 + 50
+            width: 840,
+            height: 970
         });
         const canvas = document.getElementById('canvas');
-        const map = new Map(canvas, 10947, 3310);
+        const map = new Map(canvas, 10387.24, 3381.99);
     })
 }

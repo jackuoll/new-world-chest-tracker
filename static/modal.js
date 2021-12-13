@@ -26,7 +26,7 @@ const assignButtonCallbacks = (buttons) => {
         })
     })
 }
-const createModal = ({buttons, title, content, icon, closeCallback, customWidth}) => {
+const createModal = ({buttons, title, content, icon, closeCallback, width, height}) => {
     const defaultButtons = {
         "Close": {
             callback: () => {
@@ -41,7 +41,7 @@ const createModal = ({buttons, title, content, icon, closeCallback, customWidth}
     elem.innerHTML = `
         <div class="modal is-active" id="active-modal">
           <div class="modal-background"></div>
-          <div class="modal-card" style="width: ${customWidth ? customWidth: 640}px;">
+          <div class="modal-card" style="width: ${width ? width: 640}px; height: ${height ? height: 640}px;">
             <header class="modal-card-head">
               <p class="modal-card-title" id="modal-title">${title ? title : "Info"}</p>
               <button class="delete" aria-label="close" id="close-active-modal"></button>
