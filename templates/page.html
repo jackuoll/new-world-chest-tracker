@@ -30,7 +30,8 @@
         <div class="box column is-one-quarter m-1">
         <p class="subtitle">
           <h1 class="title">Statistics</h1>
-          <p><strong>Total Chests Opened:</strong> <span id="total-opened">Unknown</span></p>
+          <p><strong>Stockpiles Opened:</strong> <span id="total-opened">Unknown</span></p>
+          <p><strong>Elite Chests Opened:</strong> <span id="elite-chests-opened">Unknown</span></p>
           <p><strong>Opened Last 24h:</strong> <span id="24h-opened">Unknown</span></p>
         </p>
       </div>
@@ -42,16 +43,13 @@
       </div>
       </div>
       <div class="box">
-        <div class="tabs pb-5">
+        <div class="tabs">
           <ul id="tabs">
             <li onClick="setTab('stockpiles')" class="is-active" id="stockpiles"><a>Stockpiles</a></li>
             <li onClick="setTab('elites')" id="elites"><a>Elite Resets</a></li>
           </ul>
         </div>
         <div class="content pl-5">
-        <p class="subtitle">
-          <h1 class="title">Recently Opened</h1>
-        </p>
         <table class="table table is-fullwidth is-hoverable">
           <thead>
             <tr>

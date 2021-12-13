@@ -29,7 +29,8 @@ def timedelta_to_time(td: timedelta):
 @app.get("/data/")
 def root():
     player = PlayerData.objects.get(player_name="Nightshark")
-    total_chests_opened = LootHistory.objects.count()
+    total_chests_opened = LootHistory.objects.exclude(chest__is_elite=True).count()
+    elite_chests_opened = LootHistory.objects.filter(chest__is_elite=True).count()
     reset_timers = LootHistory.recent_loot()
     nearby = player.nearby_markers
     cur_time = datetime.now()
@@ -37,6 +38,7 @@ def root():
     data = {
         "opened_last_24h": len(LootHistory.get_last_24h()),
         "total_opened": total_chests_opened,
+        "elite_chests_opened": elite_chests_opened,
         "zone": loc.get_zone(),
         "nearby": {
             p.marker_id: {k: v for k, v in p.__dict__.items() if not k.startswith("_")} for p in nearby
@@ -103,7 +105,7 @@ def set_marker_name(request: Request, marker_id: str, data: NewNameData) -> JSON
     med = Marker.objects.get(marker_id=marker_id)
     med.name = data.new_name
     med.save()
-    return JSONResponse(status_code=204)
+    return JSONResponse(status_code=200)
 
 
 @app.get("/map/{x}/{y}/")

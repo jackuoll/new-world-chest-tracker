@@ -60,6 +60,7 @@ const setLocation = (id) => {
 
 const showStatistics = (data) => {
     document.getElementById("total-opened").textContent=data["total_opened"];
+    document.getElementById("elite-chests-opened").textContent=data["elite_chests_opened"];
     document.getElementById("24h-opened").textContent=data["opened_last_24h"];
     document.getElementById("total-opened").textContent=data["total_opened"];
     document.getElementById("nearby").textContent=JSON.stringify(data["nearby"], null, 2);
@@ -98,6 +99,11 @@ const showRecentChests = (data) => {
           const input = hiddenInputs[i];
           input.addEventListener('focusin', (event) => {
               refreshPaused = true;
+          });
+          input.addEventListener('keypress', (event) => {
+              if(event.key == "Enter") {
+                  input.blur();
+              }
           });
           input.addEventListener('focusout', (event) => {
             refreshPaused = false;
