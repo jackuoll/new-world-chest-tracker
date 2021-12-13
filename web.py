@@ -46,7 +46,7 @@ def root():
                 chest.chest_id: {
                     "name": chest.chest.name,
                     "zone": chest.chest.location.get_zone(),
-                    "reset": chest.reset_time.strftime("%I:%M%p").lower(),
+                    "reset": chest.reset_time.timestamp(),
                     "resets_in": timedelta_to_time(chest.reset_time - cur_time)
                 }
                 for chest in reset_timers
@@ -56,7 +56,7 @@ def root():
                 chest.chest_id: {
                     "name": chest.chest.name,
                     "zone": chest.chest.location.get_zone(),
-                    "reset": chest.reset_time.strftime("%I:%M%p").lower(),
+                    "reset": chest.reset_time.timestamp(),
                     "resets_in": timedelta_to_time(chest.reset_time - cur_time)
                 }
                 for chest in reset_timers
