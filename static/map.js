@@ -13,7 +13,7 @@ class MapSection {
     get blockIndex () {
         const imgX = Math.floor(this.x / 256);
         const imgY = Math.floor(this.y / 256) + 1;
-        if(imgX > 55 || imgX < 0 || imgY > 256 || imgY < 0) {
+        if(imgX > 55 || imgX < 0 || imgY > 56 || imgY < 0) {
             return null;
         }
         return [imgX, imgY];
@@ -35,11 +35,19 @@ class MapSection {
         return this.blockIndex[1];
     }
 
+    get canvasXLocation(){
+        return this.xImageUrl * 256;
+    }
+
+    get canvasYLocation(){
+        return Math.abs(56 - this.yImageUrl) * 256;
+    }
+
     get imageUrl() {
         if(this.blockIndex == null) {
             return null;
         }
-        return `/map/${this.xImageUrl}/${this.yImageUrl}/`;
+        return `/static/map_images/${this.xImageUrl}_${this.yImageUrl}.png`;
     }
 }
 
@@ -47,26 +55,35 @@ class Map {
     constructor(canvas, x_center, y_center, size=256) {
         this.x_center = x_center;
         this.y_center = y_center;
-        console.log(`${this.x_center}, ${this.y_center}`)
+        this.scale = 1;
         this.canvas = canvas;
-        this.canvas.width = size * 3;
-        this.canvas.height = size * 3;
+        this.canvas.width = 256 * 56 * this.scale;
+        this.canvas.height = 256 * 56 * this.scale;
         this.ctx = canvas.getContext("2d");
-        // this.ctx.transform(1, 0, 0, -1, 0, canvas.height);
+        this.ctx.scale(this.scale, this.scale);
         this.blocks = this.getMapBlocks();
         this.draw();
         // this.addTreasure(100, 100);
     }
 
+    get canvasYCenter() {
+        return Math.abs(256 * 56 - this.y_center);
+    }
+
     getMapBlocks() {
         // return 5x5 array of MapSection
         const mapSections = [];
-        for(let x = -2; x <= 2; x++){
-            for(let y = -2; y <= 2; y++){
-                mapSections.push(new MapSection(
+        const eachWay = 2;
+        for(let x = -eachWay; x <= eachWay; x++){
+            for(let y = -eachWay; y <= eachWay; y++){
+                const mapSection = new MapSection(
                     this.x_center + 256 * x,
                     this.y_center + 256 * y
-                ));
+                );
+                this.minX = Math.min(this.minX || 99999, mapSection.realXStart);
+                this.minY = Math.min(this.minY || 99999, mapSection.canvasYLocation);
+
+                mapSections.push(mapSection);
             }
         }
         return mapSections;
@@ -91,15 +108,14 @@ class Map {
     }
 
     addText(label, x, y) {
-        this.ctx.scale(1, -1);
-        this.ctx.strokeText(label, x, -y);
+        this.ctx.font = "30px Arial";
+        this.ctx.fillText(label, x, y);
     }
 
     draw() {
         const ctx = this.ctx;
         const map = this;
-        const totalBlocks = this.blocks.length;
-        let blocksLoaded = 0;
+        let totalLoaded = 0;
         this.blocks.forEach((block) => {
             if (block.imageUrl == null) {
                 return;
@@ -107,17 +123,23 @@ class Map {
             const image = new Image();
             image.src = block.imageUrl;
             image.onload = function () {
-                blocksLoaded++;
-                // todo: this logic is too confusing.. draw everything we need and THEN shift it
-                const xPos = (block.realXStart - map.x_center + 256 * 2.5) - 256;
-                const imageSize = 5 * 256;
-                const yPos = Math.abs(imageSize - (block.realYStart - map.y_center + 256 * 2.5)) - 256;
-                console.log(`${xPos}, ${yPos}`)
+                const xPos = block.canvasXLocation - map.minX;
+                const yPos = block.canvasYLocation - map.minY;
+                console.log("drawing");
                 ctx.drawImage(image, xPos, yPos);
-                if(blocksLoaded == totalBlocks) {
+                map.addText(`${block.xImageUrl}, ${block.yImageUrl}`, xPos + 20, yPos + 30)
+                ctx.beginPath();
+                ctx.moveTo(xPos, 0);
+                ctx.lineTo(xPos, 256 * 5);
+                ctx.moveTo(0, yPos);
+                ctx.lineTo(256 * 5, yPos);
+                ctx.stroke();
+                if(++totalLoaded == map.blocks.length) {
                     ctx.beginPath();
-                    ctx.arc(ctx.canvas.height / 2, ctx.canvas.width / 2, 2, 0, 2 * Math.PI);
+                    ctx.arc(
+                        map.x_center % 256 + 256 * 2, Math.abs(256 * 5 - (map.y_center % 256 + 256 * 2)), 2, 0, 2 * Math.PI);
                     ctx.stroke();
+                    console.log(`Done! ${xPos}, ${yPos}`);
                 }
             }
         });
