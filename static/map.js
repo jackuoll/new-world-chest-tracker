@@ -1,4 +1,4 @@
-const SCALE = 1;
+const SCALE = 0.9;
 const NUM_BLOCKS_WIDTH = 3;
 
 class MapSection {
@@ -103,7 +103,7 @@ class Map {
 
     addMarkerImage(x, y, typeId="chest-white", scale = 1) {
         const image = new Image();
-        image.src = `/static/map_images/${typeId}.png`
+        image.src = `/static/images/${typeId}.png`
         image.onload = () => {
             const targetWidth = image.width / 4 * scale;
             const targetHeight = image.height / 4 * scale;
@@ -180,6 +180,6 @@ const addMapModal = () => {
             height: 256 * NUM_BLOCKS_WIDTH * SCALE + 195
         });
         const canvas = document.getElementById('canvas');
-        const map = new Map(canvas, 10387.24, 3381.99);
+        const map = new Map(canvas, 10287.24, 3381.99);
     })
 }
