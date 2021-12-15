@@ -1,8 +1,5 @@
-class MapMarker {
-    constructor(mapCanvas) {
-
-    }
-}
+const SCALE = 1;
+const NUM_BLOCKS_WIDTH = 3;
 
 class MapSection {
     constructor(x, y) {
@@ -55,25 +52,40 @@ class Map {
     constructor(canvas, x_center, y_center, size=256) {
         this.x_center = x_center;
         this.y_center = y_center;
-        this.scale = 1;
+        this.numBlocksWidth = NUM_BLOCKS_WIDTH;
+        this.blocks = this.getMapBlocks();
+        this.markersReq = this.markersRequest();
+        this.scale = SCALE;
         this.canvas = canvas;
-        this.canvas.width = 256 * 56 * this.scale;
-        this.canvas.height = 256 * 56 * this.scale;
+        this.canvas.width = 256 * this.numBlocksWidth * this.scale;
+        this.canvas.height = 256 * this.numBlocksWidth * this.scale;
         this.ctx = canvas.getContext("2d");
         this.ctx.scale(this.scale, this.scale);
-        this.blocks = this.getMapBlocks();
         this.draw();
         // this.addTreasure(100, 100);
     }
 
-    get canvasYCenter() {
-        return Math.abs(256 * 56 - this.y_center);
+    canvasYLocation(y) {
+        return Math.abs(256 * 56 - y);
+    }
+
+    get mapBounds() {
+        return {
+            minX: this.minX,
+            minY: 256 * 56 - this.minY,
+            width: 256 * this.numBlocksWidth,
+            height: 256 * this.numBlocksWidth,
+        }
+    }
+
+    markersRequest() {
+        return fetch(`/markers/${this.x_center}/${this.y_center}/${256 * this.numBlocksWidth / 2}/`)
     }
 
     getMapBlocks() {
         // return 5x5 array of MapSection
         const mapSections = [];
-        const eachWay = 2;
+        const eachWay = Math.floor(this.numBlocksWidth / 2);
         for(let x = -eachWay; x <= eachWay; x++){
             for(let y = -eachWay; y <= eachWay; y++){
                 const mapSection = new MapSection(
@@ -89,17 +101,16 @@ class Map {
         return mapSections;
     }
 
-    addTreasure(x, y) {
-        this.ctx.scale(-1, -1);
+    addMarkerImage(x, y, typeId="chest-white", scale = 1) {
         const image = new Image();
-        image.src = "/static/map_images/chest.png"
+        image.src = `/static/map_images/${typeId}.png`
         image.onload = () => {
-            const targetWidth = image.width / 2;
-            const targetHeight = image.height / 2;
+            const targetWidth = image.width / 4 * scale;
+            const targetHeight = image.height / 4 * scale;
             this.ctx.drawImage(
                 image,
-                -x - targetWidth / 2,
-                -y - targetHeight / 2,
+                x - this.minX - targetWidth / 2,
+                this.canvasYLocation(y) - this.minY - targetWidth / 2,
                 targetWidth,
                 targetHeight
             );
@@ -110,6 +121,18 @@ class Map {
     addText(label, x, y) {
         this.ctx.font = "30px Arial";
         this.ctx.fillText(label, x, y);
+    }
+
+    drawGrid() {
+        // grid
+        for(let i=1; i<5; i++) {
+            this.ctx.beginPath();
+            this.ctx.moveTo(i * 256, 0);
+            this.ctx.lineTo(i * 256, 256 * this.numBlocksWidth);
+            this.ctx.moveTo(0, i * 256);
+            this.ctx.lineTo(256 * this.numBlocksWidth, i * 256);
+            this.ctx.stroke();
+        }
     }
 
     draw() {
@@ -127,18 +150,15 @@ class Map {
                 const yPos = block.canvasYLocation - map.minY;
                 console.log("drawing");
                 ctx.drawImage(image, xPos, yPos);
-                map.addText(`${block.xImageUrl}, ${block.yImageUrl}`, xPos + 20, yPos + 30)
-                ctx.beginPath();
-                ctx.moveTo(xPos, 0);
-                ctx.lineTo(xPos, 256 * 5);
-                ctx.moveTo(0, yPos);
-                ctx.lineTo(256 * 5, yPos);
-                ctx.stroke();
+                //map.addText(`${block.xImageUrl}, ${block.yImageUrl}`, xPos + 20, yPos + 30)
+                //ctx.stroke();
                 if(++totalLoaded == map.blocks.length) {
-                    ctx.beginPath();
-                    ctx.arc(
-                        map.x_center % 256 + 256 * 2, Math.abs(256 * 5 - (map.y_center % 256 + 256 * 2)), 2, 0, 2 * Math.PI);
-                    ctx.stroke();
+                    map.markersReq.then(res => res.json()).then(json => {
+                        for (const [key, value] of Object.entries(json)) {
+                            map.addMarkerImage(value["location_y"], value["location_x"], "chest-orange", 1.5)
+                        }
+                        map.addMarkerImage(map.x_center, map.y_center, "pos", 3);
+                    });
                     console.log(`Done! ${xPos}, ${yPos}`);
                 }
             }
@@ -148,7 +168,7 @@ class Map {
 
 const drawMap = () => {
     const canvas = document.getElementById('canvas');
-    const map = new Map(canvas, 10387.24, 3381.99);
+    const map = new Map(canvas, 10287.24, 3381.99);
 }
 
 const addMapModal = () => {
@@ -156,8 +176,8 @@ const addMapModal = () => {
         createModal({
             title: "Map",
             content: data,
-            width: 840,
-            height: 970
+            width: 256 * NUM_BLOCKS_WIDTH * SCALE + 55,
+            height: 256 * NUM_BLOCKS_WIDTH * SCALE + 195
         });
         const canvas = document.getElementById('canvas');
         const map = new Map(canvas, 10387.24, 3381.99);

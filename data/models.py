@@ -6,7 +6,7 @@ from typing import List
 
 
 from django.db import models
-from django.db.models import F
+from django.db.models import F, QuerySet
 import django
 
 from models import Location
@@ -36,6 +36,20 @@ class Marker(models.Model):
     @property
     def location(self) -> Location:
         return Location(x=self.location_x, y=self.location_y)
+
+    @property
+    def dict(self) -> dict:
+        return {k: v for k, v in self.__dict__.items() if not k.startswith("_")}
+
+    @classmethod
+    def nearby_markers_range(cls, x_location: float, y_location: float, in_range: int) -> QuerySet[Marker]:
+        return cls.objects.filter(
+            location_x__gt=x_location - in_range,
+            location_x__lt=x_location + in_range,
+            location_y__gt=y_location - in_range,
+            location_y__lt=y_location + in_range,
+            is_deleted=False
+        )
 
 
 class LootHistory(models.Model):
@@ -77,7 +91,6 @@ class LootHistory(models.Model):
         return LootHistory.objects.filter(loot_time__gte=one_day_prior)
 
 
-
 class PlayerData(models.Model):
     player_name = models.CharField(primary_key=True, max_length=100)
     chests_looted = models.IntegerField(default=0)
@@ -106,10 +119,4 @@ class PlayerData(models.Model):
 
     @property
     def nearby_markers(self) -> List[Marker]:
-        return Marker.objects.filter(
-            location_x__gt=self.location.x - 3,
-            location_x__lt=self.location.x + 3,
-            location_y__gt=self.location.y - 3,
-            location_y__lt=self.location.y + 3,
-            is_deleted=False
-        )
+        return Marker.nearby_markers_range(self.location_x, self.location_y, 3)

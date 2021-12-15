@@ -41,7 +41,7 @@ def root():
         "elite_chests_opened": elite_chests_opened,
         "zone": loc.get_zone(),
         "nearby": {
-            p.marker_id: {k: v for k, v in p.__dict__.items() if not k.startswith("_")} for p in nearby
+            p.marker_id: p.dict() for p in nearby
         },
         "reset_timers": {
             "elites": {
@@ -135,3 +135,14 @@ def get_map(x: int, y: int) -> StreamingResponse:
 @app.get("/map/")
 def show_position(request: Request):
     return templates.TemplateResponse("draw.html", {"request": request, "id": id, "repos": is_self(request)})
+
+
+@app.get("/markers/{x}/{y}/{int_range}/")
+def get_markers(x: float, y: float, int_range: int) -> dict:
+    markers = Marker.nearby_markers_range(y, x, int_range).filter(type__in=[
+        "Supply Stockpile", "Ancient Chest (Elite)", "Ancient Chest"
+    ])
+    return {
+        marker.marker_id: marker.dict
+        for marker in markers
+    }
