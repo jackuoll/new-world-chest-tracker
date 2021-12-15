@@ -36,12 +36,13 @@ def root():
     cur_time = datetime.now()
     loc = player.location
     data = {
+        "current_position": player.location.json(),
         "opened_last_24h": len(LootHistory.get_last_24h()),
         "total_opened": total_chests_opened,
         "elite_chests_opened": elite_chests_opened,
         "zone": loc.get_zone(),
         "nearby": {
-            p.marker_id: p.dict() for p in nearby
+            p.marker_id: p.dict for p in nearby
         },
         "reset_timers": {
             "elites": {

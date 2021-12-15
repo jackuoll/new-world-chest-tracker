@@ -180,6 +180,6 @@ const addMapModal = () => {
             height: 256 * NUM_BLOCKS_WIDTH * SCALE + 195
         });
         const canvas = document.getElementById('canvas');
-        const map = new Map(canvas, 10287.24, 3381.99);
+        const map = new Map(canvas, currentPosition["y"], currentPosition["x"]);
     })
 }

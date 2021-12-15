@@ -2,6 +2,7 @@ let lastReceivedData = null;
 let refreshPaused = false;
 let onTab = "stockpiles";
 let repositionButtonEnabled = false;
+let currentPosition = null;
 
 
 const canResposition = (value) => {
@@ -59,6 +60,7 @@ const setLocation = (id) => {
 };
 
 const showStatistics = (data) => {
+    currentPosition = JSON.parse(data["current_position"]);
     document.getElementById("total-opened").textContent=data["total_opened"];
     document.getElementById("elite-chests-opened").textContent=data["elite_chests_opened"];
     document.getElementById("24h-opened").textContent=data["opened_last_24h"];
