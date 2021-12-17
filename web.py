@@ -155,5 +155,7 @@ def add_marker(request: Request, new_marker: NewMarkerData) -> JSONResponse:
 def delete_marker(request: Request, marker_id: str) -> JSONResponse:
     if not is_self(request):
         return JSONResponse(status_code=401, content={"status": "forbidden"})
-    Marker.objects.get(marker_id=marker_id).delete()
+    marker = Marker.objects.get(marker_id=marker_id)
+    marker.is_deleted = True
+    marker.save()
     return JSONResponse(status_code=204)

@@ -1,3 +1,4 @@
+let MAP_REFERENCE = null;
 const SCALE = 0.9;
 const NUM_BLOCKS_WIDTH = 3;
 
@@ -106,7 +107,6 @@ class Map {
     initContextMenu() {
         const map = this;
         document.getElementById("canvas").addEventListener("contextmenu", (e) => {
-            console.log("Ya");
             e.preventDefault()
         });
         this.canvas.addEventListener("click", (event) => {
@@ -121,6 +121,9 @@ class Map {
             const elem = document.getElementById("context-menu");
             let anyFound = false;
             this.markers.forEach((marker) => {
+                if(marker.name == "player") {
+                    return;
+                }
                 const targetWidth = marker.image.width;
                 const targetHeight = marker.image.height;
                 const canvasX = (marker.x - map.minX) * map.scale;
@@ -136,7 +139,7 @@ class Map {
                     elem.classList.add("context-menu");
                     elem.innerHTML = `<aside class="menu" style="background-color: lightgray">
                                       <ul class="menu-list" class="is-danger">
-                                        <li><a>Delete ${marker.name}</a></li>
+                                        <li><a onclick="deleteMarkerPrompt('${marker.marker_id}')">Delete ${marker.name}</a></li>
                                       </ul>
                                     </aside>`;
                     elem.style.left = `${canvasX}px`;
@@ -227,7 +230,7 @@ class Map {
                             const marker = new MapMarker(map, key, value.name, value["location_y"], value["location_x"], "chest-orange", 0.5)
                             map.markers.push(marker);
                         }
-                        const marker = new MapMarker(map.x_center, map.y_center, "pos", 0.75)
+                        const marker = new MapMarker(map, "player", "player", map.x_center, map.y_center, "pos", 0.75)
                         map.markers.push(marker);
                     });
 
@@ -241,6 +244,7 @@ class Map {
 const drawMap = () => {
     const canvas = document.getElementById('canvas');
     const map = new Map(canvas, 10287.24, 3381.99);
+    MAP_REFERENCE = map;
 }
 
 const addMapModal = () => {
@@ -253,5 +257,6 @@ const addMapModal = () => {
         });
         const canvas = document.getElementById('canvas');
         const map = new Map(canvas, currentPosition["y"], currentPosition["x"]);
+        MAP_REFERENCE = map;
     })
 }

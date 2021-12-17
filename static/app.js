@@ -213,6 +213,54 @@ const displayAddMarkerForm = () => {
     });
 };
 
+const deleteMarkerPrompt = (marker_id) => {
+    const map = MAP_REFERENCE;
+    if(!map) {
+        alert("Map not initialised");
+        return;
+    }
+    let name = null;
+    map.markers.forEach((marker) => {
+        if(marker.marker_id === marker_id) {
+            name = marker.name;
+        }
+    })
+    if(!name) {
+        alert("Marker not found");
+        return;
+    }
+    const deleteMarker = () => {
+        console.log("??");
+        fetch(`/delete_marker/${marker_id}/`, {
+            method: "DELETE",
+        }).then(response => {
+            console.log(response);
+            if(!response.ok) {
+                const message = new Notification(NotificationLevel.danger, "Couldn't delete marker.");
+                Notifications.displayNotificationNow(message);
+                return;
+            }
+            const message = new Notification(NotificationLevel.info, "Marker deleted.");
+            Notifications.displayNotificationNow(message);
+        }).catch((err) => {
+            const message = new Notification(NotificationLevel.info, "Couldn't delete marker.");
+            Notifications.displayNotificationNow(message);
+        }).finally(() => {
+            removeModal();
+        })
+    };
+    removeModal();
+    createModal({
+        title: `Delete Marker ${name}?`,
+        content: `You are about to delete the marker ${name}. Are you sure?`,
+        buttons: {
+            "Confirm": {callback: deleteMarker, classes: "is-danger"},
+            "Cancel": {callback: removeModal}
+        },
+        height: 450
+    })
+}
+
 window.onload = function() {
     refreshAll();
 };
