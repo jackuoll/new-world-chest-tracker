@@ -79,7 +79,7 @@ def is_self(request: Request) -> bool:
 
 @app.get("/")
 def page(request: Request) -> templates.TemplateResponse:
-    return templates.TemplateResponse("page.html", {"request": request, "id": id, "repos": is_self(request)})
+    return templates.TemplateResponse("page.html", {"request": request, "id": id, "is_admin": is_self(request)})
 
 
 @app.patch("/set_marker_location/{marker_id}/")

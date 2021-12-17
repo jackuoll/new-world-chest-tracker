@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script>
-      canResposition({% if repos %}true{% else %}false{%endif%})
+      canResposition({% if is_admin %}true{% else %}false{%endif%})
     </script>
   </head>
   <body>
@@ -23,9 +23,11 @@
       <div class="columns">
         <h1 class="column title">Nightshark's Chest Resets</h1>
         <div class="column has-text-right">
+          {% if is_admin %}
           <a class="icon has-background-link is-medium has-text-white-bis" style="border-radius: 5px;" onClick="displayAddMarkerForm()" id="add-marker">
             <i class='fa fa-plus' ></i>
           </a>
+          {% endif %}
           <a class="icon has-background-link is-medium has-text-white-bis" style="border-radius: 5px;" onClick="addMapModal()" id="map">
             <i class='fa fa-globe' ></i>
           </a>
