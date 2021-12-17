@@ -1,0 +1,27 @@
+<div class="field">
+  <label class="label">Name</label>
+  <div class="control">
+    <input id="form_name" class="input" type="text" placeholder="Enter Name">
+  </div>
+</div>
+<div class="field">
+  <label class="label">Zone</label>
+  <div class="control">
+    <input id="form_zone" class="input" type="text" placeholder="{{ zone }}" value="{{ zone }}">
+  </div>
+</div>
+<div class="field">
+  <label class="label">Type</label>
+  <div class="control">
+    <div class="select">
+      <select id="form_type">
+        <option>Ancient Chest</option>
+        <option>Supply Stockpile</option>
+        <option>Ancient Chest (Elite)</option>
+        <option>Supply Stockpile (Elite)</option>
+      </select>
+    </div>
+  </div>
+</div>
+<input id="form_x" class="input" type="hidden" value="{{ location.0 }}">
+<input id="form_y" class="input" type="hidden" value="{{ location.1 }}">

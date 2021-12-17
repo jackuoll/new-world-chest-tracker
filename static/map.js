@@ -1,6 +1,29 @@
 const SCALE = 0.9;
 const NUM_BLOCKS_WIDTH = 3;
 
+class MapMarker {
+    constructor(map, marker_id, name, x, y, t, scale) {
+        this.name = name;
+        this.map = map;
+        this.marker_id = marker_id;
+        this.x = x;
+        this.y = y;
+        this.type = t;
+        this.scale = scale;
+        this.image = this.loadImage(this.map.addMarkerImage);
+    }
+
+    loadImage(callback) {
+        const map = this.map;
+        const image = new Image();
+        image.src = `/static/images/${this.type}.png`;
+        image.onload = () => {
+            map.addMarkerImage(this);
+        }
+        return image;
+    }
+}
+
 class MapSection {
     constructor(x, y) {
         this.x = x;
@@ -61,7 +84,9 @@ class Map {
         this.canvas.height = 256 * this.numBlocksWidth * this.scale;
         this.ctx = canvas.getContext("2d");
         this.ctx.scale(this.scale, this.scale);
+        this.markers = [];
         this.draw();
+        this.initContextMenu();
         // this.addTreasure(100, 100);
     }
 
@@ -76,6 +101,52 @@ class Map {
             width: 256 * this.numBlocksWidth,
             height: 256 * this.numBlocksWidth,
         }
+    }
+
+    initContextMenu() {
+        const map = this;
+        document.getElementById("canvas").addEventListener("contextmenu", (e) => {
+            console.log("Ya");
+            e.preventDefault()
+        });
+        this.canvas.addEventListener("click", (event) => {
+            // if the user clicks anywhere on the canvas, close any open context
+            event.preventDefault();
+            document.getElementById("context-menu").innerHTML = "";
+        });
+        this.canvas.addEventListener("contextmenu", (event) => {
+            console.log(`${event.offsetX}, ${event.offsetY}`)
+            event.preventDefault();
+
+            const elem = document.getElementById("context-menu");
+            let anyFound = false;
+            this.markers.forEach((marker) => {
+                const targetWidth = marker.image.width;
+                const targetHeight = marker.image.height;
+                const canvasX = (marker.x - map.minX) * map.scale;
+                const canvasY = (this.canvasYLocation(marker.y) - this.minY)  * map.scale;
+                const canvasWidth = targetWidth * map.scale;
+                const canvasHeight = targetHeight * map.scale;
+                if(
+                    event.offsetX > canvasX - canvasWidth / 4 && event.offsetX < canvasX + canvasHeight / 4 &&
+                    event.offsetY > canvasY - canvasWidth / 4 && event.offsetY < canvasY + canvasHeight / 4
+                ){
+                    anyFound = true;
+                    console.log("drawing...");
+                    elem.classList.add("context-menu");
+                    elem.innerHTML = `<aside class="menu" style="background-color: lightgray">
+                                      <ul class="menu-list" class="is-danger">
+                                        <li><a>Delete ${marker.name}</a></li>
+                                      </ul>
+                                    </aside>`;
+                    elem.style.left = `${canvasX}px`;
+                    elem.style.top = `${canvasY}px`;
+                }
+            })
+            if(!anyFound) {
+                elem.innerHTML = "";
+            }
+        })
     }
 
     markersRequest() {
@@ -101,21 +172,18 @@ class Map {
         return mapSections;
     }
 
-    addMarkerImage(x, y, typeId="chest-white", scale = 1) {
-        const image = new Image();
-        image.src = `/static/images/${typeId}.png`
-        image.onload = () => {
-            const targetWidth = image.width / 4 * scale;
-            const targetHeight = image.height / 4 * scale;
-            this.ctx.drawImage(
-                image,
-                x - this.minX - targetWidth / 2,
-                this.canvasYLocation(y) - this.minY - targetWidth / 2,
-                targetWidth,
-                targetHeight
-            );
-            console.log("loaded!");
-        }
+    addMarkerImage(marker) {
+        const targetWidth = marker.image.width * marker.scale;
+        const targetHeight = marker.image.height * marker.scale;
+        const canvasX = marker.x - this.minX - targetWidth / 2;
+        const canvasY = this.canvasYLocation(marker.y) - this.minY - targetWidth / 2;
+        this.ctx.drawImage(
+            marker.image,
+            canvasX,
+            canvasY,
+            targetWidth,
+            targetHeight
+        );
     }
 
     addText(label, x, y) {
@@ -153,12 +221,16 @@ class Map {
                 //map.addText(`${block.xImageUrl}, ${block.yImageUrl}`, xPos + 20, yPos + 30)
                 //ctx.stroke();
                 if(++totalLoaded == map.blocks.length) {
+                    map.markers = [];
                     map.markersReq.then(res => res.json()).then(json => {
                         for (const [key, value] of Object.entries(json)) {
-                            map.addMarkerImage(value["location_y"], value["location_x"], "chest-orange", 1.5)
+                            const marker = new MapMarker(map, key, value.name, value["location_y"], value["location_x"], "chest-orange", 0.5)
+                            map.markers.push(marker);
                         }
-                        map.addMarkerImage(map.x_center, map.y_center, "pos", 3);
+                        const marker = new MapMarker(map.x_center, map.y_center, "pos", 0.75)
+                        map.markers.push(marker);
                     });
+
                     console.log(`Done! ${xPos}, ${yPos}`);
                 }
             }

@@ -6,6 +6,7 @@
     <title>nightshark's chest resets</title>
     <script src="/static/app.js"></script>
     <script src="/static/modal.js"></script>
+    <script src="/static/notifications.js"></script>
     <script src="/static/map.js"></script>
     <script src="/static/moment.min.js"></script>
     <link rel="stylesheet" href="/static/custom.css">
@@ -18,17 +19,19 @@
   <body>
   <section class="section">
     <div class="container">
+      <div id="notification-container"></div>
       <div class="columns">
-        <h1 class="column title">
-        Nightshark's Chest Resets
-      </h1>
+        <h1 class="column title">Nightshark's Chest Resets</h1>
         <div class="column has-text-right">
-          <span class="icon has-background-link is-medium has-text-white-bis" style="border-radius: 5px;" onClick="addMapModal()" id="map">
+          <a class="icon has-background-link is-medium has-text-white-bis" style="border-radius: 5px;" onClick="displayAddMarkerForm()" id="add-marker">
+            <i class='fa fa-plus' ></i>
+          </a>
+          <a class="icon has-background-link is-medium has-text-white-bis" style="border-radius: 5px;" onClick="addMapModal()" id="map">
             <i class='fa fa-globe' ></i>
-          </span>
-          <span class="icon has-background-link is-medium has-text-white-bis" style="border-radius: 5px;" onClick="togglePause()" id="pause">
+          </a>
+          <a class="icon has-background-link is-medium has-text-white-bis" style="border-radius: 5px;" onClick="togglePause()" id="pause">
             <i class='fa fa-pause' ></i>
-          </span>
+          </a>
         </div>
       </div>
       <div class="columns">

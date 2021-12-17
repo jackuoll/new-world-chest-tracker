@@ -148,6 +148,71 @@ const refreshAll = () => {
     } );
 }
 
+const displayAddMarkerForm = () => {
+    const submit = () => {
+        const t = document.getElementById("form_type").value;
+        const submitValues = {
+            name: document.getElementById("form_name").value || t,
+            zone: document.getElementById("form_zone").value,
+            type: t,
+            is_elite: t.includes("Elite"),
+            location_x: document.getElementById("form_x").value,
+            location_y: document.getElementById("form_y").value,
+        }
+        console.log(submitValues);
+        fetch(`/add_marker/`, {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(submitValues)
+        })
+            .then((response) => {
+                if(response.ok) {
+                    return response.json();
+                } else if(response.status == 401) {
+                    const message = new Notification(NotificationLevel.danger, "You are not authorized to create markers.");
+                    Notifications.displayNotificationNow(message);
+                } else {
+                    const message = new Notification(NotificationLevel.danger, "Whoops... something went wrong.");
+                    Notifications.displayNotificationNow(message);
+                }
+            })
+            .then(() => {
+                const message = new Notification(NotificationLevel.info, "Marker created.");
+                Notifications.displayNotificationNow(message);
+            })
+            .catch((err) => {
+                throw err;
+            }).finally(() => {removeModal();})
+    };
+    fetch(
+        `/add_marker_form/`,
+        {
+            "headers": {"Content-Type": "text/html"},
+            "method": "GET",
+        },
+    )
+    .then(response => {
+        return response.text();
+    })
+    .then(data => {
+        createModal({
+            title: "Add Marker",
+            content: data,
+            buttons: {
+                "Submit": {callback: submit, classes: "is-link"},
+                "Cancel": {callback: removeModal}
+            },
+            height: 450
+        })
+    })
+    .catch((error) => {
+        createModal({
+            title: "Error occurred!",
+            content: "Something went wrong"
+        })
+    });
+};
+
 window.onload = function() {
     refreshAll();
 };

@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
 from io import BytesIO
 
+from django.template.response import TemplateResponse
 from fastapi import FastAPI, Body
 from pydantic import BaseModel
 from starlette.requests import Request
@@ -9,6 +10,7 @@ from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 
 from data.models import Marker, LootHistory, PlayerData
+from models import Location
 from settings import SETTINGS
 
 app = FastAPI()
@@ -27,7 +29,7 @@ def timedelta_to_time(td: timedelta):
 
 
 @app.get("/data/")
-def root():
+def get_app_data():
     player = PlayerData.objects.get(player_name="Nightshark")
     total_chests_opened = LootHistory.objects.exclude(chest__is_elite=True).count()
     elite_chests_opened = LootHistory.objects.filter(chest__is_elite=True).count()
@@ -71,7 +73,7 @@ def root():
 
 
 def is_self(request: Request) -> bool:
-    print(request.client.host,  SETTINGS.my_ip)
+    print(f"'{request.client.host}' == '{SETTINGS.my_ip}' {request.client.host == SETTINGS.my_ip}")
     return request.client.host == SETTINGS.my_ip
 
 
@@ -109,30 +111,6 @@ def set_marker_name(request: Request, marker_id: str, data: NewNameData) -> JSON
     return JSONResponse(status_code=200)
 
 
-@app.get("/map/{x}/{y}/")
-def get_map(x: int, y: int) -> StreamingResponse:
-    # pixels = 256
-    # # image 0, 0 = max Y, min X
-    # max_y = pixels * 56  # 56 images, 256 pix each
-    # y_img_val = int((max_y - y) / pixels)
-    # x_img_val = int(x / pixels)
-    # filename = f"static/map_images/{x_img_val}_{y_img_val}.png"
-    # if min(x_img_val, y_img_val) < 0:
-    #     return JSONResponse({
-    #         "status_code": 422,
-    #         "info": f"Value is out of bounds"
-    #     })
-    filename = f"static/map_images/{x}_{y}.png"
-    try:
-        with open(filename, "rb") as f:
-            return StreamingResponse(BytesIO(f.read()), media_type="image/png")
-    except FileNotFoundError:
-        return JSONResponse({
-            "status_code": 404,
-            "info": f"No image {filename} found"
-        })
-
-
 @app.get("/map/")
 def show_position(request: Request):
     return templates.TemplateResponse("draw.html", {"request": request, "id": id, "repos": is_self(request)})
@@ -140,10 +118,42 @@ def show_position(request: Request):
 
 @app.get("/markers/{x}/{y}/{int_range}/")
 def get_markers(x: float, y: float, int_range: int) -> dict:
-    markers = Marker.nearby_markers_range(y, x, int_range).filter(type__in=[
-        "Supply Stockpile", "Ancient Chest (Elite)", "Ancient Chest"
-    ])
+    markers = Marker.nearby_markers_range(y, x, int_range).filter(type__in=SETTINGS.interested_marker_names)
     return {
         marker.marker_id: marker.dict
         for marker in markers
     }
+
+
+@app.get("/add_marker_form/")
+def add_marker_form(request: Request) -> TemplateResponse:
+    player = PlayerData.objects.get(player_name="Nightshark")
+    loc = Location(x=player.location_x, y=player.location_y)
+    zone = loc.get_zone()
+    return templates.TemplateResponse("new_marker_form.html", context={"request": request, "zone": zone, "location": [loc.x, loc.y]})
+
+
+class NewMarkerData(BaseModel):
+    name: str
+    zone: str
+    type: str
+    location_x: float
+    location_y: float
+    is_elite: bool
+
+
+@app.post("/add_marker/")
+def add_marker(request: Request, new_marker: NewMarkerData) -> JSONResponse:
+    if not is_self(request):
+        return JSONResponse(status_code=401, content={"status": "forbidden"})
+    marker = Marker(**new_marker.dict())
+    marker.save()
+    return JSONResponse(status_code=201, content={"status": "created"})
+
+
+@app.delete("/delete_marker/{marker_id}/")
+def delete_marker(request: Request, marker_id: str) -> JSONResponse:
+    if not is_self(request):
+        return JSONResponse(status_code=401, content={"status": "forbidden"})
+    Marker.objects.get(marker_id=marker_id).delete()
+    return JSONResponse(status_code=204)

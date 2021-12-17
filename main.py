@@ -33,9 +33,8 @@ def handle_position_update(event):
     loc = Location(y=loc_arr[0], x=loc_arr[1])
     PLAYER.update_location(loc)
     markers = PLAYER.nearby_markers
-    interested_types = ["Supply Stockpile", "Ancient Chest (Elite)", "Ancient Chest"]
     for poi in markers:
-        is_chest = poi.type in interested_types
+        is_chest = poi.type in SETTINGS.interested_marker_names
         if poi.location.is_entering(PLAYER.old_location, PLAYER.location) and not poi.unreachable:
             if is_chest:
                 lh = LootHistory.mark_looted(poi.marker_id, 60 * 60 * 23 if poi.is_elite else 60 * 60)

@@ -3,3 +3,11 @@
     width: 100%;
     font-size: 16px;
 }
+
+#canvas-div {
+    position: relative;
+}
+
+.context-menu {
+    position: absolute;
+}

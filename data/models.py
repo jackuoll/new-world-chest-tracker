@@ -1,6 +1,7 @@
 from __future__ import annotations
 # models.py
 import os
+import uuid
 from datetime import datetime, timedelta
 from typing import List
 
@@ -20,7 +21,7 @@ except RuntimeError:
 
 
 class Marker(models.Model):
-    marker_id = models.CharField(primary_key=True, max_length=255)
+    marker_id = models.CharField(primary_key=True, max_length=255, default=uuid.uuid4)
     zone = models.CharField(max_length=255)
     type = models.CharField(max_length=255)
     unreachable = models.BooleanField(default=False)
