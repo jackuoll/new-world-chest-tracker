@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     ws_proxy_server_port: int = 8765
     nw_wss_server_location: str = "wss://localhost.newworldminimap.com:42224/Location"
     interested_marker_names = [
-        "Supply Stockpile", "Ancient Chest (Elite)", "Ancient Chest"
+        "Supply Stockpile", "Supply Stockpile (Elite)", "Ancient Chest (Elite)", "Ancient Chest"
     ]
 
     class Config:

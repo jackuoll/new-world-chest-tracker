@@ -115,7 +115,6 @@ class Map {
             document.getElementById("context-menu").innerHTML = "";
         });
         this.canvas.addEventListener("contextmenu", (event) => {
-            console.log(`${event.offsetX}, ${event.offsetY}`)
             event.preventDefault();
 
             const elem = document.getElementById("context-menu");
@@ -135,7 +134,6 @@ class Map {
                     event.offsetY > canvasY - canvasWidth / 4 && event.offsetY < canvasY + canvasHeight / 4
                 ){
                     anyFound = true;
-                    console.log("drawing...");
                     elem.classList.add("context-menu");
                     elem.innerHTML = `<aside class="menu" style="background-color: lightgray">
                                       <ul class="menu-list" class="is-danger">
@@ -219,7 +217,6 @@ class Map {
             image.onload = function () {
                 const xPos = block.canvasXLocation - map.minX;
                 const yPos = block.canvasYLocation - map.minY;
-                console.log("drawing");
                 ctx.drawImage(image, xPos, yPos);
                 //map.addText(`${block.xImageUrl}, ${block.yImageUrl}`, xPos + 20, yPos + 30)
                 //ctx.stroke();
